@@ -195,14 +195,18 @@
     right: 0px;
 }
 
-#paginationDesktop {
+#paginationDesktop {   
     position: absolute;
-    background-image: url('../images/dotsPage1.png');
-    background-repeat: no-repeat;
     bottom: 20px;
     right: 50px;
     width: 170px;
-    height: 15px
+    height: 15px;
+    
+}
+
+#paginationDesktop i {
+    color: white;
+    padding-right: 6px
 }
 
 // Extra small devices (portrait phones, less than 576px)
