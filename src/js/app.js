@@ -13,55 +13,89 @@ $(function() {
 
     function buildHome() {
         //remove classes if previously built
+        $('#state0backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('#rightCurveShape').removeClass('fadeOut');
         
         //add classes
+        $('#state0backgroundContainer').addClass('backgroundContainerActive');
         $('#rightCurveShape').addClass('fadeIn');
         console.log('page 1 build');
     }
     function destroyHome() {
+        $('#state0backgroundContainer').removeClass('backgroundContainerActive');
+        $('#state0backgroundContainer').addClass('backgroundContainerCollapsed');
         $('#rightCurveShape').removeClass('fadeIn');
         $('#rightCurveShape').addClass('fadeOut');
         console.log('page 1 destroyed');
     }
 
     function buildDouble() {
+        $('#state1backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('#wrapper').removeClass('backgroundPage1');
+
+        //add classes
+        $('#state1backgroundContainer').addClass('backgroundContainerActive');
         $('#wrapper').addClass('backgroundPage2');
         console.log('page 2 build');
     }
 
     function destroyDouble() {
+        $('#state1backgroundContainer').removeClass('backgroundContainerActive');
+        $('#state1backgroundContainer').addClass('backgroundContainerCollapsed');
         console.log('page 2 destroy');
     }
 
     function buildJoin() {
+        $('#state2backgroundContainer').removeClass('backgroundContainerCollapsed');
+        
+        //add classes
+        $('#state2backgroundContainer').addClass('backgroundContainerActive');
         console.log('page 3 build');
     }
 
     function destroyJoin() {
+        $('#state2backgroundContainer').removeClass('backgroundContainerActive');
+        $('#state2backgroundContainer').addClass('backgroundContainerCollapsed');
         console.log('page 3 destroy');
     }
 
     function buildOperate() {
+        $('#state3backgroundContainer').removeClass('backgroundContainerCollapsed');
+        
+        //add classes
+        $('#state3backgroundContainer').addClass('backgroundContainerActive');
         console.log('page 4 build');
     }
     function destroyOperate() {
+        $('#state3backgroundContainer').removeClass('backgroundContainerActive');
+        $('#state3backgroundContainer').addClass('backgroundContainerCollapsed');
         console.log('page 4 destroy');
     } 
 
     function buildWinning() {
+        $('#state4backgroundContainer').removeClass('backgroundContainerCollapsed');
+        
+        //add classes
+        $('#state4backgroundContainer').addClass('backgroundContainerActive');
         console.log('page 5 build');
     }
 
     function destroyWinning() {
+        $('#state4backgroundContainer').removeClass('backgroundContainerActive');
+        $('#state4backgroundContainer').addClass('backgroundContainerCollapsed');
         console.log('page 5 destroy');
     }
     function buildLastPage() {
+        $('#state5backgroundContainer').removeClass('backgroundContainerCollapsed');
+        
+        //add classes
+        $('#state5backgroundContainer').addClass('backgroundContainerActive');
         console.log('page 6 build');
     }
 
     function destroyLastPage() {
+        $('#state5backgroundContainer').removeClass('backgroundContainerActive');
+        $('#state5backgroundContainer').addClass('backgroundContainerCollapsed');
         console.log('page 6 destroy');
     }
 
@@ -142,7 +176,7 @@ $(function() {
         stateCaseChange = false;
         setTimeout(function(){
             stateCaseChange = true;
-        }, 500);
+        }, 1000);
     }
 
 });
