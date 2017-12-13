@@ -33,15 +33,24 @@
 
 </head>
 <body class="stretched no-transition" itemid="body">
-    <div id="wrapper" class="clearfix">
+    <div id="desktopWrapper" class="clearfix">
         <div id="state0backgroundContainer" class="backgroundContainerActive"></div>
         <div id="state1backgroundContainer" class="backgroundContainerCollapsed"></div>
         <div id="state2backgroundContainer" class="backgroundContainerCollapsed"></div>
         <div id="state3backgroundContainer" class="backgroundContainerCollapsed"></div>
         <div id="state4backgroundContainer" class="backgroundContainerCollapsed"></div>
         <div id="state5backgroundContainer" class="backgroundContainerCollapsed"></div>
+        <div id="deskTopMenuRight" class="hidden">
+            <div id="deskTopMenuRightTitle">Menu</div>
+            <div id="deskTopMenuRightList">
+                <ul>
+                    <a href="#"><li>Your Advantage</li></a>
+                    <a href="#"><li>Meet Primelending</li></a>
+                    <a href="#"><li>Get in Touch</li></a>
+                </ul>
+            </div>
+        </div>
         <!-- State 0 -->
-        
         <div id="rightCurveShape" class="animated fadeIn"></div>
         <div id="leftCurveImg" class="animated slideInLeft"></div>
         <img id="logo" src="images/logo-white.png" class="animated slideInLeft">
@@ -50,7 +59,21 @@
         <div id="scrollToLearnTxt" class="animated slideInLeft">SCROLL TO LEARN HOW</div>
         <div id="scrollToLearnDownChevron" class="bounce"><i class="fa fa-angle-double-down bounce" aria-hidden="true"></i></div>
         <!-- State 1 -->
-        
+        <div id="state1Wrapper" >
+            <div id="state1TitleA" class="hidden">
+                <img src="images/state1TitleA.png" alt="Double">
+            </div>
+            <div id="state1TitleB" class="hidden">
+                <img src="images/state1TitleB.png" alt="Your Income">
+            </div>
+            <div id="state1Text" class="hidden">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="state1Spacer" class="hidden"></div>
+            <div id="state1Btn" class="hidden">
+                <a href="#"><img src="images/state1CTABtn.png" alt="Find Out How Button"></a>
+            </div>
+        </div>
         <!-- State 2 -->
         
         <!-- State 3 -->
@@ -59,12 +82,12 @@
         
         <!-- State 5 -->
         <div id="paginationDesktop" class="">
-            <a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-circle-thin" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-circle-thin" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-circle-thin" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-circle-thin" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-circle-thin" aria-hidden="true"></i></a>
+            <i id="paginationState0" class="fa fa-circle" aria-hidden="true"></i>
+            <i id="paginationState1" class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i id="paginationState2" class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i id="paginationState3" class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i id="paginationState4" class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i id="paginationState5" class="fa fa-circle-thin" aria-hidden="true"></i>
         </div>
     </div>
     <script type='text/javascript' src='js/jquery.waypoints.min.js'></script>

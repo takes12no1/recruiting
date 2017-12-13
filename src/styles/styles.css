@@ -1,4 +1,17 @@
-#wrapper {
+/* Utilities */
+.bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
+.negativeZ {
+    z-index: -1
+}
+
+
+/* blocks */
+#desktopWrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,6 +41,7 @@
     z-index: 0 !important;
 }
 
+/* State 0 */
 #state0backgroundContainer {
     pointer-events: none;
     position: fixed;
@@ -40,20 +54,6 @@
     background: -o-linear-gradient(-45deg, #00D59E, #0C46C7); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-45deg, #00D59E, #0C46C7); /* For Firefox 3.6 to 15 */
     background: linear-gradient(-45deg, #00D59E, #0C46C7); /* Standard syntax */
-}
-
-#state1backgroundContainer {
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    background: #00D59E; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(15deg, #00A8E3, #00D59E); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(15deg, #00A8E3, #00D59E); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(15deg, #00A8E3, #00D59E); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(15deg, #00A8E3, #00D59E); /* Standard syntax */
 }
 
 #state2backgroundContainer {
@@ -108,6 +108,47 @@
     background: linear-gradient(15deg, #00C760, #00A8E3); /* Standard syntax */
 }
 
+#deskTopMenuRight {
+    font-family: 'lato', sans-serif;
+    padding: 20px;
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    border-top: 2px solid #ECECEC;
+    border-bottom: 2px solid #ECECEC;
+    border-left: 2px solid #ECECEC;
+    z-index: 9
+}
+#deskTopMenuRightTitle {
+    color: #0C46C7;
+    text-align: center;
+    line-height: 34px;
+    font-size: 24px
+}
+
+#deskTopMenuRightList ul {
+    padding-left: 0px
+}
+#deskTopMenuRightList ul li {
+    list-style: none;
+    text-align: center;
+    padding: 12px;
+    margin: 0px
+}
+
+#deskTopMenuRightList ul li a {
+    list-style: none;
+    color: #0C46C7;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+}
+
+#deskTopMenuRightList ul a:hover{
+    text-decoration: none;
+    color: #07308B;
+}
+
 #logo {
     position: absolute;
     left: 86px;
@@ -129,9 +170,6 @@
 #getInTouchBtn:hover { 
     background-image: url('../images/getInTouchHover.png');
 }
-
-
-
 
 #discoverYourBestTitleImg {
     position: absolute;
@@ -166,12 +204,6 @@
     width: 320px
 }
 
-.bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
-}
-
 #leftCurveImg {
     position: absolute;
     background-image: url('../images/leftCurve.png');
@@ -195,6 +227,74 @@
     right: 0px;
 }
 
+/* state1 */
+#state1backgroundContainer {
+    pointer-events: none;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #00D59E; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(15deg, #00A8E3, #00D59E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(15deg, #00A8E3, #00D59E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(15deg, #00A8E3, #00D59E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(15deg, #00A8E3, #00D59E); /* Standard syntax */
+}
+
+#state1Wrapper {
+    padding-top: 10%;
+    padding-left: 15%
+}
+
+#state1TitleA {
+    margin-left: -12px;
+    position: relative;
+    z-index: 9
+}
+
+#state1TitleB {
+    border-left: 1px solid white;
+    padding-top: 32px;
+    padding-left: 30px;
+    margin-top: -10px;
+  
+}
+
+#state1Text {
+    border-left: 1px solid white;
+    padding-left: 30px;
+    font-size: 24px;
+    line-height: 34px;
+    max-width: 571px;
+    font-family: 'lato', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+   
+}
+
+#state1Spacer {
+    height: 48px;
+    width: 50px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-left: 30px;
+  
+}
+
+#state1Btn {
+    margin-top: -52px;
+    padding-left: 30px;
+   
+}
+
+#state1Btn img {
+    cursor: pointer;
+}
+
+/* pagination */
 #paginationDesktop {   
     position: absolute;
     bottom: 20px;
@@ -206,8 +306,19 @@
 
 #paginationDesktop i {
     color: white;
-    padding-right: 6px
+    padding-right: 6px;
+
 }
+
+#paginationDesktop i:hover {
+    cursor: pointer;
+}
+
+.bluePagination {
+    color: #3352A4 !important
+}
+
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {  }
