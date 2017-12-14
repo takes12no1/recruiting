@@ -11,7 +11,7 @@ $(function() {
         console.log('Resized');
     });
 
-    function buildHome() {   
+    function buildState0() {   
         setTimeout(function(){     
         //add classes
         $('#state0backgroundContainer').removeClass('backgroundContainerCollapsed');
@@ -30,8 +30,8 @@ $(function() {
             $('#discoverYourBestTitleImg').addClass('slideInLeft');
             $('#scrollToLearnTxt').removeClass('fadeOut');
             $('#scrollToLearnTxt').addClass('slideInLeft');
-            $('#scrollToLearnDownChevron').removeClass('animated fadeOut');
-            $('#scrollToLearnDownChevron').addClass('bounce');
+            $('#scrollToLearnDownChevron').removeClass('hidden');
+            $('#scrollToLearnDownChevron').addClass('animated bounce infinite');
         }, 2000);    
         //Menu
         $('#deskTopMenuRight').addClass('hidden'); 
@@ -39,10 +39,10 @@ $(function() {
         $('#paginationState0').removeClass('fa-circle-thin');
         $('#paginationState0').addClass('fa-circle');
         homeState = 0;
-        console.log('page 1 build');
+        console.log('state 0 build');
     }
 
-    function destroyHome() {
+    function destroyState0() {
         $('#rightCurveShape').removeClass('fadeIn');
         $('#rightCurveShape').addClass('fadeOut');
         $('#leftCurveImg').removeClass('slideInLeft');
@@ -55,22 +55,21 @@ $(function() {
         $('#discoverYourBestTitleImg').addClass('fadeOut');
         $('#scrollToLearnTxt').removeClass('slideInLeft');
         $('#scrollToLearnTxt').addClass('fadeOut');
-        $('#scrollToLearnDownChevron').removeClass('bounce');
-        $('#scrollToLearnDownChevron').addClass('animated fadeOut');
+        $('#scrollToLearnDownChevron').removeClass('animated bounce infinite');
+        $('#scrollToLearnDownChevron').addClass('hidden');
         $('#state0backgroundContainer').removeClass('backgroundContainerActive');
         $('#state0backgroundContainer').addClass('backgroundContainerCollapsed');
         //pagination
         $('#paginationState0').removeClass('fa-circle');
         $('#paginationState0').addClass('fa-circle-thin');
-        console.log('page 1 destroyed');
+        console.log('state 0 destroyed');
     }
 
-    function buildDouble() {
+    function buildState1() {
         
         //Background
         $('#state1backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('#state1backgroundContainer').addClass('backgroundContainerActive');
-    
         //Content
         setTimeout(function(){
             $('#state1TitleA').removeClass('hidden animated slideOutUp');
@@ -96,20 +95,14 @@ $(function() {
         //Menu
         $('#deskTopMenuRight').removeClass('hidden');
         homeState = 1;
-        console.log('page 2 build');
+        console.log('state 1 build');
     }
 
-    
-
-
-
-    function destroyDouble() {
+    function destroyState1() {
         $('#state1TitleA').removeClass('animated slideInDown');
         $('#state1TitleA').addClass('animated slideOutUp');
         $('#state1TitleA img').removeClass('animated fadeIn');
         $('#state1TitleA img').addClass('animated fadeOut');
-        
-        
         $('#state1TitleB').removeClass('animated fadeIn');
         $('#state1TitleB').addClass('animated fadeOut');
         $('#state1TitleB img').removeClass('animated slideInUp');
@@ -129,82 +122,188 @@ $(function() {
         //pagination
         $('#paginationState1').removeClass('fa-circle');
         $('#paginationState1').addClass('fa-circle-thin');
-        console.log('page 2 destroy');
+        console.log('state 1 destroy');
     }
 
-    function buildJoin() {
+    function buildState2() {
+
+        //Background
         $('#state2backgroundContainer').removeClass('backgroundContainerCollapsed');
-        
-        //add classes
         $('#state2backgroundContainer').addClass('backgroundContainerActive');
+        //Content
+        setTimeout(function(){
+            $('#state2TitleA').removeClass('hidden animated slideOutUp');
+            $('#state2TitleA').addClass('animated slideInDown');
+            $('#state2TitleA img').removeClass('animated fadeOut');
+            $('#state2TitleA img').addClass('animated fadeIn');
+            $('#state2TitleB').removeClass('hidden animated fadeOut');
+            $('#state2TitleB').addClass('animated fadeIn');
+            $('#state2TitleB img').removeClass('animated slideOutUp');
+            $('#state2TitleB img').addClass('animated slideInUp');
+            $('#state2Text').removeClass('hidden animated fadeOut');
+            $('#state2Text').addClass('animated fadeIn');
+            $('#state2Text p').removeClass('animated slideOutUp');
+            $('#state2Text p').addClass('animated slideInUp');
+            $('#state2Spacer').removeClass('hidden animated fadeOut');
+            $('#state2Spacer').addClass('animated fadeIn');
+            $('#state2Btn').removeClass('hidden animated slideOutLeft');
+            $('#state2Btn').addClass('animated slideInLeft');
+        }, 1000);
         //pagination
         $('#paginationState2').removeClass('fa-circle-thin');
         $('#paginationState2').addClass('fa-circle');
         //Menu
         $('#deskTopMenuRight').removeClass('hidden');
         homeState = 2;
-        console.log('page 3 build');
+        console.log('state 2 build');
     }
 
-    function destroyJoin() {
-        $('#state2backgroundContainer').removeClass('backgroundContainerActive');
-        $('#state2backgroundContainer').addClass('backgroundContainerCollapsed');
-        
+    function destroyState2() {
+        $('#state2TitleA').removeClass('animated slideInDown');
+        $('#state2TitleA').addClass('animated slideOutUp');
+        $('#state2TitleA img').removeClass('animated fadeIn');
+        $('#state2TitleA img').addClass('animated fadeOut');
+        $('#state2TitleB').removeClass('animated fadeIn');
+        $('#state2TitleB').addClass('animated fadeOut');
+        $('#state2TitleB img').removeClass('animated slideInUp');
+        $('#state2TitleB img').addClass('animated slideOutUp');
+        $('#state2Text').removeClass('animated fadeIn');
+        $('#state2Text').addClass('animated fadeOut');
+        $('#state2Text p').removeClass('animated slideInUp');
+        $('#state2Text p').addClass('animated slideOutUp');
+        $('#state2Spacer').removeClass('animated fadeIn');
+        $('#state2Spacer').addClass('animated fadeOut');
+        $('#state2Btn').removeClass('animated slideInleft');
+        $('#state2Btn').addClass('animated slideOutLeft');
+        setTimeout(function(){
+            $('#state2backgroundContainer').removeClass('backgroundContainerActive');
+            $('#state2backgroundContainer').addClass('backgroundContainerCollapsed');
+        }, 1000);
         //pagination
         $('#paginationState2').removeClass('fa-circle');
         $('#paginationState2').addClass('fa-circle-thin');
-        console.log('page 3 destroy');
+        console.log('state 2 destroy');
     }
 
-    function buildOperate() {
+    function buildState3() {
+        //Background
         $('#state3backgroundContainer').removeClass('backgroundContainerCollapsed');
-        
-        //add classes
         $('#state3backgroundContainer').addClass('backgroundContainerActive');
+        //Content
+        setTimeout(function(){
+            $('#state3TitleA').removeClass('hidden animated slideOutUp');
+            $('#state3TitleA').addClass('animated slideInDown');
+            $('#state3TitleA img').removeClass('animated fadeOut');
+            $('#state3TitleA img').addClass('animated fadeIn');
+            $('#state3TitleB').removeClass('hidden animated fadeOut');
+            $('#state3TitleB').addClass('animated fadeIn');
+            $('#state3TitleB img').removeClass('animated slideOutUp');
+            $('#state3TitleB img').addClass('animated slideInUp');
+            $('#state3Text').removeClass('hidden animated fadeOut');
+            $('#state3Text').addClass('animated fadeIn');
+            $('#state3Text p').removeClass('animated slideOutUp');
+            $('#state3Text p').addClass('animated slideInUp');
+            $('#state3Spacer').removeClass('hidden animated fadeOut');
+            $('#state3Spacer').addClass('animated fadeIn');
+            $('#state3Btn').removeClass('hidden animated slideOutLeft');
+            $('#state3Btn').addClass('animated slideInLeft');
+        }, 1000);
         //pagination
         $('#paginationState3').removeClass('fa-circle-thin');
         $('#paginationState3').addClass('fa-circle');
         //Menu
         $('#deskTopMenuRight').removeClass('hidden');
         homeState = 3;
-        console.log('page 4 build');
+        console.log('state 3 build');
     }
 
-    function destroyOperate() {
-        $('#state3backgroundContainer').removeClass('backgroundContainerActive');
-        $('#state3backgroundContainer').addClass('backgroundContainerCollapsed');
+    function destroyState3() {
+        $('#state3TitleA').removeClass('animated slideInDown');
+        $('#state3TitleA').addClass('animated slideOutUp');
+        $('#state3TitleA img').removeClass('animated fadeIn');
+        $('#state3TitleA img').addClass('animated fadeOut');
+        $('#state3TitleB').removeClass('animated fadeIn');
+        $('#state3TitleB').addClass('animated fadeOut');
+        $('#state3TitleB img').removeClass('animated slideInUp');
+        $('#state3TitleB img').addClass('animated slideOutUp');
+        $('#state3Text').removeClass('animated fadeIn');
+        $('#state3Text').addClass('animated fadeOut');
+        $('#state3Text p').removeClass('animated slideInUp');
+        $('#state3Text p').addClass('animated slideOutUp');
+        $('#state3Spacer').removeClass('animated fadeIn');
+        $('#state3Spacer').addClass('animated fadeOut');
+        $('#state3Btn').removeClass('animated slideInleft');
+        $('#state3Btn').addClass('animated slideOutLeft');
+        setTimeout(function(){
+            $('#state3backgroundContainer').removeClass('backgroundContainerActive');
+            $('#state3backgroundContainer').addClass('backgroundContainerCollapsed');
+        }, 1000);
         //pagination
         $('#paginationState3').removeClass('fa-circle');
         $('#paginationState3').addClass('fa-circle-thin');
-        console.log('page 4 destroy');
+        console.log('state 3 destroy');
     } 
 
-    function buildWinning() {
+    function buildState4() {
+        //Background
         $('#state4backgroundContainer').removeClass('backgroundContainerCollapsed');
-        
-        //add classes
         $('#state4backgroundContainer').addClass('backgroundContainerActive');
+        //Content
+        setTimeout(function(){
+            $('#state4TitleA').removeClass('hidden animated slideOutUp');
+            $('#state4TitleA').addClass('animated slideInDown');
+            $('#state4TitleA img').removeClass('animated fadeOut');
+            $('#state4TitleA img').addClass('animated fadeIn');
+            $('#state4TitleB').removeClass('hidden animated fadeOut');
+            $('#state4TitleB').addClass('animated fadeIn');
+            $('#state4TitleB img').removeClass('animated slideOutUp');
+            $('#state4TitleB img').addClass('animated slideInUp');
+            $('#state4Text').removeClass('hidden animated fadeOut');
+            $('#state4Text').addClass('animated fadeIn');
+            $('#state4Text p').removeClass('animated slideOutUp');
+            $('#state4Text p').addClass('animated slideInUp');
+            $('#state4Spacer').removeClass('hidden animated fadeOut');
+            $('#state4Spacer').addClass('animated fadeIn');
+            $('#state4Btn').removeClass('hidden animated slideOutLeft');
+            $('#state4Btn').addClass('animated slideInLeft');
+        }, 1000);
         //pagination
         $('#paginationState4').removeClass('fa-circle-thin');
         $('#paginationState4').addClass('fa-circle');
-        $('#paginationDesktop i').addClass('bluePagination');
         //Menu
         $('#deskTopMenuRight').removeClass('hidden');
         homeState = 4;
-        console.log('page 5 build');
+        console.log('state 4 build');
     }
 
-    function destroyWinning() {
-        $('#state4backgroundContainer').removeClass('backgroundContainerActive');
-        $('#state4backgroundContainer').addClass('backgroundContainerCollapsed');
+    function destroyState4() {
+        $('#state4TitleA').removeClass('animated slideInDown');
+        $('#state4TitleA').addClass('animated slideOutUp');
+        $('#state4TitleA img').removeClass('animated fadeIn');
+        $('#state4TitleA img').addClass('animated fadeOut');
+        $('#state4TitleB').removeClass('animated fadeIn');
+        $('#state4TitleB').addClass('animated fadeOut');
+        $('#state4TitleB img').removeClass('animated slideInUp');
+        $('#state4TitleB img').addClass('animated slideOutUp');
+        $('#state4Text').removeClass('animated fadeIn');
+        $('#state4Text').addClass('animated fadeOut');
+        $('#state4Text p').removeClass('animated slideInUp');
+        $('#state4Text p').addClass('animated slideOutUp');
+        $('#state4Spacer').removeClass('animated fadeIn');
+        $('#state4Spacer').addClass('animated fadeOut');
+        $('#state4Btn').removeClass('animated slideInleft');
+        $('#state4Btn').addClass('animated slideOutLeft');
+        setTimeout(function(){
+            $('#state4backgroundContainer').removeClass('backgroundContainerActive');
+            $('#state4backgroundContainer').addClass('backgroundContainerCollapsed');
+        }, 1000);
         //pagination
         $('#paginationState4').removeClass('fa-circle');
         $('#paginationState4').addClass('fa-circle-thin');
-        $('#paginationDesktop i').removeClass('bluePagination');
-        console.log('page 5 destroy');
+        console.log('state 4 destroy');
     }
 
-    function buildLastPage() {
+    function buildState5() {
         $('#state5backgroundContainer').removeClass('backgroundContainerCollapsed');
         
         //add classes
@@ -216,7 +315,7 @@ $(function() {
         console.log('page 6 build');
     }
 
-    function destroyLastPage() {
+    function destroyState5() {
         $('#state5backgroundContainer').removeClass('backgroundContainerActive');
         $('#state5backgroundContainer').addClass('backgroundContainerCollapsed');
         //pagination
@@ -252,42 +351,42 @@ $(function() {
         //destroy Previous
         switch (currentState) {
             case 0:
-                destroyHome();
+                destroyState0();
                 break;
             case 1:
-                destroyDouble();
+                destroyState1();
                 break;
             case 2:
-                destroyJoin();
+                destroyState2();
                 break;
             case 3:
-                destroyOperate();
+                destroyState3();
                 break;
             case 4:
-                destroyWinning();
+                destroyState4();
                 break;
             case 5:
-                destroyLastPage();
+                destroyState5();
         }
         // Build new
         switch (goToState) {
             case 0:
-                buildHome();
+                buildState0();
                 break;
             case 1:
-                buildDouble();
+                buildState1();
                 break;
             case 2:
-                buildJoin();
+                buildState2();
                 break;
             case 3:
-                buildOperate();
+                buildState3();
                 break;
             case 4:
-                buildWinning();
+                buildState4();
                 break;
             case 5:
-                buildLastPage();
+                buildState5();
         }
     }
 
@@ -307,42 +406,42 @@ $(function() {
         //destroy Previous
         switch (prevHomeState) {
             case 0:
-                destroyHome();
+                destroyState0();
                 break;
             case 1:
-                destroyDouble();
+                destroyState1();
                 break;
             case 2:
-                destroyJoin();
+                destroyState2();
                 break;
             case 3:
-                destroyOperate();
+                destroyState3();
                 break;
             case 4:
-                destroyWinning();
+                destroyState4();
                 break;
             case 5:
-                destroyLastPage();
+                destroyState5();
         }
         // Build new
         switch (homeState) {
             case 0:
-                buildHome();
+                buildState0();
                 break;
             case 1:
-                buildDouble();
+                buildState1();
                 break;
             case 2:
-                buildJoin();
+                buildState2();
                 break;
             case 3:
-                buildOperate();
+                buildState3();
                 break;
             case 4:
-                buildWinning();
+                buildState4();
                 break;
             case 5:
-                buildLastPage();
+                buildState5();
         }
         
     }
