@@ -310,26 +310,54 @@ $(function() {
     }
 
     function buildState5() {
+        //Background
         $('#state5backgroundContainer').removeClass('backgroundContainerCollapsed');
-        
-        //add classes
         $('#state5backgroundContainer').addClass('backgroundContainerActive');
+        //Content
+        setTimeout(function(){
+            $('#state5TextArea1').removeClass('hidden animated fadeOut');
+            // $('#state5TextArea1').addClass('animated slideInDown');
+            $('#state5TextArea2').removeClass('hidden animated fadeOut');
+            // $('#state5TextArea2').addClass('animated slideInDown');
+            $('#state5CTABtnContainer').removeClass('hidden animated fadeOut');
+            // $('#state5CTABtnContainer').addClass('animated fadeIn');
+
+            $('#state5FooterLeft').removeClass('hidden animated fadeOut');
+            // $('#state5FooterLeft').addClass('animated fadeIn');
+
+            $('#state5FooterRight').removeClass('hidden animated fadeOut');
+            // $('#state5FooterRight').addClass('animated fadeIn');
+            
+        }, 1000);
         //pagination
         $('#paginationState5').removeClass('fa-circle-thin');
         $('#paginationState5').addClass('fa-circle');
         homeState = 5;
-        console.log('page 6 build');
+        console.log('state 5 build');
     }
 
     function destroyState5() {
-        $('#state5backgroundContainer').removeClass('backgroundContainerActive');
-        $('#state5backgroundContainer').addClass('backgroundContainerCollapsed');
+        $('#state5TextArea1').removeClass('animated slideInDown');
+        $('#state5TextArea1').addClass('animated fadeOut');
+        $('#state5TextArea2').removeClass('animated slideInDown');
+        $('#state5TextArea2').addClass('animated fadeOut');
+        $('#state5CTABtnContainer').removeClass('animated fadeIn');
+        $('#state5CTABtnContainer').addClass('animated fadeOut');
+        
+        $('#state5FooterLeft').removeClass('animated fadeIn');
+        $('#state5FooterLeft').addClass('animated fadeOut');
+
+        $('#state5FooterRight').removeClass('animated fadeIn');
+        $('#state5FooterRight').addClass('animated fadeOut');
+        
+        setTimeout(function(){
+            $('#state5backgroundContainer').removeClass('backgroundContainerActive');
+            $('#state5backgroundContainer').addClass('backgroundContainerCollapsed');
+        }, 1000);
         //pagination
         $('#paginationState5').removeClass('fa-circle');
         $('#paginationState5').addClass('fa-circle-thin');
-        //Menu
-        $('#deskTopMenuRight').removeClass('hidden');
-        console.log('page 6 destroy');
+        console.log('state 6 destroy');
     }
 
     // pagination interaction
