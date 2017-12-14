@@ -250,6 +250,8 @@ $(function() {
         $('#state4backgroundContainer').addClass('backgroundContainerActive');
         //Content
         setTimeout(function(){
+            $('#benefitCurveContainer').removeClass('hidden animated rotateOutUpLeft');
+            $('#benefitCurveContainer').addClass('animated rotateInDownLeft');
             $('#state4TitleA').removeClass('hidden animated slideOutUp');
             $('#state4TitleA').addClass('animated slideInDown');
             $('#state4TitleA img').removeClass('animated fadeOut');
@@ -270,6 +272,7 @@ $(function() {
         //pagination
         $('#paginationState4').removeClass('fa-circle-thin');
         $('#paginationState4').addClass('fa-circle');
+        $('#paginationDesktop i').addClass('bluePagination');
         //Menu
         $('#deskTopMenuRight').removeClass('hidden');
         homeState = 4;
@@ -277,6 +280,8 @@ $(function() {
     }
 
     function destroyState4() {
+        $('#benefitCurveContainer').removeClass('animated rotateInDownLeft');
+        $('#benefitCurveContainer').addClass('animated rotateOutUpLeft');
         $('#state4TitleA').removeClass('animated slideInDown');
         $('#state4TitleA').addClass('animated slideOutUp');
         $('#state4TitleA img').removeClass('animated fadeIn');
@@ -300,6 +305,7 @@ $(function() {
         //pagination
         $('#paginationState4').removeClass('fa-circle');
         $('#paginationState4').addClass('fa-circle-thin');
+        $('#paginationDesktop i').removeClass('bluePagination');
         console.log('state 4 destroy');
     }
 
