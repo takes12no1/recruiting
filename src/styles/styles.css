@@ -182,7 +182,8 @@ body {
     left: 86px;
     top: 50px;
     height: 59px;
-    width: 300px
+    width: 300px;
+    z-index: 999;
 }
 
 #getInTouchBtn {
@@ -245,7 +246,7 @@ body {
     background-image: url('../images/leftCurve.png');
     background-repeat: no-repeat;
     background-position: bottom -1px right;
-    background-size: contain;
+    background-size: cover;
     bottom: 0px;
     left: 0px;
     width: 100%;

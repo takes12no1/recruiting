@@ -335,9 +335,9 @@ $(function() {
         //Content
         setTimeout(function(){
             $('#state5TextArea1').removeClass('hidden animated fadeOut');
-            $('#state5TextArea1').addClass('');
+            $('#state5TextArea1').addClass('animated slideInDown');
             $('#state5TextArea2').removeClass('hidden animated fadeOut');
-            $('#state5TextArea2').addClass('');
+            $('#state5TextArea2').addClass('animated slideInDown');
             $('#state5CTABtnContainer').removeClass('hidden animated fadeOut');
             $('#state5CTABtnContainer').addClass('animated fadeIn');
 
@@ -357,11 +357,11 @@ $(function() {
 
     function destroyState5() {
         $('#state5TextArea1').removeClass('animated slideInDown');
-        $('#state5TextArea1').addClass('hidden');
+        $('#state5TextArea1').addClass('animated fadeOut');
         $('#state5TextArea2').removeClass('animated slideInDown');
-        $('#state5TextArea2').addClass('hidden');
+        $('#state5TextArea2').addClass('animated fadeOut');
         $('#state5CTABtnContainer').removeClass('animated fadeIn');
-        $('#state5CTABtnContainer').addClass('hidden');
+        $('#state5CTABtnContainer').addClass('animated fadeOut');
         
         $('#state5FooterLeft').removeClass('animated fadeIn');
         $('#state5FooterLeft').addClass('animated fadeOut');
