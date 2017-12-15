@@ -13,9 +13,10 @@ $(function() {
 
     function buildState0() {   
         setTimeout(function(){     
-        //add classes
-        $('#state0backgroundContainer').removeClass('backgroundContainerCollapsed');
-        $('#state0backgroundContainer').addClass('backgroundContainerActive');
+            //add classes
+            $('#state0Wrapper').removeClass('negativeZ');
+            $('#state0backgroundContainer').removeClass('backgroundContainerCollapsed');
+            $('#state0backgroundContainer').addClass('backgroundContainerActive');
         }, 1000); 
         setTimeout(function(){
             $('#rightCurveShape').removeClass('fadeOut');
@@ -57,9 +58,12 @@ $(function() {
         $('#scrollToLearnTxt').addClass('fadeOut');
         $('#scrollToLearnDownChevron').removeClass('animated bounce infinite');
         $('#scrollToLearnDownChevron').addClass('hidden');
-        $('#state0backgroundContainer').removeClass('backgroundContainerActive');
-        $('#state0backgroundContainer').addClass('backgroundContainerCollapsed');
-        //pagination
+        setTimeout(function(){
+            $('#state0Wrapper').addClass('negativeZ');
+            $('#state0backgroundContainer').removeClass('backgroundContainerActive');
+            $('#state0backgroundContainer').addClass('backgroundContainerCollapsed');
+        }, 1000);
+            //pagination
         $('#paginationState0').removeClass('fa-circle');
         $('#paginationState0').addClass('fa-circle-thin');
         console.log('state 0 destroyed');
@@ -70,6 +74,7 @@ $(function() {
         //Background
         $('#state1backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('#state1backgroundContainer').addClass('backgroundContainerActive');
+        $('#state1Wrapper').removeClass('negativeZ');
         //Content
         setTimeout(function(){
             $('#state1TitleA').removeClass('hidden animated slideOutUp');
@@ -89,6 +94,7 @@ $(function() {
             $('#state1Btn').removeClass('hidden animated slideOutLeft');
             $('#state1Btn').addClass('animated slideInLeft');
         }, 1000);
+        
         //pagination
         $('#paginationState1').removeClass('fa-circle-thin');
         $('#paginationState1').addClass('fa-circle');
@@ -116,6 +122,7 @@ $(function() {
         $('#state1Btn').removeClass('animated slideInleft');
         $('#state1Btn').addClass('animated slideOutLeft');
         setTimeout(function(){
+            $('#state1Wrapper').addClass('negativeZ');
             $('#state1backgroundContainer').removeClass('backgroundContainerActive');
             $('#state1backgroundContainer').addClass('backgroundContainerCollapsed');
         }, 1000);
@@ -130,6 +137,7 @@ $(function() {
         //Background
         $('#state2backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('#state2backgroundContainer').addClass('backgroundContainerActive');
+        $('#state2Wrapper').removeClass('negativeZ');
         //Content
         setTimeout(function(){
             $('#state2TitleA').removeClass('hidden animated slideOutUp');
@@ -176,6 +184,7 @@ $(function() {
         $('#state2Btn').removeClass('animated slideInleft');
         $('#state2Btn').addClass('animated slideOutLeft');
         setTimeout(function(){
+            $('#state2Wrapper').addClass('negativeZ');
             $('#state2backgroundContainer').removeClass('backgroundContainerActive');
             $('#state2backgroundContainer').addClass('backgroundContainerCollapsed');
         }, 1000);
@@ -189,6 +198,7 @@ $(function() {
         //Background
         $('#state3backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('#state3backgroundContainer').addClass('backgroundContainerActive');
+        $('#state3Wrapper').removeClass('negativeZ');
         //Content
         setTimeout(function(){
             $('#state3TitleA').removeClass('hidden animated slideOutUp');
@@ -213,6 +223,8 @@ $(function() {
         $('#paginationState3').addClass('fa-circle');
         //Menu
         $('#deskTopMenuRight').removeClass('hidden');
+        $('#deskTopMenuRightTitle').addClass('deskTopMenuRightListLight');
+        $('#deskTopMenuRight').addClass('deskTopMenuRightListLight');
         homeState = 3;
         console.log('state 3 build');
     }
@@ -235,12 +247,16 @@ $(function() {
         $('#state3Btn').removeClass('animated slideInleft');
         $('#state3Btn').addClass('animated slideOutLeft');
         setTimeout(function(){
+            $('#state3Wrapper').addClass('negativeZ');
             $('#state3backgroundContainer').removeClass('backgroundContainerActive');
             $('#state3backgroundContainer').addClass('backgroundContainerCollapsed');
         }, 1000);
         //pagination
         $('#paginationState3').removeClass('fa-circle');
         $('#paginationState3').addClass('fa-circle-thin');
+        //Menu
+        $('#deskTopMenuRightTitle').removeClass('deskTopMenuRightListLight');
+        $('#deskTopMenuRight').removeClass('deskTopMenuRightListLight');
         console.log('state 3 destroy');
     } 
 
@@ -248,6 +264,7 @@ $(function() {
         //Background
         $('#state4backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('#state4backgroundContainer').addClass('backgroundContainerActive');
+        $('#state4Wrapper').removeClass('negativeZ');        
         //Content
         setTimeout(function(){
             $('#benefitCurveContainer').removeClass('hidden animated rotateOutUpLeft');
@@ -299,6 +316,7 @@ $(function() {
         $('#state4Btn').removeClass('animated slideInleft');
         $('#state4Btn').addClass('animated slideOutLeft');
         setTimeout(function(){
+            $('#state4Wrapper').addClass('negativeZ');
             $('#state4backgroundContainer').removeClass('backgroundContainerActive');
             $('#state4backgroundContainer').addClass('backgroundContainerCollapsed');
         }, 1000);
@@ -313,20 +331,21 @@ $(function() {
         //Background
         $('#state5backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('#state5backgroundContainer').addClass('backgroundContainerActive');
+        $('#state5Wrapper').removeClass('negativeZ');
         //Content
         setTimeout(function(){
             $('#state5TextArea1').removeClass('hidden animated fadeOut');
-            // $('#state5TextArea1').addClass('animated slideInDown');
+            $('#state5TextArea1').addClass('');
             $('#state5TextArea2').removeClass('hidden animated fadeOut');
-            // $('#state5TextArea2').addClass('animated slideInDown');
+            $('#state5TextArea2').addClass('');
             $('#state5CTABtnContainer').removeClass('hidden animated fadeOut');
-            // $('#state5CTABtnContainer').addClass('animated fadeIn');
+            $('#state5CTABtnContainer').addClass('animated fadeIn');
 
             $('#state5FooterLeft').removeClass('hidden animated fadeOut');
-            // $('#state5FooterLeft').addClass('animated fadeIn');
+            $('#state5FooterLeft').addClass('animated fadeIn');
 
             $('#state5FooterRight').removeClass('hidden animated fadeOut');
-            // $('#state5FooterRight').addClass('animated fadeIn');
+            $('#state5FooterRight').addClass('animated fadeIn');
             
         }, 1000);
         //pagination
@@ -338,11 +357,11 @@ $(function() {
 
     function destroyState5() {
         $('#state5TextArea1').removeClass('animated slideInDown');
-        $('#state5TextArea1').addClass('animated fadeOut');
+        $('#state5TextArea1').addClass('hidden');
         $('#state5TextArea2').removeClass('animated slideInDown');
-        $('#state5TextArea2').addClass('animated fadeOut');
+        $('#state5TextArea2').addClass('hidden');
         $('#state5CTABtnContainer').removeClass('animated fadeIn');
-        $('#state5CTABtnContainer').addClass('animated fadeOut');
+        $('#state5CTABtnContainer').addClass('hidden');
         
         $('#state5FooterLeft').removeClass('animated fadeIn');
         $('#state5FooterLeft').addClass('animated fadeOut');
@@ -351,6 +370,7 @@ $(function() {
         $('#state5FooterRight').addClass('animated fadeOut');
         
         setTimeout(function(){
+            $('#state5Wrapper').addClass('negativeZ');
             $('#state5backgroundContainer').removeClass('backgroundContainerActive');
             $('#state5backgroundContainer').addClass('backgroundContainerCollapsed');
         }, 1000);
@@ -503,7 +523,7 @@ $(function() {
         stateCaseChange = false;
         setTimeout(function(){
             stateCaseChange = true;
-        }, 1000);
+        }, 2000);
     }
 
 });
