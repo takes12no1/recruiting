@@ -1,0 +1,23 @@
+/* pagination */
+#paginationDesktop {   
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    width: 170px;
+    height: 15px;
+    
+}
+
+#paginationDesktop i {
+    color: white;
+    padding-right: 6px;
+
+}
+
+#paginationDesktop i:hover {
+    cursor: pointer;
+}
+
+.bluePagination {
+    color: #3352A4 !important
+}

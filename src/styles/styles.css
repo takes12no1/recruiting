@@ -1,13 +1,10 @@
-body {
-    font-family: 'lato', sans-serif
-}
-/* Utilities */
-
-
-.negativeZ {
-    z-index: -1
-}
-
+@import "normalize.css";
+@import "bootstrap.css";
+@import "font-awesome.css";
+@import "base/_global";
+@import "modules/_utilities";
+@import "modules/_pagination";
+@import "modules/_animate";
 
 /* backgrounds */
 #desktopWrapper {
@@ -134,6 +131,7 @@ body {
     border-left: 2px solid #ECECEC;
     z-index: 9
 }
+
 #deskTopMenuRightTitle {
     color: #0C46C7;
     text-align: center;
@@ -465,29 +463,6 @@ body {
     padding-top: 16px
 }
 
-/* pagination */
-#paginationDesktop {   
-    position: absolute;
-    bottom: 20px;
-    right: 0px;
-    width: 170px;
-    height: 15px;
-    
-}
-
-#paginationDesktop i {
-    color: white;
-    padding-right: 6px;
-
-}
-
-#paginationDesktop i:hover {
-    cursor: pointer;
-}
-
-.bluePagination {
-    color: #3352A4 !important
-}
 
 
 
