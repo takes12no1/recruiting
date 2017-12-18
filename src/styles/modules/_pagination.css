@@ -1,5 +1,5 @@
 /* pagination */
-#paginationDesktop {   
+.paginationDesktop {   
     position: absolute;
     bottom: 20px;
     right: 0px;
@@ -8,13 +8,13 @@
     
 }
 
-#paginationDesktop i {
+.paginationDesktop i {
     color: white;
     padding-right: 6px;
 
 }
 
-#paginationDesktop i:hover {
+.paginationDesktop i:hover {
     cursor: pointer;
 }
 
