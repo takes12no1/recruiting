@@ -7,7 +7,7 @@
 @import "modules/_animate";
 
 /* backgrounds */
-#desktopWrapper {
+.desktopWrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,21 +39,21 @@
 }
 
 
-#state0backgroundContainer {
+.state0backgroundContainer {
     pointer-events: none;
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    background: #0C46C7; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(-45deg, #00D59E, #0C46C7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(-45deg, #00D59E, #0C46C7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(-45deg, #00D59E, #0C46C7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(-45deg, #00D59E, #0C46C7); /* Standard syntax */
+    background: .0C46C7; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-45deg, .00D59E, .0C46C7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-45deg, .00D59E, .0C46C7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-45deg, .00D59E, .0C46C7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-45deg, .00D59E, .0C46C7); /* Standard syntax */
 }
 
-#state1backgroundContainer {
+.state1backgroundContainer {
     pointer-events: none;
     position: fixed;
     z-index: 0;
@@ -61,42 +61,42 @@
     right: 0;
     width: 0%;
     height: 100%;
-    background: #00D59E; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(15deg, #00A8E3, #00D59E); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(15deg, #00A8E3, #00D59E); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(15deg, #00A8E3, #00D59E); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(15deg, #00A8E3, #00D59E); /* Standard syntax */
+    background: .00D59E; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(15deg, .00A8E3, .00D59E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(15deg, .00A8E3, .00D59E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(15deg, .00A8E3, .00D59E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(15deg, .00A8E3, .00D59E); /* Standard syntax */
 }
 
-#state2backgroundContainer {
+.state2backgroundContainer {
     pointer-events: none;
     position: fixed;
     top: 0;
     right: 0;
     width: 0%;
     height: 100%;
-    background: #00C760; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(15deg, #00D59E, #00C760); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(15deg, #00D59E, #00C760); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(15deg, #00D59E, #00C760); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(15deg, #00D59E, #00C760); /* Standard syntax */
+    background: .00C760; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(15deg, .00D59E, .00C760); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(15deg, .00D59E, .00C760); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(15deg, .00D59E, .00C760); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(15deg, .00D59E, .00C760); /* Standard syntax */
 }
 
-#state3backgroundContainer {
+.state3backgroundContainer {
     pointer-events: none;
     position: fixed;
     top: 0;
     right: 0;
     width: 0%;
     height: 100%;
-    background: #0C46C7; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(15deg, #0C46C7, #00A8E3); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(15deg, #0C46C7, #00A8E3); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(15deg, #0C46C7, #00A8E3); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(15deg, #0C46C7, #00A8E3); /* Standard syntax */
+    background: .0C46C7; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(15deg, .0C46C7, .00A8E3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(15deg, .0C46C7, .00A8E3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(15deg, .0C46C7, .00A8E3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(15deg, .0C46C7, .00A8E3); /* Standard syntax */
 }
 
-#state4backgroundContainer {
+.state4backgroundContainer {
     pointer-events: none;
     position: fixed;
     top: 0;
@@ -106,60 +106,61 @@
     background: white; /* For browsers that do not support gradients */
 }
 
-#state5backgroundContainer {
+.state5backgroundContainer {
     pointer-events: none;
     position: fixed;
     top: 0;
     right: 0;
     width: 0%;
     height: 100%;
-    background: #00A8E3; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(15deg, #00A8E3, #00C760); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(15deg, #00A8E3, #00C760); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(15deg, #00A8E3, #00C760); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(15deg, #00A8E3, #00C760); /* Standard syntax */
+    background: .00A8E3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(15deg, .00A8E3, .00C760); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(15deg, .00A8E3, .00C760); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(15deg, .00A8E3, .00C760); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(15deg, .00A8E3, .00C760); /* Standard syntax */
 }
 
-#deskTopMenuRight {
+.deskTopMenuRight {
     font-family: 'lato', sans-serif;
     padding: 20px;
     position: absolute;
     right: 0px;
     top: 40%;
-    border-top: 2px solid #ECECEC;
-    border-bottom: 2px solid #ECECEC;
-    border-left: 2px solid #ECECEC;
+    border-top: 2px solid .ECECEC;
+    border-bottom: 2px solid .ECECEC;
+    border-left: 2px solid .ECECEC;
     z-index: 9
 }
 
-#deskTopMenuRightTitle {
-    color: #0C46C7;
+.deskTopMenuRightTitle {
+    color: .0C46C7;
     text-align: center;
     line-height: 34px;
     font-size: 24px
 }
 
-#deskTopMenuRightList ul {
+.deskTopMenuRightList ul {
     padding-left: 0px
 }
-#deskTopMenuRightList ul li {
+
+.deskTopMenuRightList ul li {
     list-style: none;
     text-align: center;
     padding: 12px;
     margin: 0px
 }
 
-#deskTopMenuRightList ul li a {
+.deskTopMenuRightList ul li a {
     list-style: none;
-    color: #07308B;
+    color: .07308B;
     text-align: center;
     line-height: 34px;
     font-size: 18px;
 }
 
-#deskTopMenuRightList ul a:hover {
+.deskTopMenuRightList ul a:hover {
     text-decoration: none;
-    color: #07308B;
+    color: .07308B;
 }
 
 .deskTopMenuRightListLight {
@@ -171,11 +172,11 @@
 }
 
 .deskTopMenuRightListLight ul a:hover {
-    color: #e3e3e3 !important;
+    color: .e3e3e3 !important;
 }
 
 
-#logo {
+.logo {
     position: absolute;
     left: 86px;
     top: 50px;
@@ -184,7 +185,7 @@
     z-index: 999;
 }
 
-#getInTouchBtn {
+.getInTouchBtn {
     position: absolute;
     top: 50px;
     right: 50px;
@@ -193,11 +194,11 @@
     z-index: 10
 }
 
-#getInTouchBtn img { 
+.getInTouchBtn img { 
     z-index: 10
 }
 
-#discoverYourBestTitleImg {
+.discoverYourBestTitleImg {
     position: absolute;
     left: 14%;
     top: 25%;
@@ -205,7 +206,7 @@
     width: 930px
 }
 
-#scrollToLearnTxt {
+.scrollToLearnTxt {
     color: white;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -218,7 +219,7 @@
     width: 320px
 }
 
-#scrollToLearnDownChevron {
+.scrollToLearnDownChevron {
     text-align: center;
     font-size: 30px;
     color: white;
@@ -239,7 +240,7 @@
     animation: bounce 3s infinite; */
 }
 
-#leftCurveImg {
+.leftCurveImg {
     position: absolute;
     background-image: url('../images/leftCurve.png');
     background-repeat: no-repeat;
@@ -251,7 +252,7 @@
     height: 100%;
 }
 
-#rightCurveShape {
+.rightCurveShape {
     background-image: url('../images/rightCurveShape.png');
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -263,7 +264,7 @@
     right: 0px;
 }
 
-#state1Wrapper {
+.state1Wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -271,10 +272,10 @@
     height: 100%;  
 }
 
-#state1Wrapper,
-#state2Wrapper,
-#state3Wrapper,
-#state4Wrapper
+.state1Wrapper,
+.state2Wrapper,
+.state3Wrapper,
+.state4Wrapper
 {
     position: absolute;
     top: 0;
@@ -285,20 +286,20 @@
     padding-left: 15%
 }
 
-#state1TitleA,
-#state2TitleA,
-#state3TitleA,
-#state4TitleA
+.state1TitleA,
+.state2TitleA,
+.state3TitleA,
+.state4TitleA
 {
     margin-left: -12px;
     position: relative;
     z-index: 9
 }
 
-#state1TitleB,
-#state2TitleB,
-#state3TitleB,
-#state4TitleB
+.state1TitleB,
+.state2TitleB,
+.state3TitleB,
+.state4TitleB
 {
     border-left: 1px solid white;
     padding-top: 32px;
@@ -306,14 +307,14 @@
     margin-top: -10px
 }
 
-#state4TitleB {
-    border-left: 1px solid #53B961;
+.state4TitleB {
+    border-left: 1px solid .53B961;
 }
 
-#state1Text,
-#state2Text,
-#state3Text,
-#state4Text
+.state1Text,
+.state2Text,
+.state3Text,
+.state4Text
 {
     border-left: 1px solid white;
     padding-left: 30px;
@@ -326,15 +327,15 @@
     color: white
 }
 
-#state4Text {
-    border-left: 1px solid #53B961;
-    color: #555559
+.state4Text {
+    border-left: 1px solid .53B961;
+    color: .555559
 }
 
-#state1Spacer,
-#state2Spacer,
-#state3Spacer,
-#state4Spacer 
+.state1Spacer,
+.state2Spacer,
+.state3Spacer,
+.state4Spacer 
 {
     height: 48px;
     width: 50px;
@@ -343,29 +344,29 @@
     padding-left: 30px
 }
 
-#state4Spacer {
-    border-left: 1px solid #53B961;
-    border-bottom: 1px solid #53B961;
+.state4Spacer {
+    border-left: 1px solid .53B961;
+    border-bottom: 1px solid .53B961;
 }
 
-#state1Btn,
-#state2Btn,
-#state3Btn,
-#state4Btn 
+.state1Btn,
+.state2Btn,
+.state3Btn,
+.state4Btn 
 {
     margin-top: -52px;
     padding-left: 30px
 }
 
-#state1Btn img,
-#state2Btn img
-#state3Btn img
-#state4Btn img 
+.state1Btn img,
+.state2Btn img
+.state3Btn img
+.state4Btn img 
 {
     cursor: pointer;
 }
 
-#benefitCurveContainer {
+.benefitCurveContainer {
     padding-left: 30%;
     position: absolute;
     top: 0%;
@@ -379,7 +380,7 @@
 }
 
 /* State 5 */
-#state5Wrapper {
+.state5Wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -388,7 +389,7 @@
     padding-top: 10%;
 }
 
-#state5TextArea1 {
+.state5TextArea1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -402,7 +403,7 @@
     padding-right: 10%
 }
 
-#state5TextArea2 {
+.state5TextArea2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -416,7 +417,7 @@
     padding-right: 10%
 }
 
-#state5CTABtnContainer {
+.state5CTABtnContainer {
     text-align: center;
     position: absolute;
     top: 0;
@@ -425,7 +426,7 @@
     padding-top: 25%
 }
 
-#state5FooterLeft {
+.state5FooterLeft {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -435,18 +436,18 @@
     padding-left: 32px;
 }
 
-#state5FooterLeft img {
+.state5FooterLeft img {
    float: left;
 }
 
-#state5FooterLeft ol li {
+.state5FooterLeft ol li {
     margin-left: 32px;
     line-height: 24px;
     font-size: 12px                
 
  }
 
-#state5FooterRight {
+.state5FooterRight {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -456,7 +457,7 @@
     padding-right: 30px
 }
 
-#state5FooterRight i {
+.state5FooterRight i {
     color: white;
     padding-right: 16px;
     font-size: 25px;
