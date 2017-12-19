@@ -1,0 +1,77 @@
+.deskTopMenuRight {
+    font-family: 'lato', sans-serif;
+    padding: 20px;
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    border-top: 2px solid #ECECEC;
+    border-bottom: 2px solid #ECECEC;
+    border-left: 2px solid #ECECEC;
+    z-index: 9
+}
+
+.deskTopMenuRightTitle {
+    color: #0C46C7;
+    text-align: center;
+    line-height: 34px;
+    font-size: 24px
+}
+
+.deskTopMenuRightList ul {
+    padding-left: 0px
+}
+
+.deskTopMenuRightList ul li {
+    list-style: none;
+    text-align: center;
+    padding: 12px;
+    margin: 0px
+}
+
+.deskTopMenuRightList ul li a {
+    list-style: none;
+    color: #07308B;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+}
+
+.deskTopMenuRightList ul a:hover {
+    text-decoration: none;
+    color: #07308B;
+}
+
+.deskTopMenuRightListLight {
+    color: white !important;
+}
+
+.deskTopMenuRightListLight ul a {
+    color: white !important;
+}
+
+.deskTopMenuRightListLight ul a:hover {
+    color: #e3e3e3 !important;
+}
+
+
+.logo {
+    position: absolute;
+    left: 86px;
+    top: 50px;
+    height: 59px;
+    width: 300px;
+    z-index: 999;
+}
+
+.getInTouchBtn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 246px;
+    height: 82px;
+    z-index: 10
+}
+
+.getInTouchBtn img { 
+    z-index: 10
+}

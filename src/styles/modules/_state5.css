@@ -1,0 +1,84 @@
+/* State 5 */
+.state5Wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+}
+
+.state5TextArea1 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    line-height: 65px;
+    color: white;
+    padding-top: 0;
+    padding-left: 10%;
+    padding-right: 10%
+}
+
+.state5TextArea2 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    color: white;
+    padding-top: 1em;
+    padding-left: 10%;
+    padding-right: 10%
+}
+
+.state5CTABtnContainer {
+    text-align: center;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 1em
+}
+
+.state5FooterLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    height: 15%;
+    color: white;
+    padding-left: 32px;
+}
+
+.state5FooterLeft img {
+   float: left;
+}
+
+.state5FooterLeft ol li {
+    margin-left: 32px;
+    line-height: 24px;
+    font-size: 12px                
+
+ }
+
+.state5FooterRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15%;
+    font-size: 14px;
+    color: white;
+    padding-right: 30px
+}
+
+.state5FooterRight i {
+    color: white;
+    padding-right: 16px;
+    font-size: 25px;
+    padding-top: 16px
+}
