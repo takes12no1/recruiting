@@ -1,4 +1,18 @@
 /* State 5 */
+.state5backgroundContainer {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #00A8E3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(15deg, #00A8E3, #00C760); /* For Safari 5.1 to 6#0 */
+    background: -o-linear-gradient(15deg, #00A8E3, #00C760); /* For Opera 11.1 to 12#0 */
+    background: -moz-linear-gradient(15deg, #00A8E3, #00C760); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(15deg, #00A8E3, #00C760); /* Standard syntax */
+}
+
 .state5Wrapper {
     position: absolute;
     top: 0;
@@ -43,6 +57,7 @@
     left: 0;
     width: 100%;
     padding-top: 1em
+
 }
 
 .state5FooterLeft {

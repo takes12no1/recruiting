@@ -21,8 +21,8 @@ $(function() {
         setTimeout(function(){
             $('.rightCurveShape').removeClass('fadeOut');
             $('.rightCurveShape').addClass('fadeIn');
-            $('.leftCurveImg').removeClass('slideOutLeft');
-            $('.leftCurveImg').addClass('slideInLeft');
+            $('.leftCurveImg').removeClass('slideOutDown');
+            $('.leftCurveImg').addClass('slideInUp');
             $('.logo').removeClass('fadeOut');
             $('.logo').addClass('slideInLeft');
             $('.getInTouchBtn').removeClass('fadeOut');
@@ -46,8 +46,8 @@ $(function() {
     function destroyState0() {
         $('.rightCurveShape').removeClass('fadeIn');
         $('.rightCurveShape').addClass('fadeOut');
-        $('.leftCurveImg').removeClass('slideInLeft');
-        $('.leftCurveImg').addClass('slideOutLeft');
+        $('.leftCurveImg').removeClass('slideInUp');
+        $('.leftCurveImg').addClass('slideOutDown');
         $('.logo').removeClass('slideInLeft');
         $('.logo').addClass('fadeOut');
         $('.getInTouchBtn').removeClass('fadeIn');
@@ -516,6 +516,22 @@ $(function() {
                 }
             }
       
+    });
+
+    $('body').on('swipeup', function(e){
+             if (stateCaseChange == true) {
+                     changeHomeCase(1);
+                     // console.log('scrolled up');
+                     scrolled(); 
+             }
+    });
+
+    $('body').on('swipedown', function(e){
+        if (stateCaseChange == true) {
+                changeHomeCase(-1);
+                // console.log('scrolled up');
+                scrolled(); 
+        }
     });
 
     // Slow down pardner

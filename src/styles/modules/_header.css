@@ -1,3 +1,29 @@
+.mobileMenuImg {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    z-index: 99;
+}
+.getInTouchBtnMobile {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+}
+
+.getInTouchBtn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 246px;
+    height: 82px;
+    z-index: 10
+}
+
+.getInTouchBtn img { 
+    z-index: 10
+}
+
 .deskTopMenuRight {
     font-family: 'lato', sans-serif;
     padding: 20px;
@@ -7,7 +33,12 @@
     border-top: 2px solid #ECECEC;
     border-bottom: 2px solid #ECECEC;
     border-left: 2px solid #ECECEC;
-    z-index: 9
+    z-index: 9;
+    opacity: 0;
+
+    @mixin atExtraLarge {
+        opacity: 1;
+    }
 }
 
 .deskTopMenuRightTitle {
@@ -53,25 +84,32 @@
     color: #e3e3e3 !important;
 }
 
+.logoContainer {
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin atExtraLarge {
+        position: absolute;
+        max-width: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        left: 86px;
+        top: 50px;
+    }
+}
 
 .logo {
-    position: absolute;
-    left: 86px;
-    top: 50px;
-    height: 59px;
-    width: 300px;
+    padding-top: 100px;
     z-index: 999;
+
+    @mixin atExtraLarge {
+        padding-top: 10px;
+        /* left: 86px; */
+        /* top: 50px; */
+        width: 300px;
+    }
 }
 
-.getInTouchBtn {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 246px;
-    height: 82px;
-    z-index: 10
-}
-
-.getInTouchBtn img { 
-    z-index: 10
-}

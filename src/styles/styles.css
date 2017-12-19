@@ -3,7 +3,6 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "modules/_utilities";
-@import "modules/_backgrounds";
 @import "modules/_header";
 @import "modules/_state0";
 @import "modules/_state1to4";

@@ -1,55 +1,113 @@
-.discoverYourBestTitleImg {
+.state0backgroundContainer {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0C46C7; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-45deg, #00D59E, #0C46C7); /* For Safari 5.1 to 6#0 */
+    background: -o-linear-gradient(-45deg, #00D59E, #0C46C7); /* For Opera 11.1 to 12#0 */
+    background: -moz-linear-gradient(-45deg, #00D59E, #0C46C7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-45deg, #00D59E, #0C46C7); /* Standard syntax */
+}
+
+.state0Wrapper {
     position: absolute;
-    left: 14%;
-    top: 25%;
-    height: 218px;
-    width: 930px
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.discoverYourBestTitleImgContainer {
+    position: absolute;
+    left: 0%;
+    top: 33%;
+    display: block;
+    margin-left: .3em;
+    margin-right: .3em;
+    padding: .3em;
+    max-width: 96%; 
+    
+
+    @mixin atExtraLarge {
+        position: relative;
+        left: 14px;
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.discoverYourBestTitleImg {
+    max-width: 96%; 
+    
+
+    @mixin atExtraLarge {
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .scrollToLearnTxt {
     color: white;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    position: absolute;
-    left: 33%;
-    top: 62%;
-    height: 30px;
-    width: 320px
+    font-size: 1.25em;
+    line-height: 1.5em;
+    position: relative;
+    left: 0%;
+    top: 42%;
+
+    @mixin atExtraLarge {
+        font-size: 1.25em;
+        line-height: 1.5em;
+        padding-top: 3em;
+
+    }
 }
 
 .scrollToLearnDownChevron {
     text-align: center;
     font-size: 30px;
     color: white;
-    position: absolute;
-    margin-top: 88px;
-    left: 33%;
-    top: 62%;
-    height: 30px;
-    width: 320px;
-    -moz-animation-duration: 3s;
+    position: relative;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    top: 42%;
+    -moz-animation-duration: 2s;
     -moz-animation-delay: 2s;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-delay: 2s;
-    animation-duration: 3s;
-    animation-delay: 2s;
+    animation-duration: 2s !important;
+    animation-delay: 2s !important;
     /* -moz-animation: bounce 3s infinite;
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite; */
+
+    @mixin atExtraLarge {
+        padding-top: 1em;   
+    }
 }
 
 .leftCurveImg {
     position: absolute;
     background-image: url('../../images/leftCurve.png');
     background-repeat: no-repeat;
-    background-position: bottom -1px right;
+    background-position: bottom center;
     background-size: cover;
     bottom: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
+
+    @mixin atExtraLarge {
+        background-position: bottom -1px right;
+    }
 }
 
 .rightCurveShape {
@@ -58,8 +116,13 @@
     background-position: right bottom;
     background-size: 80%;
     position: absolute;
-    height: 806px;
-    width: 897px;
+    height: 45%;
+    width: 33%;
     bottom:0px;
     right: 0px;
+
+    @mixin atExtraLarge {
+        height: 806px;
+        width: 897px;
+    }
 }

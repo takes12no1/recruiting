@@ -7,6 +7,7 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
+    "jquery-touch-events": "git+https://github.com/benmajor/jQuery-Touch-Events.git",
     "normalize.css": "^7.0.0",
     "waypoints": "^4.0.1"
   },

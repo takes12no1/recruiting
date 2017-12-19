@@ -26,18 +26,13 @@
     <!-- External JavaScripts
         ============================================= -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.mobile-events.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/4c42ee5749.js"></script>
 
 </head>
 <body class="stretched no-transition" itemid="body">
-    <div class="desktopWrapper clearfix">
-        <div class="state0backgroundContainer backgroundContainerActive"></div>
-        <div class="state1backgroundContainer backgroundContainerCollapsed"></div>
-        <div class="state2backgroundContainer backgroundContainerCollapsed"></div>
-        <div class="state3backgroundContainer backgroundContainerCollapsed"></div>
-        <div class="state4backgroundContainer backgroundContainerCollapsed"></div>
-        <div class="state5backgroundContainer backgroundContainerCollapsed"></div>
+    <div class="wrapper">
         <div class="deskTopMenuRight hidden">
             <div class="deskTopMenuRightTitle">Menu</div>
             <div class="deskTopMenuRightList">
@@ -49,16 +44,32 @@
             </div>
         </div>
         <!-- State 0 -->
+        <img class="mobileMenuImg hidden-lg" src="images/mobileMenuWhite.png" alt="Mobile Menu">
+        <div class="state0backgroundContainer backgroundContainerActive"></div>
         <div class="state0Wrapper">
-            <div class="rightCurveShape animated fadeIn"></div>
-            <div class="leftCurveImg animated slideInLeft"></div>
-            <img src="images/logo-white.png" class="logo animated slideInLeft">
-            <div class="getInTouchBtn animated fadeIn" ><a href="#"><img src="images/getInTouchBtn.png" onmouseover="this.src='images/getInTouchBtnHover.png'" onmouseout="this.src='images/getInTouchBtn.png'" width="246" height="82" alt="Get In Touch"></a></div>
-            <img class="discoverYourBestTitleImg animated slideInLeft" src="images/discoverYourBestTitle.png">
+            <div class="rightCurveShape animated fadeIn hidden-xs"></div>
+            <div class="leftCurveImg animated slideInUp"></div>
+            <div class="logoContainer animated slideInLeft">
+                <img srcset="images/logoSmall.png 250w, images/logoLarge.png 300w" class="logo animated slideInLeft">
+            </div>
+            
+            <div class="getInTouchBtn animated fadeIn visible-lg" ><a href="#">
+                <img src="images/getInTouchBtn.png" onmouseover="this.src='images/getInTouchBtnHover.png'" onmouseout="this.src='images/getInTouchBtn.png'" width="246" height="82" alt="Get In Touch"></a>
+            </div>
+            <div class="getInTouchBtnMobile animated fadeIn hidden-lg" >
+                <a href="#"><img src="images/getInTouchBtnMobile.png" width="168" height="61" alt="Get In Touch"></a>
+            </div>
+            <div class="discoverYourBestTitleImgContainer">
+                <img class="discoverYourBestTitleImg animated slideInLeft" srcset="images/discoverYourBestSmall.png 288w, images/discoverYourBestMedium.png 504w, images/discoverYourBestLarge.png 930w">
+            </div>
+            
             <div class="scrollToLearnTxt animated slideInLeft">SCROLL TO LEARN HOW</div>
-            <div class="scrollToLearnDownChevron animated bounce infinite"><i class="fa fa-angle-double-down bounce" aria-hidden="true"></i></div>
+            <div class="scrollToLearnDownChevron animated bounce infinite">
+                <i class="fa fa-angle-double-down bounce" aria-hidden="true"></i>
+            </div>
         </div>
         <!-- State 1 -->
+        <div class="state1backgroundContainer backgroundContainerCollapsed"></div>
         <div class="state1Wrapper negativeZ">
             <div class="state1TitleA hidden">
                 <img src="images/state1TitleA.png" alt="Double">
@@ -75,6 +86,7 @@
             </div>
         </div>
         <!-- State 2 -->
+        <div class="state2backgroundContainer backgroundContainerCollapsed"></div>
         <div class="state2Wrapper negativeZ">
             <div  class="state2TitleA hidden">
                 <img src="images/state2TitleA.png" alt="Join A">
@@ -91,6 +103,7 @@
             </div>
         </div>
         <!-- State 3 -->
+        <div class="state3backgroundContainer backgroundContainerCollapsed"></div>
         <div class="state3Wrapper negativeZ">
                 <div class="state3TitleA hidden">
                     <img src="images/state3TitleA.png" alt="Operate">
@@ -107,6 +120,7 @@
                 </div>
             </div>
         <!-- State 4 -->
+        <div class="state4backgroundContainer backgroundContainerCollapsed"></div>
         <div class="state4Wrapper negativeZ">
             <div class="benefitCurveContainer hidden"></div>
             <div class="state4TitleA hidden">
@@ -124,6 +138,7 @@
             </div>
         </div>
         <!-- State 5 -->
+        <div class="state5backgroundContainer backgroundContainerCollapsed"></div>
         <div class="state5Wrapper negativeZ">
             <div class="state5TextArea1 hidden">
                 <p>This move will change your game and maybe it’s time you did.</p>
@@ -162,7 +177,7 @@
             </div>
         </div>
         <!-- Pagination -->
-        <div class="paginationDesktop">
+        <div class="paginationContainer">
             <i class="paginationState0 fa fa-circle" aria-hidden="true"></i>
             <i class="paginationState1 fa fa-circle-thin" aria-hidden="true"></i>
             <i class="paginationState2 fa fa-circle-thin" aria-hidden="true"></i>
@@ -180,6 +195,6 @@
 
 <!-- 
 Todo:
-convert to REM
+convert to BEM
 fix gulp output -->
     

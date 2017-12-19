@@ -1,16 +1,30 @@
 /* pagination */
-.paginationDesktop {   
+.paginationContainer {   
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     right: 0px;
-    width: 170px;
-    height: 15px;
+    
+    @mixin atExtraLarge {
+        bottom: 20px;
+        right: 0px;
+        width: 170px;
+        height: 15px;
+    }
     
 }
 
-.paginationDesktop i {
+.paginationContainer i {
     color: white;
-    padding-right: 6px;
+    padding-right: .6em;
+    clear: both;
+    float: right;
+    padding-bottom: .5em;
+
+    @mixin atExtraLarge {
+        padding-right: 6px;
+        float: none;
+        clear: none;
+    }
 
 }
 
