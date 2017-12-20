@@ -1,6 +1,7 @@
 $(function() {
     'use strict';
     
+
     var homeState = 0;
     //zero based 5 equals 6 states
     var stateCasesTotal = 5;
@@ -11,6 +12,31 @@ $(function() {
         console.log('Resized');
     });
 
+    // mobile menu interaction
+    $('.mobileMenuImg').on('click', function(){
+        openMobileMenu();
+    });
+
+    $('.mobileMenuImgOpen').on('click', function(){
+        closeMobileMenu();
+    });
+
+    $('.mobileMenuCloseIcon').on('click', function(){
+        closeMobileMenu();
+    });
+
+    function openMobileMenu() {
+        $('.mobileMenuContainer').removeClass('hidden animated slideOutLeft');
+        $('.mobileMenuContainer').addClass('animated slideInLeft');
+    }
+
+    function closeMobileMenu() {
+        $('.mobileMenuContainer').removeClass('animated slideInLeft');
+        $('.mobileMenuContainer').addClass('animated slideOutLeft');
+    }
+
+
+    // States Build and Destroy
     function buildState0() {   
         setTimeout(function(){     
             //add classes
@@ -21,8 +47,8 @@ $(function() {
         setTimeout(function(){
             $('.rightCurveShape').removeClass('fadeOut');
             $('.rightCurveShape').addClass('fadeIn');
-            $('.leftCurveImg').removeClass('slideOutDown');
-            $('.leftCurveImg').addClass('slideInUp');
+            $('.leftCurveImg').removeClass('fadeOut');
+            $('.leftCurveImg').addClass('fadeIn');
             $('.logo').removeClass('fadeOut');
             $('.logo').addClass('slideInLeft');
             $('.getInTouchBtn').removeClass('fadeOut');
@@ -46,8 +72,8 @@ $(function() {
     function destroyState0() {
         $('.rightCurveShape').removeClass('fadeIn');
         $('.rightCurveShape').addClass('fadeOut');
-        $('.leftCurveImg').removeClass('slideInUp');
-        $('.leftCurveImg').addClass('slideOutDown');
+        $('.leftCurveImg').removeClass('fadeIn');
+        $('.leftCurveImg').addClass('fadeOut');
         $('.logo').removeClass('slideInLeft');
         $('.logo').addClass('fadeOut');
         $('.getInTouchBtn').removeClass('fadeIn');
@@ -289,7 +315,7 @@ $(function() {
         //pagination
         $('.paginationState4').removeClass('fa-circle-thin');
         $('.paginationState4').addClass('fa-circle');
-        $('.paginationDesktop i').addClass('bluePagination');
+        $('.paginationContainer i').addClass('bluePagination');
         //Menu
         $('.deskTopMenuRight').removeClass('hidden');
         homeState = 4;
@@ -323,7 +349,7 @@ $(function() {
         //pagination
         $('.paginationState4').removeClass('fa-circle');
         $('.paginationState4').addClass('fa-circle-thin');
-        $('.paginationDesktop i').removeClass('bluePagination');
+        $('.paginationContainer i').removeClass('bluePagination');
         console.log('state 4 destroy');
     }
 
