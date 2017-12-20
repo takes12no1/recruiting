@@ -125,7 +125,7 @@ $(function() {
         $('.paginationState1').removeClass('fa-circle-thin');
         $('.paginationState1').addClass('fa-circle');
         //Menu
-        $('.deskTopMenuRight').removeClass('hidden');
+        $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 1;
         console.log('state 1 build');
     }
@@ -155,6 +155,8 @@ $(function() {
         //pagination
         $('.paginationState1').removeClass('fa-circle');
         $('.paginationState1').addClass('fa-circle-thin');
+        //Menu
+        $('.deskTopMenuRight').addClass('negativeZ');
         console.log('state 1 destroy');
     }
 
@@ -187,7 +189,7 @@ $(function() {
         $('.paginationState2').removeClass('fa-circle-thin');
         $('.paginationState2').addClass('fa-circle');
         //Menu
-        $('.deskTopMenuRight').removeClass('hidden');
+        $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 2;
         console.log('state 2 build');
     }
@@ -217,6 +219,8 @@ $(function() {
         //pagination
         $('.paginationState2').removeClass('fa-circle');
         $('.paginationState2').addClass('fa-circle-thin');
+        //Menu
+        $('.deskTopMenuRight').addClass('negativeZ');
         console.log('state 2 destroy');
     }
 
@@ -248,7 +252,7 @@ $(function() {
         $('.paginationState3').removeClass('fa-circle-thin');
         $('.paginationState3').addClass('fa-circle');
         //Menu
-        $('.deskTopMenuRight').removeClass('hidden');
+        $('.deskTopMenuRight').removeClass('hidden negativeZ');
         $('.deskTopMenuRightTitle').addClass('deskTopMenuRightListLight');
         $('.deskTopMenuRight').addClass('deskTopMenuRightListLight');
         homeState = 3;
@@ -281,6 +285,7 @@ $(function() {
         $('.paginationState3').removeClass('fa-circle');
         $('.paginationState3').addClass('fa-circle-thin');
         //Menu
+        $('.deskTopMenuRight').addClass('negativeZ');
         $('.deskTopMenuRightTitle').removeClass('deskTopMenuRightListLight');
         $('.deskTopMenuRight').removeClass('deskTopMenuRightListLight');
         console.log('state 3 destroy');
@@ -317,7 +322,7 @@ $(function() {
         $('.paginationState4').addClass('fa-circle');
         $('.paginationContainer i').addClass('bluePagination');
         //Menu
-        $('.deskTopMenuRight').removeClass('hidden');
+        $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 4;
         console.log('state 4 build');
     }
@@ -350,6 +355,8 @@ $(function() {
         $('.paginationState4').removeClass('fa-circle');
         $('.paginationState4').addClass('fa-circle-thin');
         $('.paginationContainer i').removeClass('bluePagination');
+        //Menu
+        $('.deskTopMenuRight').addClass('negativeZ');
         console.log('state 4 destroy');
     }
 
@@ -377,6 +384,8 @@ $(function() {
         //pagination
         $('.paginationState5').removeClass('fa-circle-thin');
         $('.paginationState5').addClass('fa-circle');
+        //Menu
+        $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 5;
         console.log('state 5 build');
     }
@@ -403,27 +412,51 @@ $(function() {
         //pagination
         $('.paginationState5').removeClass('fa-circle');
         $('.paginationState5').addClass('fa-circle-thin');
+        //Menu
+        $('.deskTopMenuRight').addClass('negativeZ');
         console.log('state 6 destroy');
     }
 
     // pagination interaction
+    var currentState = 0;
     $('.paginationState0').on('click', function(){
-        changeState(0);
+        if (currentState != 0) {
+            changeState(0);
+        };
+        currentState = 0;
+   
     });
     $('.paginationState1').on('click', function(){
-        changeState(1);
+        if (currentState != 1) {
+            changeState(1);
+        };
+        currentState = 1;
+        
     });
     $('.paginationState2').on('click', function(){
-        changeState(2);
+        if (currentState !=2) {
+            changeState(2);
+        };
+        currentState = 2;
+       
     });
     $('.paginationState3').on('click', function(){
-        changeState(3);
+        if (currentState != 3) {
+            changeState(3);
+        };
+        currentState = 3;
     });
     $('.paginationState4').on('click', function(){
-        changeState(4);
+        if (currentState != 4) {
+            changeState(4);
+        };
+        currentState = 4;
     });
     $('.paginationState5').on('click', function(){
-        changeState(5);
+        if (currentState != 5) {
+            changeState(5);
+        };
+        currentState = 5;
     });
 
     function changeState(goToState) {

@@ -87,11 +87,12 @@
     border-top: 2px solid #ECECEC;
     border-bottom: 2px solid #ECECEC;
     border-left: 2px solid #ECECEC;
-    z-index: 9;
+    z-index: -1;
     opacity: 0;
 
     @mixin atExtraLarge {
         opacity: 1;
+        z-index: 9;
     }
 }
 
