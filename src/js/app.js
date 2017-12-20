@@ -470,8 +470,6 @@ $(function() {
         }
     }
 
-
-
     function changeHomeCase(x) {
         var prevHomeState = homeState;
         homeState = homeState + x;
@@ -525,7 +523,6 @@ $(function() {
         }
         
     }
-
 
     $('body').bind('mousewheel', function(e){
        
