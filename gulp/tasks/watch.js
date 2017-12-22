@@ -18,7 +18,7 @@ gulp.task('watch', function(cb){
                 baseDir: "src"
             }
         });
-        watch('./src/index.html', function() {
+        watch('./src/*.html', function() {
             browserSync.reload();
         });
     

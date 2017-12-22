@@ -1,13 +1,14 @@
 .advantageTitleImgContainer {
     position: absolute;
     left: 0;
-    top: 33%;
+    top: 0;
     display: block;
     background: #3352A4; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(-10deg, #00D59E, #3352A4); /* For Safari 5.1 to 6#0 */
-    background: -o-linear-gradient(-10deg, #00D59E, #3352A4); /* For Opera 11.1 to 12#0 */
-    background: -moz-linear-gradient(-10deg, #00D59E, #3352A4); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(-10deg, #00D59E, #3352A4); /* Standard syntax */
+    background: url("../../images/interiorPageHeaderShape.png") no-repeat center bottom, -webkit-linear-gradient(-10deg, #00D59E, #3352A4); /* For Safari 5.1 to 6#0 */
+    background: url("../../images/interiorPageHeaderShape.png") no-repeat center bottom, -o-linear-gradient(-10deg, #00D59E, #3352A4); /* For Opera 11.1 to 12#0 */
+    background: url("../../images/interiorPageHeaderShape.png") no-repeat center bottom, -moz-linear-gradient(-10deg, #00D59E, #3352A4); /* For Firefox 3.6 to 15 */
+    background: url("../../images/interiorPageHeaderShape.png") no-repeat center bottom, linear-gradient(-10deg, #00D59E, #3352A4); /* Standard syntax */
+    background-size: cover;
 
     @mixin atExtraLarge {
         top: 0;
@@ -20,11 +21,94 @@
 }
 
 .advantageTitleImg {
-    
+    max-width: 1128px;
+    margin: 1em auto;
 
     @mixin atExtraLarge {
         max-width: 1128px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+    }
+}
+.whatWhenContainer {
+
+    @mixin atExtraLarge {
+        margin: 3em auto;
+    }
+}
+
+.whatWhenContainer p {
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    font-size: 1.875em;
+    line-height: 3em;
+    color: #555559;
+
+    @mixin atExtraLarge {
+        margin: 1em auto;
+       
+    }
+
+}
+.advantageFeatureBoxGreyLeft {
+    background: linear-gradient(90deg, #e3e3e3 50%, #ffffff 50%);
+}
+
+.advantageFeatureBoxGreyRight {
+    background: linear-gradient(90deg, #ffffff 50%, #e3e3e3 50%);
+}
+.advantageFeatureBox {
+    padding-top: 3.625em;
+    padding-bottom: 3.625em;
+
+    @mixin atExtraLarge {
+
+    }
+}
+
+.advantageFeatureBox.grey {
+    background-color: #e3e3e3;
+        
+    @mixin atExtraLarge {
+        
+
+    }
+}
+.advantageFeatureIcons {
+
+
+    @mixin atExtraLarge {
+        padding-left: 2em;
+
+    }
+}
+
+.featureBoxTextContainer {
+    
+    @mixin atExtraLarge {
+        /* padding-right: 4em; */
+    }
+}
+
+.featureBoxTextContainer h2 {
+    text-transform: uppercase;
+    line-height: 1.25em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1em;
+
+    @mixin atExtraLarge {
+        font-size: 2.25em;
+        margin-bottom: 1em;
+
+    }
+}
+
+.featureBoxTextContainer p {
+    
+    @mixin atExtraLarge {
+        font-family: 'lato', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0;
+        margin-right: 4em;
     }
 }

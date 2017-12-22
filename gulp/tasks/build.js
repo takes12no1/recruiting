@@ -23,7 +23,7 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
         '!./src/js/app.js'
     ]
     return gulp.src(pathsToCopy)
-    .pipe(gulp,dest("./dist"));
+    .pipe(gulp.dest("./dist"));
 });
 
 gulp.task('deleteDistFolder', function() {
