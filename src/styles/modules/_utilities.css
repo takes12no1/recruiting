@@ -7,3 +7,7 @@
 .negativeZ {
     z-index: -1;
 }
+
+.headingTextForTitle {
+    text-indent: -999px
+}

@@ -1,0 +1,79 @@
+/* footer */
+.footerBackgroundContainer {
+    pointer-events: none; 
+    width: 100%;
+    background: #00A8E3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(15deg, #00A8E3, #00C760); /* For Safari 5.1 to 6#0 */
+    background: -o-linear-gradient(15deg, #00A8E3, #00C760); /* For Opera 11.1 to 12#0 */
+    background: -moz-linear-gradient(15deg, #00A8E3, #00C760); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(15deg, #00A8E3, #00C760); /* Standard syntax */
+}
+
+.footerTextArea1 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    line-height: 65px;
+    color: white;
+    padding-top: 0;
+    padding-left: 10%;
+    padding-right: 10%
+}
+
+.footerTextArea2 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    color: white;
+    padding-top: 1em;
+    padding-left: 10%;
+    padding-right: 10%
+}
+
+.footerCTABtnContainer {
+    text-align: center;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 1em
+
+}
+
+.footerLeft {
+    color: white;
+    padding-left: 32px;
+}
+
+.footerLeft img {
+   float: left;
+}
+
+.footerLeft ol li {
+    margin-left: 32px;
+    line-height: 24px;
+    font-size: 12px                
+
+ }
+ .footerRightFloatRight {
+     float: right
+ }
+.footerRight {
+    font-size: 14px;
+    color: white;
+    padding-right: 30px
+}
+
+.footerRight i {
+    color: white;
+    padding-right: 16px;
+    font-size: 25px;
+    padding-top: 16px
+}
