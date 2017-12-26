@@ -175,7 +175,7 @@
     position: absolute;
     top: 0%;
     left: 0%;
-    background-image: url(../../images/benefitCurve.png);
+    background-image: url('../../images/benefitCurve.png');
     background-position: right top;
     background-repeat: no-repeat;
     background-size: contain;
