@@ -96,7 +96,7 @@
 
 .leftCurveImg {
     position: absolute;
-    background-image: url('../../images/leftCurve.png');
+    background-image: url('../images/leftCurve.png');
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -111,7 +111,7 @@
 }
 
 .rightCurveShape {
-    background-image: url('../../images/rightCurveShape.png');
+    background-image: url('../images/rightCurveShape.png');
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 80%;

@@ -3,11 +3,8 @@
     left: 0;
     top: 0;
     display: block;
-    background: #3352A4; /* For browsers that do not support gradients */
-    background: url("../../images/interiorPageHeaderShape.png") no-repeat center bottom, -webkit-linear-gradient(-10deg, #00D59E, #3352A4); /* For Safari 5.1 to 6#0 */
-    background: url("../../images/interiorPageHeaderShape.png") no-repeat center bottom, -o-linear-gradient(-10deg, #00D59E, #3352A4); /* For Opera 11.1 to 12#0 */
-    background: url("../../images/interiorPageHeaderShape.png") no-repeat center bottom, -moz-linear-gradient(-10deg, #00D59E, #3352A4); /* For Firefox 3.6 to 15 */
-    background: url("../../images/interiorPageHeaderShape.png") no-repeat center bottom, linear-gradient(-10deg, #00D59E, #3352A4); /* Standard syntax */
+    background: #00D59E; /* For browsers that do not support gradients */
+    background: url('../images/interiorPageHeaderShape.png') no-repeat center bottom, linear-gradient(-10deg, #00D59E, #3352A4); /* Standard syntax */
     background-size: cover;
 
     @mixin atExtraLarge {
