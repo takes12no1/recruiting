@@ -1,0 +1,47 @@
+
+.contact-input input, select, textarea {
+	width: 100%; 
+	border: 1px solid #099FD6;
+	margin-bottom: 20px;
+}
+
+.contact-input input, select{
+	height: 38px;
+}
+	
+.contact-input label{
+	font-weight: normal; 
+	font-family: helvetica, lato, sans-serif; text-transform: none; 
+	margin-bottom:.2em;
+	font-size: 14px; 
+	color: #555559
+}
+
+
+.submitButton {
+	width: auto; 
+	color: #ffffff;
+    background-color: #00C760 ;
+    font-family: 'josefin', sans-serif;
+    padding: 1.5em 3em;
+    font-size: 1.125em;
+    font-weight: 500;
+    border: none;
+    letter-spacing: .25em;
+    margin-bottom: 3em;
+}
+
+.submitButton:hover {
+    background-color: #01AA52 !important;
+}
+
+.ContactUsForm {
+    display: inline-block;
+    max-width: 640px;
+    margin: 0 auto;
+    
+}
+.ContactUsForm label {
+    text-align: left;
+    display: block;
+}

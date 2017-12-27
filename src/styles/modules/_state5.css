@@ -15,11 +15,17 @@
 
 .state5Wrapper {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100%;
-    padding-top: 10%;
+
+
+    @mixin atExtraLarge {
+        position: absolute;
+        top: 0;
+        padding-top: 10%;
+    }
 }
 
 .state5TextArea1 {
@@ -28,12 +34,25 @@
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 48px;
-    line-height: 65px;
+    font-size: 1.5em;
+    line-height: 2em;
     color: white;
     padding-top: 0;
     padding-left: 10%;
-    padding-right: 10%
+    padding-right: 10%;
+
+    @mixin atExtraLarge {
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        line-height: 65px;
+        color: white;
+        padding-top: 0;
+        padding-left: 10%;
+        padding-right: 10%
+    }
 }
 
 .state5TextArea2 {
@@ -42,12 +61,21 @@
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 1.125em;
+    line-height: 1.75em;
     color: white;
     padding-top: 1em;
     padding-left: 10%;
-    padding-right: 10%
+    padding-right: 10%;
+
+    @mixin atExtraLarge {
+        font-size: 1.875em;
+        line-height: 2.625em;
+        color: white;
+        padding-top: 1em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 .state5CTABtnContainer {
@@ -61,17 +89,23 @@
 }
 
 .state5FooterLeft {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 65%;
-    height: 15%;
-    color: white;
-    padding-left: 32px;
+
+    @mixin atExtraLarge {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 65%;
+        height: 15%;
+        color: white;
+        padding-left: 32px;
+    }
 }
 
 .state5FooterLeft img {
-   float: left;
+   
+   @mixin atExtraLarge {
+    float: left;
+   }
 }
 
 .state5FooterLeft ol li {
@@ -92,6 +126,32 @@
 }
 
 .state5FooterRight i {
+    color: white;
+    padding-right: 16px;
+    font-size: 25px;
+    padding-top: 16px
+}
+.state5mobileFooter {
+    text-align: center;
+}
+.socCenter {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.legalCenter {
+    text-align: center;
+    font-size: 0.75em;
+    color: white;
+    padding: 1.2em;
+}
+
+.mobileDisclaimers {
+   color: white;
+   font-size: 0.75em;
+   text-align: left;
+}
+.state5mobileFooter i {
     color: white;
     padding-right: 16px;
     font-size: 25px;

@@ -41,9 +41,11 @@
             <div class="deskTopMenuRightTitle">Menu</div>
             <div class="deskTopMenuRightList">
                 <ul>
-                    <a href="your-advantage.html"><li>Your Advantage</li></a>
-                    <a href="meet-primelending.html"><li>Meet Primelending</li></a>
-                    <a href="contact.html"><li>Get in Touch</li></a>
+                    <ul> 
+                        <a class="noUnderline" href="your-advantage.html"><li class="deskTopMenuRightListItem">Your Advantage</li></a>
+                        <a class="noUnderline" href="meet-primelending.html"><li class="deskTopMenuRightListItem">Meet Primelending</li></a>
+                        <li class="getInTouchMenuItem deskTopMenuRightListItem">Get in Touch</li>
+                    </ul>
                 </ul>
             </div>
         </div>
@@ -55,7 +57,7 @@
                 <ul>
                     <li><a href="your-advantage.html">Your Advantage</a></li>
                     <li><a href="meet-primelending.html">Meet Primelending</a></li>
-                    <li><a href="contact.html">Get in Touch</a></li>
+                    <li class="getInTouchMobileMenuItem">Get in Touch</li>
                 </ul>
             </div>
         </div>
@@ -154,6 +156,71 @@
                             <h2>We've Got Your Back</h2>
                             <p>When you’re with us, you’re never alone. We are not going to let you fail. Our entire culture is people-centric and the support you need is always a quick call or click away.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact modal -->
+            <div class="modalOuter hidden">
+                <div class="modalMiddle">
+                    <div class="modalInner">
+                        <i class="fa fa-times-circle modalClose" aria-hidden="true"></i>
+                        <h2>Get In Touch With Us</h2>
+                        <p>Are you a mortgage superstar ready to dominate your local market?</p>
+                        <p>If so, you might be one of us.</p>
+                        <p class="contactModalLinks"><a href="tel:855-886-9704">855-886-9704 </a><span> | </span> <a href="mailto:careers@primelending.com">careers@primelending.com</a></p>
+                        <div class="modalFormContainer">
+                            <form class="ContactUsForm" onsubmit="return validate();" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" novalidate="novalidate">
+                                <input type="hidden" name="oid" value="00Dd0000000cFpL">
+                                <input type="hidden" name="00NU0000005Dj4t" value="1">
+                                <input type="hidden" name="retURL" value="https://www.primelending.com/recruiting/thank-you">
+                                <input type="hidden" id="lead_source" name="lead_source" value="Recruitment Site Contact Us">
+                                <input type="hidden" id="00NU0000005gZCB" name="00NU0000005gZCB" maxlength="255"  value=""/>
+                                <input type="hidden" id="clientId" name="00N0P000004wutk" maxlength="255"  value=""/>
+                                <div class="contact-input col-xs-12 col-sm-6">
+                                    <label for="first_name" class="field-title">First Name<span class="required" aria-required="true">*</span></label>
+                                    <input type="text" name="first_name" value="" maxlength="80" title="First Name">
+                                </div>
+                                <div class="contact-input col-xs-12 col-sm-6">
+                                    <label for="last_name" class="field-title">Last Name<span class="required" aria-required="true">*</span></label>
+                                    <input type="text" name="last_name" value="" maxlength="80" title="Last Name">
+                                </div>
+                                <div class="contact-input col-xs-12">
+                                    <label for="email" class="field-title">Email<span class="required" aria-required="true">*</span></label>
+                                    <input type="text" name="email" value="" maxlength="80" title="phone">
+                                </div>
+                                <div class="contact-input col-xs-12">
+                                    <label for="description" class="list-title">Message</label>
+                                    <div class="comment-field">
+                                        <textarea rows="4" cols="30" maxlength="255" name="description"></textarea>
+                                    </div>
+                                </div>      
+                                <div class="col-xs-12 center">
+                                    <input type="submit" class="submitButton shadow" value="LET'S TALK" title="submit">
+                                </div>
+                                <script>
+                                    function generateUUID(){
+                                        var d = new Date().getTime();
+                                        if(window.performance && typeof window.performance.now === "function"){
+                                            d += performance.now();; //use high-precision timer if available
+                                        }
+                                        var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx-xxxx'.replace(/[xy]/g, function(c) {
+                                            var r = (d + Math.random()*36)%36 | 0;
+                                            d = Math.floor(d/32);
+                                            return (c=='x' ? r : (r&0x3|0x8)).toString(36);
+                                        });
+                                        return uuid;
+                                    };
+                
+                                    document.getElementById('00NU0000005gZCB').onload = function() {
+                                        document.getElementById('00NU0000005gZCB').value = generateUUID();
+                                    };
+                
+                                    document.getElementById('00NU0000005gZCB').value = generateUUID();
+                                </script>
+                            </form>
+                        </div>
+                        
+                        <p class="modalDisclaimer">By submitting your information you agree to our <a href="https://www.primelending.com/legal-disclosures/index/">Terms of Service</a>.</p>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
+    z-index: 999;
     
     @mixin atExtraLarge {
         bottom: 20px;

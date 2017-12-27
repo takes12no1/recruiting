@@ -1,0 +1,108 @@
+.modalOuter {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    overflow: auto;
+}
+.modalMiddle {
+    width: 100%; 
+    background-color: rgba(255,255,255, 1);
+    padding: 1em;
+    text-align: center;
+
+    @mixin atExtraLarge {
+        margin: 1em auto 0 auto;
+        width: 80%; 
+        max-width: 1056px;
+    }
+
+}
+.modalFormContainer {
+
+}
+
+.modalClose {
+    color: #0C46C7;
+    position: relative;
+    top: 8px;
+    right: 8px;
+    display: block;
+    float: right;
+    font-size: 1.625em;
+    cursor: pointer;
+}
+
+.modalInner h2 {
+    color: #0C46C7;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 2.125em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .1em; 
+
+    @mixin atExtraLarge {
+        font-size: 3em;
+        line-height: 2.4em;
+        letter-spacing: .1em; 
+    }
+}
+
+.modalInner p {
+    text-align: center;
+    color: #555559;
+    font-size: 0.875em;
+    line-height: 1.5em;
+
+    @mixin atExtraLarge {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+}
+
+.contactModalLinks {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 2em !important;
+
+    @mixin atExtraLarge {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        line-height: 1em !important;
+    }
+}
+
+.contactModalLinks span {
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 0;
+    color: #0C46C7;
+
+    @mixin atExtraLarge {
+        padding-left: 1em;
+        padding-right: 1em;
+        opacity: 1;
+    }
+}
+
+.modalInner a {
+    color: #0C46C7;
+    font-family: 'lato', sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+.modalInner a:focus,
+.modalInner a:hover
+ {
+    text-decoration: none
+}
+
+p.modalDisclaimer ,
+p.modalDisclaimer a {
+    font-size: 0.875em;
+}

@@ -5,13 +5,18 @@
 }
 
 .negativeZ {
-    z-index: -1;
-}
-
-.headingTextForTitle {
-    text-indent: -999px
+    z-index: -1 !important;
 }
 
 .color00C760 {
     color: #00C760 !important;
+}
+
+/* Google Material Design shadow */
+.shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.noUnderline:hover {
+    text-decoration: none !important;
 }

@@ -1,3 +1,4 @@
+
 $(function() {
     'use strict';
     
@@ -11,6 +12,44 @@ $(function() {
         location.reload();
         console.log('Resized');
     });
+    //modal 
+    $('.getInTouchBtn').on('click', function(){
+        openModal();
+    });
+
+    $('.getInTouchBtnMobile').on('click', function(){
+        openModal();
+    });
+
+    $('.getInTouchMenuItem').on('click', function(){
+        openModal();
+    });
+
+    $('.state5CTABtnContainer img').on('click', function(){
+        openModal();
+    });
+
+    $('.getInTouchMobileMenuItem').on('click', function(){
+        closeMobileMenu();
+        openModal();
+    });
+
+    $('.modalClose').on('click', function(){
+        closeModal();
+    });
+
+    function openModal() {
+        $('.modalOuter').removeClass('hidden animated zoomOut negativeZ');
+        $('.modalOuter').addClass('animated zoomIn');
+    }
+
+    function closeModal() {
+        $('.modalOuter').removeClass('animated zoomIn');
+        $('.modalOuter').addClass('animated zoomOut');
+        setTimeout(function(){
+            $('.modalOuter').addClass('negativeZ');
+        }, 1000);
+    }
 
     // mobile menu interaction
     $('.mobileMenuImg').on('click', function(){
@@ -297,6 +336,7 @@ $(function() {
         $('.state4backgroundContainer').addClass('backgroundContainerActive');
         $('.state4Wrapper').removeClass('negativeZ');        
         //Content
+        $('.mobileMenuImg').attr("src","images/mobileMenuBlue.png");
         setTimeout(function(){
             $('.benefitCurveContainer').removeClass('hidden animated rotateOutUpLeft');
             $('.benefitCurveContainer').addClass('animated rotateInDownLeft');
@@ -356,6 +396,7 @@ $(function() {
         $('.paginationState4').addClass('fa-circle-thin');
         $('.paginationContainer i').removeClass('bluePagination');
         //Menu
+        $('.mobileMenuImg').attr("src","images/mobileMenuWhite.png");
         $('.deskTopMenuRight').addClass('negativeZ');
         console.log('state 4 destroy');
     }
@@ -422,6 +463,7 @@ $(function() {
     $('.paginationState0').on('click', function(){
         if (currentState != 0) {
             changeState(0);
+            $(document).scrollTop(0);
         };
         currentState = 0;
    
@@ -429,6 +471,7 @@ $(function() {
     $('.paginationState1').on('click', function(){
         if (currentState != 1) {
             changeState(1);
+            $(document).scrollTop(0);
         };
         currentState = 1;
         
@@ -436,6 +479,7 @@ $(function() {
     $('.paginationState2').on('click', function(){
         if (currentState !=2) {
             changeState(2);
+            $(document).scrollTop(0);
         };
         currentState = 2;
        
@@ -443,18 +487,21 @@ $(function() {
     $('.paginationState3').on('click', function(){
         if (currentState != 3) {
             changeState(3);
+            $(document).scrollTop(0);
         };
         currentState = 3;
     });
     $('.paginationState4').on('click', function(){
         if (currentState != 4) {
             changeState(4);
+            $(document).scrollTop(0);
         };
         currentState = 4;
     });
     $('.paginationState5').on('click', function(){
         if (currentState != 5) {
             changeState(5);
+            $(document).scrollTop(0);
         };
         currentState = 5;
     });
@@ -562,11 +609,13 @@ $(function() {
             if (stateCaseChange == true) {
                 if(e.originalEvent.wheelDelta >= 35) {
                     changeHomeCase(-1);
+                    $(document).scrollTop(0);
                     // console.log('scrolled up');
                     scrolled()
                 }
                 else if(e.originalEvent.wheelDelta <= -35) {
                     changeHomeCase(1);
+                    $(document).scrollTop(0);
                     // console.log('scrolled down');
                     scrolled()
                 }
@@ -576,15 +625,17 @@ $(function() {
 
     $('body').on('swipeup', function(e){
              if (stateCaseChange == true) {
-                     changeHomeCase(1);
-                     // console.log('scrolled up');
-                     scrolled(); 
+                changeHomeCase(1);
+                $(document).scrollTop(0);
+                // console.log('scrolled up');
+                scrolled(); 
              }
     });
 
     $('body').on('swipedown', function(e){
         if (stateCaseChange == true) {
                 changeHomeCase(-1);
+                $(document).scrollTop(0);
                 // console.log('scrolled up');
                 scrolled(); 
         }
