@@ -7,6 +7,7 @@ $(function() {
     //zero based 5 equals 6 states
     var stateCasesTotal = 5;
     var stateCaseChange = true;
+    var modalOpen = false;
 
     $(window).resize(function(){
         location.reload();
@@ -40,14 +41,18 @@ $(function() {
     function openModal() {
         $('.modalOuter').removeClass('hidden animated zoomOut negativeZ');
         $('.modalOuter').addClass('animated zoomIn');
+        modalOpen = true;
+        
     }
 
     function closeModal() {
         $('.modalOuter').removeClass('animated zoomIn');
         $('.modalOuter').addClass('animated zoomOut');
+        modalOpen = false;
         setTimeout(function(){
             $('.modalOuter').addClass('negativeZ');
         }, 1000);
+        
     }
 
     // mobile menu interaction
@@ -614,7 +619,7 @@ $(function() {
     }
 
     $('body').bind('mousewheel', function(e){
-       
+       if (modalOpen == false) {
             if (stateCaseChange == true) {
                 if(e.originalEvent.wheelDelta >= 35) {
                     changeHomeCase(-1);
@@ -625,7 +630,7 @@ $(function() {
                     scrolled();
                 }
             }
-      
+        }
     });
 
     // $('body').on('swipeup', function(e){

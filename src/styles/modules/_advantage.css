@@ -100,31 +100,99 @@
 
 }
 .advantageFeatureBoxGreyLeft {
-    background: linear-gradient(90deg, #e3e3e3 50%, #ffffff 50%);
+    background: #e3e3e3;
+
+    @mixin atSmall { 
+        background: linear-gradient(90deg, #e3e3e3 50%, #ffffff 50%);
+    }
+
+    @mixin atMedium {
+        background: linear-gradient(90deg, #e3e3e3 50%, #ffffff 50%);   
+    }
+
+    @mixin atLarge {
+        background: linear-gradient(90deg, #e3e3e3 50%, #ffffff 50%);   
+    }
+
+    @mixin atExtraLarge {
+        background: linear-gradient(90deg, #e3e3e3 50%, #ffffff 50%);      
+    }
 }
 
 .advantageFeatureBoxGreyRight {
-    background: linear-gradient(90deg, #ffffff 50%, #e3e3e3 50%);
+    background: #e3e3e3;
+
+    @mixin atSmall { 
+        background: linear-gradient(90deg, #ffffff 50%, #e3e3e3 50%);
+    }
+
+    @mixin atMedium {
+        background: linear-gradient(90deg, #ffffff 50%, #e3e3e3 50%);    
+    }
+
+    @mixin atLarge {
+        background: linear-gradient(90deg, #ffffff 50%, #e3e3e3 50%);    
+    }
+
+    @mixin atExtraLarge {
+        background: linear-gradient(90deg, #ffffff 50%, #e3e3e3 50%);        
+    }
 }
+
 .advantageFeatureBox {
     padding-top: 3.625em;
     padding-bottom: 3.625em;
 
-    @mixin atExtraLarge {
+    @mixin atSmall { 
+        
+    }
 
+    @mixin atMedium {
+            
+    }
+
+    @mixin atLarge {
+            
+    }
+
+    @mixin atExtraLarge {
+                
     }
 }
 
 .advantageFeatureBox.grey {
     background-color: #e3e3e3;
         
-    @mixin atExtraLarge {
+    @mixin atSmall { 
         
+    }
 
+    @mixin atMedium {
+            
+    }
+
+    @mixin atLarge {
+            
+    }
+
+    @mixin atExtraLarge {
+                
     }
 }
 .advantageFeatureIcons {
     padding-left: 0;
+
+    @mixin atSmall { 
+        
+    }
+
+    @mixin atMedium {
+            
+    }
+
+    @mixin atLarge {
+            
+    }
 
     @mixin atExtraLarge {
         padding-left: 2em;
@@ -133,6 +201,18 @@
 }
 
 .featureBoxTextContainer {
+
+    @mixin atSmall { 
+        
+    }
+
+    @mixin atMedium {
+            
+    }
+
+    @mixin atLarge {
+            
+    }
     
     @mixin atExtraLarge {
         /* padding-right: 4em; */
@@ -140,25 +220,81 @@
 }
 
 .featureBoxTextContainer h2 {
+    font-size: 1.875em;
     text-transform: uppercase;
     line-height: 1.25em;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     letter-spacing: .1em;
+    text-align: center;
+
+    @mixin atSmall {
+        font-size: 2.25em; 
+        line-height: 1.25em;
+        font-weight: 600;
+        letter-spacing: .1em;
+        text-align: left;
+    }
+
+    @mixin atMedium {
+        font-size: 2.25em;
+        line-height: 1.25em;
+        font-weight: 600;
+        letter-spacing: .1em;
+        text-align: left;
+    }
+
+    @mixin atLarge {
+        font-size: 2.25em;
+        line-height: 1.25em;
+        font-weight: 600;
+        letter-spacing: .1em; 
+        text-align: left; 
+    }
 
     @mixin atExtraLarge {
         font-size: 2.25em;
         margin-bottom: 1em;
+        text-align: left;
 
     }
 }
 
 .featureBoxTextContainer p {
+    font-family: 'lato', sans-serif;
+    font-size: 1.25em;
+    line-height: 2.125em;
+    margin-bottom: 0;
+    text-align: center; 
+
+    @mixin atSmall { 
+        font-size: 1.5em;
+        line-height: 2.125em;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    @mixin atMedium {
+        font-size: 1.5em;
+        line-height: 2.125em;
+        margin-bottom: 0;
+        text-align: left;             
+    }
+
+    @mixin atLarge {
+        font-size: 1.5em;
+        line-height: 2.125em;
+        margin-bottom: 0;
+        margin-right: 4em; 
+        text-align: left;            
+    }
     
     @mixin atExtraLarge {
         font-family: 'lato', sans-serif;
         font-size: 1.5em;
+        line-height: 2.125em;
         margin-bottom: 0;
         margin-right: 4em;
+        text-align: left;
     }
 }

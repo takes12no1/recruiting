@@ -11,24 +11,85 @@
 .footerTextArea1 {
     width: 100%;
     text-align: center;
-    font-size: 3em;
-    line-height: 65px;
+    font-size: 1.5em;
+    line-height: 2.125em;
     color: white;
     padding-top: 2em;
     padding-left: 10%;
-    padding-right: 10%
+    padding-right: 10%;
+
+    @mixin atSmall { 
+        width: 100%;
+        font-size: 3em;
+        line-height: 65px;
+        padding-top: 2em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    @mixin atMedium {
+        width: 100%;
+        font-size: 3em;
+        line-height: 65px;
+        padding-top: 2em;
+        padding-left: 10%;
+        padding-right: 10%;   
+    }
+
+    @mixin atLarge {
+        width: 100%;
+        font-size: 3em;
+        line-height: 65px;
+        padding-top: 2em;
+        padding-left: 10%;
+        padding-right: 10%;   
+    }
+
+    @mixin atExtraLarge {
+        width: 100%;
+        font-size: 3em;
+        line-height: 65px;
+        padding-top: 2em;
+        padding-left: 10%;
+        padding-right: 10%;       
+    }
 }
 
 .footerTextArea2 {
-    
-    top: 0;
-    left: 0;
     width: 100%;
     text-align: center;
-    font-size: 1.875em;
-    line-height: 2em;
+    font-size: 1.125em;
+    line-height: 1.75em;
     color: white;
     padding: 1em 10%;
+
+    @mixin atSmall { 
+        width: 100%;
+        font-size: 1.875em;
+        line-height: 2em;
+        padding: 1em 10%;
+    }
+
+    @mixin atMedium {
+        width: 100%;
+        font-size: 1.875em;
+        line-height: 2em;
+        padding: 1em 10%;   
+    }
+
+    @mixin atLarge {
+        width: 100%;
+        font-size: 1.875em;
+        line-height: 2em;
+        padding: 1em 10%;    
+    }
+
+    @mixin atExtraLarge {
+        width: 100%;
+        font-size: 1.875em;
+        line-height: 2em;
+        padding: 1em 10%;         
+    }
 }
 
 .footerCTABtnContainer {
