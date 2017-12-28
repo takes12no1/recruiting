@@ -62,30 +62,53 @@
     left: 0;
     transform: translate(0, -50%);
     margin: 0 2em;
-    
 
-    @mixin atExtraLarge {
+    @mixin atSmall { 
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
+    @mixin atMedium {
+        top: 50%;
+        left: 31%;
+        transform: translate(-23%, -50%);   
+    }
+
+    @mixin atLarge {
+        top: 50%;
+        left: 31%;
+        transform: translate(-23%, -50%);   
+    }
+
+    @mixin atExtraLarge {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);       
+    }
 }
 
 .state4Wrapper
 {
     position: absolute;
-    top: 55%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+    top: 70px;
+    margin-left: 28px;
+    width: 84%;
 
-    @mixin atExtraLarge {
-        top: 55%;
-        left: 45%;
-        transform: translate(-50%, -50%);
+    @mixin atLarge {
+        top: 50%;
+        left: 56%;
+        transform: translate(-50%, -50%);   
     }
 
+    @mixin atExtraLarge {
+        top: 60%;
+        left: 46%;
+        transform: translate(-50%, -50%); 
+        max-width: 1024px;      
+    }
 }
+
 
 .state1TitleA,
 .state2TitleA,
@@ -126,6 +149,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
+    margin-top: -2px;
 
     @mixin atExtraLarge {
         font-size: 24px;
@@ -138,10 +162,18 @@
     color: #555559
 }
 
+.state4mobileIconsContainer {
+    border-left: 1px solid #53B961;
+    display: table; 
+}
+
+.state4mobileIconsContainer img{
+   margin-bottom: 1em;
+}
+
 .state1Spacer,
 .state2Spacer,
-.state3Spacer,
-.state4Spacer 
+.state3Spacer
 {
     height: 48px;
     width: 50px;
@@ -155,16 +187,34 @@
 }
 
 .state4Spacer {
+    height: 78px;
+    width: 50px;
     border-left: 1px solid #53B961;
     border-bottom: 1px solid #53B961;
+
+    @mixin atExtraLarge {
+        height: 48px;
+        width: 50px;
+        padding-left: 30px;
+    }
 }
 
 .state1Btn,
 .state2Btn,
-.state3Btn,
-.state4Btn 
+.state3Btn
 {
     margin-top: -31px;
+    padding-left: 15px;
+
+    @mixin atExtraLarge {
+        margin-top: -52px;
+        padding-left: 30px;
+    }
+}
+
+.state4Btn 
+{
+    margin-top: -46px;
     padding-left: 15px;
 
     @mixin atExtraLarge {
@@ -180,11 +230,27 @@
 {
     cursor: pointer;
 }
-
+.state4Btn img 
+{
+    margin-bottom: 3em;
+}
 .benefitCurveContainer {
     visibility: hidden;
 
+    @mixin atSmall { 
+        visibility: hidden;
+    }
+
+    @mixin atMedium {
+        visibility: hidden;
+    }
+
+    @mixin atLarge {
+        visibility: hidden;
+    }
+
     @mixin atExtraLarge {
+        visibility: visible;
         position: absolute;
         top: 0;
         left: 0;
@@ -198,44 +264,3 @@
     }
 }
 
-@media (min-width: 1466px) and (max-width: 1620px) {
-    .state1Wrapper,
-    .state2Wrapper,
-    .state3Wrapper,
-    .state4Wrapper
-    {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding-top: 10%;
-        padding-left: 14%
-    }
-
-    .benefitCurveContainer {
-        width: 84%;
-        height: 96%;
-    }
-}
-
-@media (min-width: 1280px) and (max-width: 1465px) {
-    .state4Wrapper
-    {
-        padding-top: 12%;
-        padding-left: 3%
-    }
-
-    .state1Wrapper,
-    .state2Wrapper,
-    .state3Wrapper
-    {
-        padding-top: 4%;
-        padding-left: 3%
-    }
-
-    .benefitCurveContainer {
-        width: 84%;
-        height: 80%;
-    }
-}

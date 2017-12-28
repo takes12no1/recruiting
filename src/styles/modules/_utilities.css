@@ -20,3 +20,7 @@
 .noUnderline:hover {
     text-decoration: none !important;
 }
+
+.center {
+    text-align: center;
+}

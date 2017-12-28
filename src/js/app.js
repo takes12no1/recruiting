@@ -10,6 +10,7 @@ $(function() {
 
     $(window).resize(function(){
         location.reload();
+        scrollToTheTopAfter();
         console.log('Resized');
     });
     //modal 
@@ -105,6 +106,7 @@ $(function() {
         $('.paginationState0').removeClass('fa-circle-thin');
         $('.paginationState0').addClass('fa-circle');
         homeState = 0;
+        scrollToTheTopAfter();
         console.log('state 0 build');
     }
 
@@ -131,6 +133,7 @@ $(function() {
             //pagination
         $('.paginationState0').removeClass('fa-circle');
         $('.paginationState0').addClass('fa-circle-thin');
+        scrollToTheTopAfter();
         console.log('state 0 destroyed');
     }
 
@@ -166,6 +169,7 @@ $(function() {
         //Menu
         $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 1;
+        scrollToTheTopAfter();
         console.log('state 1 build');
     }
 
@@ -196,6 +200,7 @@ $(function() {
         $('.paginationState1').addClass('fa-circle-thin');
         //Menu
         $('.deskTopMenuRight').addClass('negativeZ');
+        scrollToTheTopAfter();
         console.log('state 1 destroy');
     }
 
@@ -230,6 +235,7 @@ $(function() {
         //Menu
         $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 2;
+        scrollToTheTopAfter();
         console.log('state 2 build');
     }
 
@@ -260,6 +266,7 @@ $(function() {
         $('.paginationState2').addClass('fa-circle-thin');
         //Menu
         $('.deskTopMenuRight').addClass('negativeZ');
+        scrollToTheTopAfter();
         console.log('state 2 destroy');
     }
 
@@ -295,6 +302,7 @@ $(function() {
         $('.deskTopMenuRightTitle').addClass('deskTopMenuRightListLight');
         $('.deskTopMenuRight').addClass('deskTopMenuRightListLight');
         homeState = 3;
+        scrollToTheTopAfter();
         console.log('state 3 build');
     }
 
@@ -327,6 +335,7 @@ $(function() {
         $('.deskTopMenuRight').addClass('negativeZ');
         $('.deskTopMenuRightTitle').removeClass('deskTopMenuRightListLight');
         $('.deskTopMenuRight').removeClass('deskTopMenuRightListLight');
+        scrollToTheTopAfter();
         console.log('state 3 destroy');
     } 
 
@@ -352,6 +361,8 @@ $(function() {
             $('.state4Text').addClass('animated fadeIn');
             $('.state4Text p').removeClass('animated slideOutUp');
             $('.state4Text p').addClass('animated slideInUp');
+            $('.state4mobileIconsContainer').removeClass('hidden animated fadeOut');
+            $('.state4mobileIconsContainer').addClass('animated fadeIn');
             $('.state4Spacer').removeClass('hidden animated fadeOut');
             $('.state4Spacer').addClass('animated fadeIn');
             $('.state4Btn').removeClass('hidden animated slideOutLeft');
@@ -364,6 +375,7 @@ $(function() {
         //Menu
         $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 4;
+        scrollToTheTopAfter();
         console.log('state 4 build');
     }
 
@@ -382,6 +394,8 @@ $(function() {
         $('.state4Text').addClass('animated fadeOut');
         $('.state4Text p').removeClass('animated slideInUp');
         $('.state4Text p').addClass('animated slideOutUp');
+        $('.state4mobileIconsContainer').removeClass('animated fadeIn');
+        $('.state4mobileIconsContainer').addClass('animated fadeOut');
         $('.state4Spacer').removeClass('animated fadeIn');
         $('.state4Spacer').addClass('animated fadeOut');
         $('.state4Btn').removeClass('animated slideInleft');
@@ -398,6 +412,7 @@ $(function() {
         //Menu
         $('.mobileMenuImg').attr("src","images/mobileMenuWhite.png");
         $('.deskTopMenuRight').addClass('negativeZ');
+        scrollToTheTopAfter();
         console.log('state 4 destroy');
     }
 
@@ -428,6 +443,7 @@ $(function() {
         //Menu
         $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 5;
+        scrollToTheTopAfter();
         console.log('state 5 build');
     }
 
@@ -455,6 +471,7 @@ $(function() {
         $('.paginationState5').addClass('fa-circle-thin');
         //Menu
         $('.deskTopMenuRight').addClass('negativeZ');
+        scrollToTheTopAfter();
         console.log('state 6 destroy');
     }
 
@@ -463,7 +480,6 @@ $(function() {
     $('.paginationState0').on('click', function(){
         if (currentState != 0) {
             changeState(0);
-            $(document).scrollTop(0);
         };
         currentState = 0;
    
@@ -471,7 +487,6 @@ $(function() {
     $('.paginationState1').on('click', function(){
         if (currentState != 1) {
             changeState(1);
-            $(document).scrollTop(0);
         };
         currentState = 1;
         
@@ -479,7 +494,6 @@ $(function() {
     $('.paginationState2').on('click', function(){
         if (currentState !=2) {
             changeState(2);
-            $(document).scrollTop(0);
         };
         currentState = 2;
        
@@ -487,21 +501,18 @@ $(function() {
     $('.paginationState3').on('click', function(){
         if (currentState != 3) {
             changeState(3);
-            $(document).scrollTop(0);
         };
         currentState = 3;
     });
     $('.paginationState4').on('click', function(){
         if (currentState != 4) {
             changeState(4);
-            $(document).scrollTop(0);
         };
         currentState = 4;
     });
     $('.paginationState5').on('click', function(){
         if (currentState != 5) {
             changeState(5);
-            $(document).scrollTop(0);
         };
         currentState = 5;
     });
@@ -609,13 +620,13 @@ $(function() {
             if (stateCaseChange == true) {
                 if(e.originalEvent.wheelDelta >= 35) {
                     changeHomeCase(-1);
-                    $(document).scrollTop(0);
+                    scrollToTheTopAfter();
                     // console.log('scrolled up');
                     scrolled()
                 }
                 else if(e.originalEvent.wheelDelta <= -35) {
                     changeHomeCase(1);
-                    $(document).scrollTop(0);
+                    scrollToTheTopAfter();
                     // console.log('scrolled down');
                     scrolled()
                 }
@@ -626,7 +637,7 @@ $(function() {
     $('body').on('swipeup', function(e){
              if (stateCaseChange == true) {
                 changeHomeCase(1);
-                $(document).scrollTop(0);
+                scrollToTheTopAfter();
                 // console.log('scrolled up');
                 scrolled(); 
              }
@@ -635,7 +646,7 @@ $(function() {
     $('body').on('swipedown', function(e){
         if (stateCaseChange == true) {
                 changeHomeCase(-1);
-                $(document).scrollTop(0);
+                scrollToTheTopAfter();
                 // console.log('scrolled up');
                 scrolled(); 
         }
@@ -644,9 +655,16 @@ $(function() {
     // Slow down pardner
     function scrolled() {
         stateCaseChange = false;
+        scrollToTheTopAfter();
         setTimeout(function(){
             stateCaseChange = true;
+            scrollToTheTopAfter();
         }, 2000);
+    }
+
+    function scrollToTheTopAfter() {
+        console.log('Scroll to top fired');
+        $('html,body').stop().animate({scrollTop:0}, 400);
     }
 
 });
