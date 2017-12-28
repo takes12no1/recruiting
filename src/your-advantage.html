@@ -63,7 +63,7 @@
         </div>
         <!-- Page Content -->
        
-        <div class="logoContainer animated slideInLeft">
+        <div class="advantageLogoContainer animated slideInLeft">
             <a href="index.html"><img srcset="images/logoSmall.png 250w, images/logoLarge.png 300w" class="logo animated slideInLeft"></a>
         </div>
         <div class="getInTouchBtn animated fadeIn visible-lg" ><a href="#">
@@ -73,17 +73,23 @@
             <a href="#"><img src="images/getInTouchBtnMobile.png" width="168" height="61" alt="Get In Touch"></a>
         </div>
         <!-- title section -->
-        <div class="advantageTitleImgContainer">
+        <div class="advantageTitleContainer">
             <div class="container">
                 <div class="row">
                     <h1 class="headingTextForTitle">Discover Your Advantage</h1>
                     <div class="logoInternalMobileContainer animated slideInLeft">
                         <img srcset="images/logoSmall.png 250w, images/logoLarge.png 300w" class="animated slideInLeft">
                     </div>
-                    <img class="advantageTitleImg animated slideInLeft" srcset="images/advantageSmall.png 323w, images/advantageMedium.png 591w, images/advantageLarge.png 1128w" alt="">
+                    <div class="advantageTitleImgContainer">
+                        <img class="visible-xs advantageTitleImg animated slideInLeft" src="images/advantageSmall.png" alt="Discover your Advantage">
+                        <img class="visible-sm visible-md advantageTitleImg animated slideInLeft" src="images/advantageMedium.png" alt="Discover your Advantage">
+                        <img class="hidden-xs hidden-sm hidden-md advantageTitleImg animated slideInLeft" src="images/advantageLarge.png" alt="Discover your Advantage">
+                    </div>
+                    
                 </div>
             </div>
         </div>
+        <div style="clear:both"></div>
         <!-- What When -->
         <div class="whatWhenContainer container">
             <div class="row">
@@ -292,6 +298,7 @@
                 </div>
             </div>
     </div>
+    <script type='text/javascript' src='js/picturefill.min.js'></script>
     <script type='text/javascript' src='js/jquery.waypoints.min.js'></script>
     <script type='text/javascript' src='js/placeholder.js'></script>
     <!-- build:js js/internal.js -->

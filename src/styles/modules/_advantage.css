@@ -1,7 +1,27 @@
-.advantageTitleImgContainer {
+.advantageLogoContainer {
     position: absolute;
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin atExtraLarge {
+        position: absolute;
+        max-width: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        left: 86px;
+        top: 50px;
+        z-index: 9;
+    }
+}
+
+.advantageTitleContainer {
+    position: relative;
     left: 0;
     top: 0;
+    width: 100%;
     display: block;
     background: #00D59E; /* For browsers that do not support gradients */
     background: url('../images/interiorPageHeaderShape.png') no-repeat center bottom, linear-gradient(-10deg, #00D59E, #3352A4); /* Standard syntax */
@@ -13,20 +33,49 @@
         left: 0;
         width: 100%;
         padding-top: 10em;
-        padding-bottom: 10em;
+        padding-bottom: 1em;
     }
 }
+.advantageTitleImgContainer {
+    margin: 4em auto;
+    width: 88%;
+    @mixin atSmall { 
+        
+    }
 
-.advantageTitleImg {
-    max-width: 1128px;
-    margin: 1em auto;
+    @mixin atMedium {
+            
+    }
+
+    @mixin atLarge {
+            
+    }
 
     @mixin atExtraLarge {
-        max-width: 1128px;
-        margin: 0 auto;
+                
+    }
+}
+.advantageTitleImg {
+    
+
+    @mixin atSmall { 
+        
+    }
+
+    @mixin atMedium {
+        
+    }
+
+    @mixin atLarge {
+            
+    }
+
+    @mixin atExtraLarge {
+        
     }
 }
 .whatWhenContainer {
+    margin: 3em auto; 
 
     @mixin atExtraLarge {
         margin: 3em auto;
@@ -36,12 +85,16 @@
 .whatWhenContainer p {
     font-family: 'lato', sans-serif;
     text-align: center;
-    font-size: 1.875em;
-    line-height: 3em;
+    font-size: 1.25em;
+    line-height: 1.875em;
     color: #555559;
+    padding: 0px 1em .5em 1em;
 
     @mixin atExtraLarge {
+        font-size: 1.875em;
+        line-height: 3em;
         margin: 1em auto;
+        padding: 0px 1em;
        
     }
 
@@ -71,7 +124,7 @@
     }
 }
 .advantageFeatureIcons {
-
+    padding-left: 0;
 
     @mixin atExtraLarge {
         padding-left: 2em;
