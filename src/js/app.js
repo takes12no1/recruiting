@@ -628,19 +628,19 @@ $(function() {
       
     });
 
-    $('body').on('swipeup', function(e){
-             if (stateCaseChange == true) {
-                changeHomeCase(1);
-                scrolled(); 
-             }
-    });
+    // $('body').on('swipeup', function(e){
+    //          if (stateCaseChange == true) {
+    //             changeHomeCase(1);
+    //             scrolled(); 
+    //          }
+    // });
 
-    $('body').on('swipedown', function(e){
-        if (stateCaseChange == true) {
-                changeHomeCase(-1);
-                scrolled(); 
-        }
-    });
+    // $('body').on('swipedown', function(e){
+    //     if (stateCaseChange == true) {
+    //             changeHomeCase(-1);
+    //             scrolled(); 
+    //     }
+    // });
 
     // Slow down pardner
     function scrolled() {
@@ -652,7 +652,7 @@ $(function() {
 
     function scrollToTheTopAfter() {
         // console.log('Scroll to top fired');
-        $('html,body').stop().animate({scrollTop:0}, 400);
+        // $('html,body').stop().animate({scrollTop:0}, 400);
     }
 
 });
