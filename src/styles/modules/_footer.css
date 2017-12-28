@@ -43,7 +43,9 @@
 
 }
 .desktopFooterRow {
-    margin-top: 180px
+    margin-top: 180px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 .footerLeft {
     color: white;
@@ -74,4 +76,8 @@
     padding-right: 16px;
     font-size: 25px;
     padding-top: 16px
+}
+
+.footerRight i:hover {
+    color: #0C46C7 ;
 }

@@ -14,6 +14,10 @@
     
 }
 
+.paginationContainer:hover { 
+    cursor: pointer;
+}
+
 .paginationContainer i {
     color: white;
     padding-right: .6em;
@@ -29,7 +33,8 @@
 
 }
 
-.paginationDesktop i:hover {
+.paginationDesktop i:hover,
+.paginationContainer i:hover {
     cursor: pointer;
 }
 

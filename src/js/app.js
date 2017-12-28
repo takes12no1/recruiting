@@ -10,8 +10,6 @@ $(function() {
 
     $(window).resize(function(){
         location.reload();
-        scrollToTheTopAfter();
-        console.log('Resized');
     });
     //modal 
     $('.getInTouchBtn').on('click', function(){
@@ -620,15 +618,11 @@ $(function() {
             if (stateCaseChange == true) {
                 if(e.originalEvent.wheelDelta >= 35) {
                     changeHomeCase(-1);
-                    scrollToTheTopAfter();
-                    // console.log('scrolled up');
-                    scrolled()
+                    scrolled();
                 }
                 else if(e.originalEvent.wheelDelta <= -35) {
                     changeHomeCase(1);
-                    scrollToTheTopAfter();
-                    // console.log('scrolled down');
-                    scrolled()
+                    scrolled();
                 }
             }
       
@@ -637,8 +631,6 @@ $(function() {
     $('body').on('swipeup', function(e){
              if (stateCaseChange == true) {
                 changeHomeCase(1);
-                scrollToTheTopAfter();
-                // console.log('scrolled up');
                 scrolled(); 
              }
     });
@@ -646,8 +638,6 @@ $(function() {
     $('body').on('swipedown', function(e){
         if (stateCaseChange == true) {
                 changeHomeCase(-1);
-                scrollToTheTopAfter();
-                // console.log('scrolled up');
                 scrolled(); 
         }
     });
@@ -655,15 +645,13 @@ $(function() {
     // Slow down pardner
     function scrolled() {
         stateCaseChange = false;
-        scrollToTheTopAfter();
         setTimeout(function(){
             stateCaseChange = true;
-            scrollToTheTopAfter();
         }, 2000);
     }
 
     function scrollToTheTopAfter() {
-        console.log('Scroll to top fired');
+        // console.log('Scroll to top fired');
         $('html,body').stop().animate({scrollTop:0}, 400);
     }
 

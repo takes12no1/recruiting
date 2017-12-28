@@ -3,8 +3,6 @@ $(function() {
 
 $(window).resize(function(){
     location.reload();
-    scrollToTheTopAfter();
-    console.log('Resized');
 });
 //modal 
 $('.getInTouchBtn').on('click', function(){
