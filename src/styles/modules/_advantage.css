@@ -162,22 +162,6 @@
 
 .advantageFeatureBox.grey {
     background-color: #e3e3e3;
-        
-    @mixin atSmall { 
-        
-    }
-
-    @mixin atMedium {
-            
-    }
-
-    @mixin atLarge {
-            
-    }
-
-    @mixin atExtraLarge {
-                
-    }
 }
 .advantageFeatureIcons {
     padding-left: 0;
