@@ -1,8 +1,7 @@
 $(function() {
     'use strict';
 
-    var modalOpen = false;
-
+    
     // $(window).resize(function(){
     //     location.reload();
     // });

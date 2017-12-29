@@ -7,7 +7,7 @@ $(function() {
     //zero based 5 equals 6 states
     var stateCasesTotal = 5;
     var stateCaseChange = true;
-    
+    var modalOpen = false;
 
     // States Build and Destroy
     function buildState0() {   
