@@ -181,11 +181,31 @@
 }
 .leaderDetails h2 {
     text-align: left;
-    line-height: 42px;
-    font-size: 36px;
-    font-family: 'futura-pt', sans-serif;
+    line-height: 28px;
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
+    
+    @mixin atSmall { 
+        line-height: 42px;
+        font-size: 36px; 
+    }
+
+    @mixin atMedium {
+        line-height: 42px;
+        font-size: 36px;    
+    }
+
+    @mixin atLarge {
+        line-height: 42px;
+        font-size: 36px;   
+    }
+
+    @mixin atExtraLarge {
+        line-height: 42px;
+        font-size: 36px;      
+    }
 }
 
 .close {
@@ -195,16 +215,36 @@
 
 .leaderDetails h3 {
     text-align: left;
-    line-height: 32px;
-    font-size: 24px;
+    line-height: 24px;
+    font-size: 18px;
     color: #23395b;
     font-weight: bold;
-    font-family: lato, sans-serif; 
+    font-family: lato, sans-serif;
+    
+    @mixin atSmall { 
+        line-height: 32px;
+        font-size: 24px;
+    }
+
+    @mixin atMedium {
+        line-height: 32px;
+        font-size: 24px;   
+    }
+
+    @mixin atLarge {
+        line-height: 32px;
+        font-size: 24px;   
+    }
+
+    @mixin atExtraLarge {
+        line-height: 32px;
+        font-size: 24px;      
+    }
 }
 
 .leaderDetails p {
     text-align: left;
-    line-height: 18px;
+    line-height: 24px;
     font-size: 16px;
     font-family: lato, sans-serif;
     font-weight: normal;
