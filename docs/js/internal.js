@@ -66,5 +66,18 @@ function closeMobileMenu() {
     $('.mobileMenuContainer').addClass('animated slideOutLeft');
 }
 
+// Video
+
+//Excellence
+$('.awardWinningImg').on('mouseenter',function() {
+    $('.awardWinningZoomWrapper').removeClass('hidden');
+    $('.awardWinningZoomWrapper').fadeIn( "slow" );
+});
+
+$('.awardWinningZoomWrapper').on('mouseout',function() {
+    $('.awardWinningZoomWrapper').removeClass('animated zoomIn');
+    $('.awardWinningZoomWrapper').fadeOut( "slow" );
+});
+
 
 });
