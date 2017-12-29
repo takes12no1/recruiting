@@ -587,7 +587,7 @@ $(function() {
 
     function scrollToTheTopAfter() {
         // console.log('Scroll to top fired');
-        // $('html,body').stop().animate({scrollTop:0}, 400);
+        $('html,body').stop().animate({scrollTop:0}, 400);
     }
 
 });
