@@ -1,0 +1,112 @@
+.thanksTitleContainer {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    background: #00D59E; /* For browsers that do not support gradients */
+    background: url('../images/interiorPageHeaderShape.png') no-repeat center bottom, linear-gradient(-10deg, #00D59E, #3352A4); /* Standard syntax */
+    background-size: cover;
+
+    @mixin atExtraLarge {
+        top: 0;
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding-top: 10em;
+        padding-bottom: 1em;
+    }
+}
+.thanksTitleContainer .row {
+    padding-top: 75px;
+}
+.thanksTitleImgContainer {
+    text-align: center;
+}
+
+.thanksTitleImgContainer h1 {
+    color: white;
+    font-size: 1.875em;
+    text-transform: uppercase;
+    line-height: 1.75em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: .2em;
+    text-align: center;
+
+    @mixin atSmall { 
+        font-size: 2.875em;
+        line-height: 3.75em;
+    }
+
+    @mixin atMedium {
+        font-size: 2.875em;
+        line-height: 3.75em;
+    }
+
+    @mixin atLarge {
+        font-size: 2.875em;
+        line-height: 3.75em;    
+    }
+
+    @mixin atExtraLarge {
+        font-size: 2.875em;
+        line-height: 3.75em;      
+    }
+
+}
+
+.thanksSection {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @mixin atSmall { 
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    @mixin atMedium {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    @mixin atLarge {
+        margin-top: 3em;
+        margin-bottom: 3em;   
+    }
+
+    @mixin atExtraLarge {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+}
+.thanksSection p{
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    text-align: left;
+   
+
+    @mixin atSmall { 
+        font-size: 1.25em;
+        line-height: 1.875em;
+    }
+
+    @mixin atMedium {
+        font-size: 1.25em;
+        line-height: 1.875em; 
+    }
+
+    @mixin atLarge {
+        font-size: 1.25em;
+        line-height: 1.875em;     
+    }
+
+    @mixin atExtraLarge {
+        font-size: 1.25em;
+        line-height: 1.875em;
+    }
+
+}
