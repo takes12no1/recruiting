@@ -58,9 +58,8 @@
 .state3Wrapper
 {
     position: absolute;
-    top: 50%;
+    top: 60px;
     left: 0;
-    transform: translate(0, -50%);
     margin: 0 2em;
 
     @mixin atSmall { 

@@ -5,7 +5,7 @@ $(function() {
     // $(window).resize(function(){
     //     location.reload();
     // });
-
+    var modalOpen = false;
     //modal 
     $('.getInTouchBtn').on('click', function(){
         openModal();

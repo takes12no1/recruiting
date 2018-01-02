@@ -5,7 +5,7 @@ $(function() {
     // $(window).resize(function(){
     //     location.reload();
     // });
-
+    var modalOpen = false;
     //modal 
     $('.getInTouchBtn').on('click', function(){
         openModal();
@@ -79,6 +79,8 @@ $(function() {
 
 
 });
+
+
 
 /*! Lity - v3.0.0-dev - 2017-07-17
 * http://sorgalla.com/lity/
