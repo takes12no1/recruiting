@@ -112,11 +112,218 @@
     margin-bottom: 1em;
 }
 
-.awardWinningZoomWrapper {
-    position: absolute;
-    margin-top: 3px;
-    margin-left: 26px;
+.awardWinningWrapper,
+.givingWrapper,
+.trainingWrapper,
+.coreWrapper,
+.historyWrapper {
+    position: relative;
 }
+
+.awardWinningZoomWrapper,
+.givingZoomWrapper,
+.trainingZoomWrapper,
+.coreZoomWrapper,
+.historyZoomWrapper {
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    opacity: 0;
+}
+
+.awardWinningZoomContainer,
+.givingZoomContainer,
+.trainingZoomContainer,
+.coreZoomContainer,
+.historyZoomContainer 
+{
+    background-color: #00A8E3;
+    padding: 3em;
+
+    @mixin atSmall { 
+        
+    }
+
+    @mixin atMedium {
+        
+    }
+
+    @mixin atLarge {
+             
+    }
+
+    @mixin atExtraLarge {
+                
+    }
+}
+
+.awardWinningZoomWrapper i,
+.givingZoomWrapper i,
+.trainingZoomWrapper i,
+.coreZoomWrapper i,
+.historyZoomWrapper i
+{
+    color: white;
+    text-align: right;
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.awardWinningZoomContainer h3,
+.givingZoomContainer h3,
+.trainingZoomContainer h3,
+.coreZoomContainer h3,
+.historyZoomContainer h3
+{
+    color: white;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    line-height: 1.25em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-align: center;
+    z-index: 999;
+    margin-top: 0px;
+
+    @mixin atSmall { 
+        font-size: 2.25em;
+        line-height: 1.25em;
+    }
+
+    @mixin atMedium {
+        font-size: 2.25em;
+        line-height: 1.25em;
+    }
+
+    @mixin atLarge {
+        font-size: 2.25em;
+        line-height: 1.25em;
+    }
+
+    @mixin atExtraLarge {
+        font-size: 2.25em;
+        line-height: 1.25em;    
+    }
+}
+
+.awardWinningZoomContainer h4,
+.givingZoomContainer h4,
+.trainingZoomContainer h4,
+.coreZoomContainer h4,
+.historyZoomContainer h4
+{
+    color: white;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    line-height: 1.6875em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: .2em;
+    text-align: left;
+    z-index: 999;
+
+    @mixin atSmall { 
+        font-size: 1.87em;
+        line-height: 2.6875em;
+    }
+
+    @mixin atMedium {
+        font-size: 1.87em;
+        line-height: 2.6875em;
+    }
+
+    @mixin atLarge {
+        font-size: 1.87em;
+        line-height: 2.6875em;   
+    }
+
+    @mixin atExtraLarge {
+        font-size: 1.87em;
+        line-height: 2.6875em;   
+    }
+}
+
+.awardWinningZoomContainer p,
+.givingZoomContainer p,
+.trainingZoomContainer p,
+.coreZoomContainer p,
+.historyZoomContainer p
+{
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    text-align: left;
+   
+
+    @mixin atSmall { 
+        font-size: 1.25em;
+        line-height: 1.875em;
+    }
+
+    @mixin atMedium {
+        font-size: 1.25em;
+        line-height: 1.875em; 
+    }
+
+    @mixin atLarge {
+        font-size: 1.25em;
+        line-height: 1.875em;     
+    }
+
+    @mixin atExtraLarge {
+        font-size: 1.25em;
+        line-height: 1.875em;
+    }
+}
+.awardWinningZoomContainer ul,
+.givingZoomContainer ul,
+.trainingZoomContainer ul ,
+.coreZoomContainer ul,
+.historyZoomContainer ul {
+    padding-left: 1em;
+    
+}
+.awardWinningZoomContainer ul li,
+.givingZoomContainer ul li,
+.trainingZoomContainer ul li,
+.coreZoomContainer ul li,
+.historyZoomContainer ul li
+{
+    color: white;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    
+
+    @mixin atSmall { 
+        font-size: 1.25em;
+        line-height: 1.875em;
+    }
+
+    @mixin atMedium {
+        font-size: 1.25em;
+        line-height: 1.875em;
+    }
+
+    @mixin atLarge {
+        font-size: 1.25em;
+        line-height: 1.875em;    
+    }
+
+    @mixin atExtraLarge {
+        font-size: 1.25em;
+        line-height: 1.875em;       
+    }
+}
+
+
 
 .leaderSection {
     background-color: white;

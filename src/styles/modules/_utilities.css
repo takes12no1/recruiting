@@ -24,3 +24,8 @@
 .center {
     text-align: center;
 }
+
+sup {
+    font-size: .5em;
+    top: -.75em
+}
