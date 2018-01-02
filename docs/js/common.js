@@ -27,6 +27,10 @@ $(function() {
         openModal();
     });
 
+    $('.footerCTABtnContainer img').on('click', function(){
+        openModal();
+    });
+
     $('.getInTouchMobileMenuItem').on('click', function(){
         closeMobileMenu();
         openModal();
