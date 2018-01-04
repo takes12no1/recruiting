@@ -276,7 +276,9 @@ $(function() {
         //Background
         $('.state4backgroundContainer').removeClass('backgroundContainerCollapsed');
         $('.state4backgroundContainer').addClass('backgroundContainerActive');
-        $('.state4Wrapper').removeClass('negativeZ');        
+        $('.state4Wrapper').removeClass('negativeZ');
+        //change menu location
+        $('.deskTopMenuRight').css('top','1em');        
         //Content
         $('.mobileMenuImg').attr("src","images/mobileMenuBlue.png");
         setTimeout(function(){
@@ -345,6 +347,7 @@ $(function() {
         //Menu
         $('.mobileMenuImg').attr("src","images/mobileMenuWhite.png");
         $('.deskTopMenuRight').addClass('negativeZ');
+        $('.deskTopMenuRight').css('top','40%');
         scrollToTheTopAfter();
         console.log('state 4 destroy');
     }
