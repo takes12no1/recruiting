@@ -4,90 +4,93 @@ $(function() {
 
 // Video
 
+
 //Excellence1
 $('.awardWinningImg').on('click',function() {
-    $('.awardWinningZoomWrapper').removeClass('negativeZ');
-    $('.awardWinningZoomWrapper').removeClass('animated fadeOut');
-    $('.awardWinningZoomWrapper').addClass('animated fadeIn');
+    excellenceItemOpenMeCloseAll('.awardWinningZoomWrapper');
 });
 
 $('.awardWinningZoomWrapper').on('click',function() {
-    $('.awardWinningZoomWrapper').removeClass('animated fadeIn');
-    $('.awardWinningZoomWrapper').addClass('animated fadeOut');
-    setTimeout(function(){ 
-        $('.awardWinningZoomWrapper').addClass('negativeZ');
-    }, 1000);  
+    excellenceItemClose('.awardWinningZoomWrapper');
 });
 //Excellence2
 $('.givingImg').on('click',function() {
-    $('.givingZoomWrapper').removeClass('negativeZ');
-    $('.givingZoomWrapper').removeClass('animated fadeOut');
-    $('.givingZoomWrapper').addClass('animated fadeIn');
+    excellenceItemOpenMeCloseAll('.givingZoomWrapper');
 });
 
 $('.givingZoomWrapper').on('click',function() {
-    $('.givingZoomWrapper').removeClass('animated fadeIn');
-    $('.givingZoomWrapper').addClass('animated fadeOut');
-    setTimeout(function(){ 
-        $('.givingZoomWrapper').addClass('negativeZ');
-    }, 1000);  
+    excellenceItemClose('.givingZoomWrapper');
 });
 
 //Excellence3
 $('.trainingImg').on('click',function() {
-    $('.trainingZoomWrapper').removeClass('negativeZ');
-    $('.trainingZoomWrapper').removeClass('animated fadeOut');
-    $('.trainingZoomWrapper').addClass('animated fadeIn');
+    excellenceItemOpenMeCloseAll('.trainingZoomWrapper');
 });
 
 $('.trainingZoomWrapper').on('click',function() {
-    $('.trainingZoomWrapper').removeClass('animated fadeIn');
-    $('.trainingZoomWrapper').addClass('animated fadeOut');
-    setTimeout(function(){ 
-        $('.trainingZoomWrapper').addClass('negativeZ');
-    }, 1000);  
+    excellenceItemClose('.trainingZoomWrapper'); 
 });
 
 //Excellence4
 $('.coreImg').on('click',function() {
-    $('.coreZoomWrapper').removeClass('negativeZ');
-    $('.coreZoomWrapper').removeClass('animated fadeOut');
-    $('.coreZoomWrapper').addClass('animated fadeIn');
+    excellenceItemOpenMeCloseAll('.coreZoomWrapper');
 });
 
 $('.coreZoomWrapper').on('click',function() {
-    $('.coreZoomWrapper').removeClass('animated fadeIn');
-    $('.coreZoomWrapper').addClass('animated fadeOut');
-    setTimeout(function(){ 
-        $('.coreZoomWrapper').addClass('negativeZ');
-    }, 1000);  
+    excellenceItemClose('.coreZoomWrapper');
 });
 
 //Excellence5
 $('.historyImg').on('click',function() {
-    $('.historyZoomWrapper').removeClass('negativeZ');
-    $('.historyZoomWrapper').removeClass('animated fadeOut');
-    $('.historyZoomWrapper').addClass('animated fadeIn');
+    excellenceItemOpenMeCloseAll('.historyZoomWrapper');
 });
 
 $('.historyZoomWrapper').on('click',function() {
-    $('.historyZoomWrapper').removeClass('animated fadeIn');
-    $('.historyZoomWrapper').addClass('animated fadeOut');
+    excellenceItemClose('.historyZoomWrapper');
+});
+
+function excellenceItemOpen(wrapper) {
+    $(wrapper).removeClass('negativeZ');
+    $(wrapper).removeClass('animated fadeOut');
+    $(wrapper).addClass('animated fadeIn');
+}
+
+function excellenceItemClose(wrapper) {
+    $(wrapper).removeClass('animated fadeIn');
+    $(wrapper).addClass('animated fadeOut');
     setTimeout(function(){ 
-        $('.historyZoomWrapper').addClass('negativeZ');
-    }, 1000);  
-});
+        $(wrapper).addClass('negativeZ');
+    }, 1000); 
+}
+
+function excellenceItemOpenMeCloseAll(wrapper) {
+    if (wrapper != '.awardWinningZoomWrapper') {
+        excellenceItemClose('.awardWinningZoomWrapper');
+    }
+    if (wrapper != '.givingZoomWrapper') {
+        excellenceItemClose('.givingZoomWrapper');
+    }
+    if (wrapper != '.trainingZoomWrapper') {
+        excellenceItemClose('.trainingZoomWrapper');
+    }
+    if (wrapper != '.coreZoomWrapper') {
+        excellenceItemClose('.coreZoomWrapper');
+    }
+    if (wrapper != '.historyZoomWrapper') {
+        excellenceItemClose('.historyZoomWrapper');
+    }
+    excellenceItemOpen(wrapper);
+}
+
+$('.leaderDetails').on('shown.bs.collapse', function() {
+    $(this).addClass('opened');
+    $(this).prev().css( "clear", "both" );
+  }).on('hidden.bs.collapse', function() {
+    $(this).prev().css( "clear", "none" );
+     $(this).removeClass('opened');
+  });
 
 
-
-
-$('.historyImg').on('mouseenter',function() {
-    $('.historyZoomWrapper').fadeIn( "slow" );
-});
-
-$('.historyZoomWrapper').on('mouseout',function() {
-    $('.historyZoomWrapper').fadeOut( "slow" );
-});
 
 
 });
