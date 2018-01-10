@@ -82,13 +82,13 @@ function excellenceItemOpenMeCloseAll(wrapper) {
     excellenceItemOpen(wrapper);
 }
 
-$('.leaderDetails').on('shown.bs.collapse', function() {
-    $(this).addClass('opened');
-    $(this).prev().css( "clear", "both" );
-  }).on('hidden.bs.collapse', function() {
-    $(this).prev().css( "clear", "none" );
-     $(this).removeClass('opened');
-  });
+// $('.leaderDetails').on('shown.bs.collapse', function() {
+//     $(this).addClass('opened');
+//     $(this).prev().css( "clear", "both" );
+//   }).on('hidden.bs.collapse', function() {
+//     $(this).prev().css( "clear", "none" );
+//      $(this).removeClass('opened');
+//   });
 
 
 

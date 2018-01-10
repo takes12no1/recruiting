@@ -40,7 +40,7 @@ $(function() {
         $('.paginationState0').addClass('fa-circle');
         homeState = 0;
         scrollToTheTopAfter();
-        console.log('state 0 build');
+        // console.log('state 0 build');
     }
 
     function destroyState0() {
@@ -67,7 +67,7 @@ $(function() {
         $('.paginationState0').removeClass('fa-circle');
         $('.paginationState0').addClass('fa-circle-thin');
         scrollToTheTopAfter();
-        console.log('state 0 destroyed');
+        // console.log('state 0 destroyed');
     }
 
     function buildState1() {
@@ -103,7 +103,7 @@ $(function() {
         $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 1;
         scrollToTheTopAfter();
-        console.log('state 1 build');
+        // console.log('state 1 build');
     }
 
     function destroyState1() {
@@ -134,7 +134,7 @@ $(function() {
         //Menu
         $('.deskTopMenuRight').addClass('negativeZ');
         scrollToTheTopAfter();
-        console.log('state 1 destroy');
+        // console.log('state 1 destroy');
     }
 
     function buildState2() {
@@ -169,7 +169,7 @@ $(function() {
         $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 2;
         scrollToTheTopAfter();
-        console.log('state 2 build');
+        // console.log('state 2 build');
     }
 
     function destroyState2() {
@@ -200,7 +200,7 @@ $(function() {
         //Menu
         $('.deskTopMenuRight').addClass('negativeZ');
         scrollToTheTopAfter();
-        console.log('state 2 destroy');
+        // console.log('state 2 destroy');
     }
 
     function buildState3() {
@@ -236,7 +236,7 @@ $(function() {
         $('.deskTopMenuRight').addClass('deskTopMenuRightListLight');
         homeState = 3;
         scrollToTheTopAfter();
-        console.log('state 3 build');
+        // console.log('state 3 build');
     }
 
     function destroyState3() {
@@ -269,7 +269,7 @@ $(function() {
         $('.deskTopMenuRightTitle').removeClass('deskTopMenuRightListLight');
         $('.deskTopMenuRight').removeClass('deskTopMenuRightListLight');
         scrollToTheTopAfter();
-        console.log('state 3 destroy');
+        // console.log('state 3 destroy');
     } 
 
     function buildState4() {
@@ -280,7 +280,7 @@ $(function() {
         //change menu location
         $('.deskTopMenuRight').css('top','1em');        
         //Content
-        $('.mobileMenuImg').attr("src","images/mobileMenuBlue.png");
+        $('.mobileMenuImg').attr("src","../../recruiting/images/mobileMenuBlue.png");
         setTimeout(function(){
             $('.benefitCurveContainer').removeClass('hidden animated rotateOutUpLeft');
             $('.benefitCurveContainer').addClass('animated rotateInDownLeft');
@@ -311,7 +311,7 @@ $(function() {
         $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 4;
         scrollToTheTopAfter();
-        console.log('state 4 build');
+        // console.log('state 4 build');
     }
 
     function destroyState4() {
@@ -345,11 +345,11 @@ $(function() {
         $('.paginationState4').addClass('fa-circle-thin');
         $('.paginationContainer i').removeClass('bluePagination');
         //Menu
-        $('.mobileMenuImg').attr("src","images/mobileMenuWhite.png");
+        $('.mobileMenuImg').attr("src","../../recruiting/images/mobileMenuWhite.png");
         $('.deskTopMenuRight').addClass('negativeZ');
         $('.deskTopMenuRight').css('top','40%');
         scrollToTheTopAfter();
-        console.log('state 4 destroy');
+        // console.log('state 4 destroy');
     }
 
     function buildState5() {
@@ -380,7 +380,7 @@ $(function() {
         $('.deskTopMenuRight').removeClass('hidden negativeZ');
         homeState = 5;
         scrollToTheTopAfter();
-        console.log('state 5 build');
+        // console.log('state 5 build');
     }
 
     function destroyState5() {
@@ -408,15 +408,15 @@ $(function() {
         //Menu
         $('.deskTopMenuRight').addClass('negativeZ');
         scrollToTheTopAfter();
-        console.log('state 6 destroy');
+        // console.log('state 6 destroy');
     }
 
     // pagination interaction
     var currentState = 0;
     $('.paginationState0').on('click', function(){
-        if (currentState != 0) {
+        // if (currentState != 0) {
             changeState(0);
-        };
+        // };
         currentState = 0;
    
     });
@@ -532,21 +532,27 @@ $(function() {
         switch (homeState) {
             case 0:
                 buildState0();
+                currentState = 0;
                 break;
             case 1:
                 buildState1();
+                currentState = 1;
                 break;
             case 2:
                 buildState2();
+                currentState = 2;
                 break;
             case 3:
                 buildState3();
+                currentState = 3;
                 break;
             case 4:
                 buildState4();
+                currentState = 4;
                 break;
             case 5:
                 buildState5();
+                currentState = 5;
         }
         
     }
@@ -578,6 +584,41 @@ $(function() {
                 changeHomeCase(-1);
                 scrolled(); 
         }
+    });
+
+    $(document).keydown(function(e) {
+        switch(e.which) {
+            case 37: // left
+            if (stateCaseChange == true) {
+                changeHomeCase(-1);
+                scrolled();
+            }
+            break;
+    
+            case 38: // up
+            if (stateCaseChange == true) {
+                changeHomeCase(-1);
+                scrolled();
+            }
+            break;
+    
+            case 39: // right
+            if (stateCaseChange == true) {
+                changeHomeCase(1);
+                scrolled();
+            }
+            break;
+    
+            case 40: // down
+            if (stateCaseChange == true) {
+                changeHomeCase(1);
+                scrolled();
+            }
+            break;
+    
+            default: return; // exit this handler for other keys
+        }
+        e.preventDefault(); // prevent the default action (scroll / move caret)
     });
 
     // Slow down pardner

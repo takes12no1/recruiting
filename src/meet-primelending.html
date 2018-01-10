@@ -37,7 +37,7 @@
 </head>
 <body class="stretched no-transition" itemid="body">
     <div class="">
-        <div id="sidebar">
+        <div id="sidebar" class="hidden-xs hidden-sm">
             <div class="deskTopMenuRight">
                 <div class="deskTopMenuRightTitle">Menu</div>
                 <div class="deskTopMenuRightList">
@@ -233,8 +233,8 @@
                 </div>
             </div>
         </section>
-        <!-- Leaders -->
-        <section class="leaderSection">
+         <!-- Leaders -->
+         <section class="leaderSection" style="margin-bottom: 4em">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -242,43 +242,56 @@
                         <p>Our leaders have set us on a course of continued growth and prosperity now and in the future. Across the board, we have assembled an unrivaled team of experts in their fields. This leadership team knows how to set priorities, clear obstacles and empower our employees to succeed.</p>
                     </div>
                 </div>
+                <!-- Production Leadership Title -->
                 <div class="row">
                     <div class="col-xs-12">
                         <h3>PRODUCTION LEADERSHIP</h3>
                         <p>Click each picture to learn more.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-target="#blakeslee" aria-expanded="false" aria-controls="blakeslee">
-                        <img src="images/KarenBlakeslee.png" onmouseover="this.src='images/KarenBlakesleeHover.png'" onmouseout="this.src='images/KarenBlakeslee.png'" width="218" height="218" alt="Karen Blakeslee - Executive Vice President, Eastern Division">
-                    </div>
-                    <div id="blakeslee" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
-                        <h2 class="col-xs-10">Karen Blakeslee</h2>
-                        <a class="close col-xs-2" href="#blakeslee" data-toggle="collapse" aria-expanded="true"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                        <div class="col-xs-12">
-                            <h3>Executive Vice President, Eastern Division</h3>
-                            <p>Karen Blakeslee joined PrimeLending in August 2008 as area manager, and was promoted to senior vice president, regional manager, Southeast in February 2011. She is responsible for branch production and operations in North Carolina, South Carolina, Tennessee, Georgia, Alabama, Florida, Mississippi, and Louisiana.</p>
-                            <p>Karen has more than 10 years of experience in the mortgage industry. Before joining PrimeLending, she held positions at CTX Mortgage Company as a regional director of marketing and a division vice president. Karen supports PrimeLending's partnership with the Raleigh Area Habitat for Humanity initiative by serving as a volunteer, and is active in the North Carolina Food Bank organization.</p>
-                            <p>With a Bachelor of Arts degree in education from Oregon State University, she performed her graduate work in the field of instructional technology at Brigham Young University.</p>
+                <!-- Production Leadership List Desktop-->
+                <div class="row panel-group hidden-xs hidden-sm" id="productionLeadership" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default" style="border: none !important">
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-parent="#productionLeadership" data-target="#blakeslee" aria-expanded="false" aria-controls="blakeslee">
+                            <img src="images/KarenBlakeslee.png" onmouseover="this.src='images/KarenBlakesleeHover.png'" onmouseout="this.src='images/KarenBlakeslee.png'" width="218" height="218" alt="Karen Blakeslee - Executive Vice President, Eastern Division">
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-target="#velasco" aria-expanded="false" aria-controls="velasco">
-                        <img src="images/AlVelasco.png" onmouseover="this.src='images/AlVelascoHover.png'" onmouseout="this.src='images/AlVelasco.png'" width="218" height="218" alt="Al Velasco - Executive Vice President, Western Division"> 
-                    </div>
-                    <div id="velasco" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
-                        <h2 class="col-xs-10">Al Velasco</h2>
-                        <a class="close col-xs-2" href="#velasco" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                        <div class="col-xs-12">
-                            <h3>Executive Vice President, Western Division</h3>
-                            <p>Al Velasco joined PrimeLending in August 2009 as area manager. He was promoted to senior vice president, regional manager, Midwest, in December 2011, and to executive vice president — Western division, in May 2014. Al oversees branch production and operations for PrimeLending's branch offices located in Arizona, Arkansas, California, Colorado, Hawaii, Idaho, Iowa, Kansas, Minnesota, Missouri, Nebraska, Nevada, New Mexico, Oklahoma, Oregon, Utah and Washington.</p>
-                            <p>Al has more than 20 years of experience in the mortgage industry. Before joining PrimeLending, he served as the senior vice president, retail production for TCF Bank Corporation. He was also the regional area managers for CTX Mortgage Company and chief operating officer for Hometown Mortgage, a division of Klein Bank.</p>
-                            <p>He has a Bachelor of Arts degree in speech communication and political science from Bethel University.</p>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-parent="#productionLeadership"  data-target="#velasco" aria-expanded="false" aria-controls="velasco">
+                            <img src="images/AlVelasco.png" onmouseover="this.src='images/AlVelascoHover.png'" onmouseout="this.src='images/AlVelasco.png'" width="218" height="218" alt="Al Velasco - Executive Vice President, Western Division"> 
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#arendt" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/BradArendt.png" onmouseover="this.src='images/BradArendtHover.png'" onmouseout="this.src='images/BradArendt.png'" width="218" height="218" alt="Brad Arendt - Senior Vice President, Regional Manager, Southeast">
-                    </div>
-                    <div id="arendt" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-parent="#productionLeadership" data-target="#arendt" aria-expanded="false"aria-controls="arendt">
+                            <img src="images/BradArendt.png" onmouseover="this.src='images/BradArendtHover.png'" onmouseout="this.src='images/BradArendt.png'" width="218" height="218" alt="Brad Arendt - Senior Vice President, Regional Manager, Southeast">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#chick" data-toggle="collapse" data-parent="#productionLeadership"  data-parent="#productionLeaders" aria-expanded="false">
+                            <img src="images/BrianChick.png" onmouseover="this.src='images/BrianChickHover.png'" onmouseout="this.src='images/BrianChick.png'" width="218" height="218" alt="Brian Chick - Senior Vice President, Regional Manager, Midwest"> 
+                        </div>
+                        
+
+                        <div id="blakeslee" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                            <h2 class="col-xs-10">Karen Blakeslee</h2>
+                            <a class="close col-xs-2" href="#blakeslee" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            <div class="col-xs-12">
+                                <h3>Executive Vice President, Eastern Division</h3>
+                                <p>Karen Blakeslee joined PrimeLending in August 2008 as area manager, and was promoted to senior vice president, regional manager, Southeast in February 2011. She is responsible for branch production and operations in North Carolina, South Carolina, Tennessee, Georgia, Alabama, Florida, Mississippi, and Louisiana.</p>
+                                <p>Karen has more than 10 years of experience in the mortgage industry. Before joining PrimeLending, she held positions at CTX Mortgage Company as a regional director of marketing and a division vice president. Karen supports PrimeLending's partnership with the Raleigh Area Habitat for Humanity initiative by serving as a volunteer, and is active in the North Carolina Food Bank organization.</p>
+                                <p>With a Bachelor of Arts degree in education from Oregon State University, she performed her graduate work in the field of instructional technology at Brigham Young University.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="velasco" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                            <h2 class="col-xs-10">Al Velasco</h2>
+                            <a class="close col-xs-2" href="#velasco" data-toggle="collapse" data-parent="#productionLeadership" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            <div class="col-xs-12">
+                                <h3>Executive Vice President, Western Division</h3>
+                                <p>Al Velasco joined PrimeLending in August 2009 as area manager. He was promoted to senior vice president, regional manager, Midwest, in December 2011, and to executive vice president — Western division, in May 2014. Al oversees branch production and operations for PrimeLending's branch offices located in Arizona, Arkansas, California, Colorado, Hawaii, Idaho, Iowa, Kansas, Minnesota, Missouri, Nebraska, Nevada, New Mexico, Oklahoma, Oregon, Utah and Washington.</p>
+                                <p>Al has more than 20 years of experience in the mortgage industry. Before joining PrimeLending, he served as the senior vice president, retail production for TCF Bank Corporation. He was also the regional area managers for CTX Mortgage Company and chief operating officer for Hometown Mortgage, a division of Klein Bank.</p>
+                                <p>He has a Bachelor of Arts degree in speech communication and political science from Bethel University.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="arendt" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Brad Arendt</h2>
                             <a class="close col-xs-2" href="#arendt" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
@@ -288,10 +301,8 @@
                                 <p>Brad is a multiple Chairman’s Club Power Producer, and he is someone who always strives to exhibit PrimeLending’s core convictions and exceptional leadership.</p>
                             </div>
                         </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#chick" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/BrianChick.png" onmouseover="this.src='images/BrianChickHover.png'" onmouseout="this.src='images/BrianChick.png'" width="218" height="218" alt="Brian Chick - Senior Vice President, Regional Manager, Midwest"> 
-                    </div>
-                    <div id="chick" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+
+                        <div id="chick" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Brian Chick</h2>
                             <a class="close col-xs-2" href="#chick" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
@@ -300,11 +311,26 @@
                                 <p>Brian received his Bachelor’s degree from Missouri State University. He currently resides in Missouri with his wife of 20 years and 3 children.</p>
                             </div>
                         </div>
+    
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#head" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/BretHead.png" onmouseover="this.src='images/BretHeadHover.png'" onmouseout="this.src='images/BretHead.png'" width="218" height="218" alt="Bret Head - Senior Vice President, Regional Manager, Mid-America">
-                    </div>
-                    <div id="head" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+                        
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#head" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/BretHead.png" onmouseover="this.src='images/BretHeadHover.png'" onmouseout="this.src='images/BretHead.png'" width="218" height="218" alt="Bret Head - Senior Vice President, Regional Manager, Mid-America">
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#hofstetter" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/EricHofstetter.png" onmouseover="this.src='images/EricHofstetterHover.png'" onmouseout="this.src='images/EricHofstetter.png'" width="218" height="218" alt="Eric Hofstetter - Senior Vice President, Regional Manager, Mid-Atlantic">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#kim" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/UlyKim.png" onmouseover="this.src='images/UlyKimHover.png'" onmouseout="this.src='images/UlyKim.png'" width="218" height="218" alt="Uly Kim - Senior Vice President, Regional Manager, Southern California and Hawaii">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#lee" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/Kellylee.png" onmouseover="this.src='images/KellyleeHover.png'" onmouseout="this.src='images/Kellylee.png'" width="218" height="218" alt="Kelly Lee - Senior Vice President, Regional Manager, Pacific Northwest"> 
+                        </div>
+                        
+                        <div id="head" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Bret Head</h2>
                             <a class="close col-xs-2" href="#head" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
@@ -313,10 +339,8 @@
                                 <p>Bret holds a Bachelor of Arts degree from Anderson University. He is an active member of the Ohio Mortgage Bankers Association and the Indiana Board of Realtors. He resides in Kokomo, Indiana, with his wife and two daughters.</p>
                             </div>
                         </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#hofstetter" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/EricHofstetter.png" onmouseover="this.src='images/EricHofstetterHover.png'" onmouseout="this.src='images/EricHofstetter.png'" width="218" height="218" alt="Eric Hofstetter - Senior Vice President, Regional Manager, Mid-Atlantic">
-                    </div>
-                    <div id="hofstetter" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+
+                        <div id="hofstetter" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Eric Hofstetter</h2>
                             <a class="close col-xs-2" href="#hofstetter" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
@@ -327,10 +351,7 @@
                             </div>
                         </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#kim" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/UlyKim.png" onmouseover="this.src='images/UlyKimHover.png'" onmouseout="this.src='images/UlyKim.png'" width="218" height="218" alt="Uly Kim - Senior Vice President, Regional Manager, Southern California and Hawaii">
-                    </div>
-                    <div id="kim" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+                        <div id="kim" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Uly Kim</h2>
                             <a class="close col-xs-2" href="#kim" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
@@ -340,11 +361,8 @@
                                 <p>Uly serves as a board member for the Asian Real Estate Association of America (AREAA) of Orange County. He holds a Bachelor of Arts degree in Economics and Political Science from University of California, Irvine. A current resident of Yorba Linda, California, Uly is an avid skier, surfer and tennis player, and enjoys spending time with his three boys.</p>
                             </div>
                         </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#lee" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/Kellylee.png" onmouseover="this.src='images/KellyleeHover.png'" onmouseout="this.src='images/Kellylee.png'" width="218" height="218" alt="Kelly Lee - Senior Vice President, Regional Manager, Pacific Northwest"> 
-                    </div>
-                    <div id="lee" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+                        
+                        <div id="lee" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Kelly Lee</h2>
                             <a class="close col-xs-2" href="#lee" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
@@ -356,54 +374,63 @@
                             </div>
                         </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#mccormick" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/MikeMcCormick.png" onmouseover="this.src='images/MikeMcCormickHover.png'" onmouseout="this.src='images/MikeMcCormick.png'" width="218" height="218" alt="Mike McCormick - Senior Vice President, Regional Manager, Northern California">
-                    </div>
-                    <div id="mccormick" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
-                            <h2 class="col-xs-10">Mike McCormick</h2>
-                            <a class="close col-xs-2" href="#mccormick" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                            <div class="col-xs-12">
-                              <h3>Senior Vice President, Regional Manager, Northern California</h3>
-                              <p>Mike has over 25 years of mortgage lending and real estate experience. He joined PrimeLending in December of 2015 after working for Wachovia and Union Bank for more than 21 years.</p>
-                              <p>He is a licensed real estate broker and licensed real estate appraiser, and he holds a Bachelor of Arts degree in Communication Studies from Chico State University in California. He also attended the Pacific Coast Banking School at the University of Washington.</p>
-                              <p>Mike currently resides in Walnut Creek, California with his wife and the youngest of his three children.</p>
-                            </div>
-                    </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#robinson" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/DawnRobinson.png" onmouseover="this.src='images/DawnRobinsonHover.png'" onmouseout="this.src='images/DawnRobinson.png'" width="218" height="218" alt="Dawn Robinson - Senior Vice President, Regional Manager, Southwest Region"> 
-                    </div>
-                    <div id="robinson" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#mccormick" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/MikeMcCormick.png" onmouseover="this.src='images/MikeMcCormickHover.png'" onmouseout="this.src='images/MikeMcCormick.png'" width="218" height="218" alt="Mike McCormick - Senior Vice President, Regional Manager, Northern California">
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#robinson" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/DawnRobinson.png" onmouseover="this.src='images/DawnRobinsonHover.png'" onmouseout="this.src='images/DawnRobinson.png'" width="218" height="218" alt="Dawn Robinson - Senior Vice President, Regional Manager, Southwest Region"> 
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#stroud" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/CathyStroud.png" onmouseover="this.src='images/CathyStroudHover.png'" onmouseout="this.src='images/CathyStroud.png'" width="218" height="218" alt="Cathy Stroud - Senior Vice President, Regional Manager, Central">
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#watkinson" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/MikeWatkinson.png" onmouseover="this.src='images/MikeWatkinsonHover.png'" onmouseout="this.src='images/MikeWatkinson.png'" width="218" height="218" alt="Mike Watkinson - Senior Vice President, Regional Manager, Northeast"> 
+                        </div>
+                        
+                        
+                        
+                        <div id="mccormick" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Mike McCormick</h2>
+                                <a class="close col-xs-2" href="#mccormick" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Northern California</h3>
+                                    <p>Mike has over 25 years of mortgage lending and real estate experience. He joined PrimeLending in December of 2015 after working for Wachovia and Union Bank for more than 21 years.</p>
+                                    <p>He is a licensed real estate broker and licensed real estate appraiser, and he holds a Bachelor of Arts degree in Communication Studies from Chico State University in California. He also attended the Pacific Coast Banking School at the University of Washington.</p>
+                                    <p>Mike currently resides in Walnut Creek, California with his wife and the youngest of his three children.</p>
+                                </div>
+                        </div>
+                        
+                        <div id="robinson" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Dawn Robinson</h2>
                             <a class="close col-xs-2" href="#robinson" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Senior Vice President, Regional Manager, Southwest Region</h3>
-                              <p>Dawn joined PrimeLending, a PlainsCapital company, in 1999 and gained experience as an assistant loan officer and processor and, in time, a loan officer.</p>
-                              <p>Dawn excelled in her earlier positions and soon was appointed as the vice president of secondary marketing/products where she provided leadership in the areas of hedging warehouse lending and investor relations. Proving that she was an asset to the organization, Dawn was promoted to senior vice president, Texas regional manager, where she oversaw a state producing more than $3 billion in sales. In August 2014, Dawn was promoted to senior vice president, regional manager, Southwest. She is responsible for branch production and operations in Texas, New Mexico and Arizona.</p>
-                              <p>Dawn earned the distinction of receiving the James M. Wooten Scholarship for participation in the MBA's Future Leaders Program, and she made the National Mortgage Professional magazine's "40 Under Forty" list in 2010. She has also participated in the Masters' Coach Program through Building Champions. She was recognized as one of the "2013 Most Influential Mortgage Executives" by Mortgage Executive magazine.</p>
-                              <p>Dawn has a Bachelor of Science degree in finance from Texas A&amp;M University and a Master of Business Administration (MBA) degree in entrepreneurship and finance from Southern Methodist University.</p>
+                                <h3>Senior Vice President, Regional Manager, Southwest Region</h3>
+                                <p>Dawn joined PrimeLending, a PlainsCapital company, in 1999 and gained experience as an assistant loan officer and processor and, in time, a loan officer.</p>
+                                <p>Dawn excelled in her earlier positions and soon was appointed as the vice president of secondary marketing/products where she provided leadership in the areas of hedging warehouse lending and investor relations. Proving that she was an asset to the organization, Dawn was promoted to senior vice president, Texas regional manager, where she oversaw a state producing more than $3 billion in sales. In August 2014, Dawn was promoted to senior vice president, regional manager, Southwest. She is responsible for branch production and operations in Texas, New Mexico and Arizona.</p>
+                                <p>Dawn earned the distinction of receiving the James M. Wooten Scholarship for participation in the MBA's Future Leaders Program, and she made the National Mortgage Professional magazine's "40 Under Forty" list in 2010. She has also participated in the Masters' Coach Program through Building Champions. She was recognized as one of the "2013 Most Influential Mortgage Executives" by Mortgage Executive magazine.</p>
+                                <p>Dawn has a Bachelor of Science degree in finance from Texas A&amp;M University and a Master of Business Administration (MBA) degree in entrepreneurship and finance from Southern Methodist University.</p>
                             </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#stroud" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/CathyStroud.png" onmouseover="this.src='images/CathyStroudHover.png'" onmouseout="this.src='images/CathyStroud.png'" width="218" height="218" alt="Cathy Stroud - Senior Vice President, Regional Manager, Central">
-                    </div>
-                    <div id="stroud" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+                        </div>
+                        
+                        <div id="stroud" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Cathy Stroud</h2>
                             <a class="close col-xs-2" href="#stroud" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Senior Vice President, Regional Manager, Central</h3>
-                              <p>Cathy Stroud joined PrimeLending in August 2014 as senior vice president, regional manager, Midwest. She is responsible for branch production and operations in Arkansas, Colorado, Iowa, Kansas, Missouri, Minnesota, Nebraska, Nevada, Oklahoma and Utah.</p>
-                              <p>Before joining PrimeLending, Cathy served as the central region vice president at HomeBridge Financial Services, Inc. Prior to that, she was a regional vice president at Cornerstone Home Lending as well as executive vice president of the central region at CTX Mortgage.</p>
-                              <p>With more than 32 years of experience in the mortgage industry, Cathy has mentored leaders and sales teams to guide them to the highest level of success and achievement, in addition to reaching high levels of funding volume growth throughout her career.</p>
-                              <p>As a resident of Denver, Cathy is actively involved with the Colorado chapter of the Mortgage Bankers Association, having served as president and a member of the board's executive committee. She earned her bachelor's degree from Colorado State University.</p>
+                                <h3>Senior Vice President, Regional Manager, Central</h3>
+                                <p>Cathy Stroud joined PrimeLending in August 2014 as senior vice president, regional manager, Midwest. She is responsible for branch production and operations in Arkansas, Colorado, Iowa, Kansas, Missouri, Minnesota, Nebraska, Nevada, Oklahoma and Utah.</p>
+                                <p>Before joining PrimeLending, Cathy served as the central region vice president at HomeBridge Financial Services, Inc. Prior to that, she was a regional vice president at Cornerstone Home Lending as well as executive vice president of the central region at CTX Mortgage.</p>
+                                <p>With more than 32 years of experience in the mortgage industry, Cathy has mentored leaders and sales teams to guide them to the highest level of success and achievement, in addition to reaching high levels of funding volume growth throughout her career.</p>
+                                <p>As a resident of Denver, Cathy is actively involved with the Colorado chapter of the Mortgage Bankers Association, having served as president and a member of the board's executive committee. She earned her bachelor's degree from Colorado State University.</p>
                             </div>
-                    </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#watkinson" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/MikeWatkinson.png" onmouseover="this.src='images/MikeWatkinsonHover.png'" onmouseout="this.src='images/MikeWatkinson.png'" width="218" height="218" alt="Mike Watkinson - Senior Vice President, Regional Manager, Northeast"> 
-                    </div>
-                    <div id="watkinson" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+                        <div id="watkinson" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Mike Watkinson</h2>
                             <a class="close col-xs-2" href="#watkinson" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
@@ -414,10 +441,28 @@
                             </div>
                         </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#watson" data-toggle="collapse" data-parent="#productionLeaders" aria-expanded="false">
-                        <img src="images/BrandonWatson.png" onmouseover="this.src='images/BrandonWatsonHover.png'" onmouseout="this.src='images/BrandonWatson.png'" width="218" height="218" alt="Brandon Watson - Senior Vice President, Regional Manager, Southern Coastal"> 
-                    </div>
-                    <div id="watson" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#jthompson" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/JoeThompson.png" onmouseover="this.src='images/JoeThompsonHover.png'" onmouseout="this.src='images/JoeThompson.png'" width="218" height="218" alt="Joe Thompson - Senior Vice President, Regional Manager, South Texas"> 
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#watson" data-toggle="collapse" data-parent="#productionLeadership" aria-expanded="false">
+                            <img src="images/BrandonWatson.png" onmouseover="this.src='images/BrandonWatsonHover.png'" onmouseout="this.src='images/BrandonWatson.png'" width="218" height="218" alt="Brandon Watson - Senior Vice President, Regional Manager, Southern Coastal"> 
+                        </div>
+
+                        <div id="jthompson" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                            <h2 class="col-xs-10">Joe Thompson</h2>
+                            <a class="close col-xs-2" href="#jthompson" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            <div class="col-xs-12">
+                                <h3>Senior Vice President, Regional Manager, South Texas</h3>
+                                <p>Joe Thompson, a 14-year veteran of the mortgage industry, is responsible for all production activities in South Texas, including Houston, San Antonio and Austin. Joe joined PrimeLending in 2015 as Area Manager for Southeast Texas, and quickly began making a tremendous impact. Known for his relentless drive to succeed, Joe takes great pride in coaching his team and developing rising stars. Joe epitomizes the high personal character, team-first attitude and servant leadership we value most at PrimeLending. When Hurricane Harvey wreaked havoc on the lives of our customers and employees this year, Joe led our boots on the ground recovery efforts, demonstrating tireless energy, quick decision making and a huge heart along the way.</p>
+                                    <p>Putting his leadership into action in the business community as well, Joe serves as the President of the Houston Mortgage Bankers Association, an organization dedicated to perpetuating the highest professional and ethical standards and representing the interests of the Houston real estate finance industry. In this role, Joe leads local industry advocacy and outreach programs focused on educating the public on the benefits of homeownership.</p>
+                                    <p>Joe holds a degree in Economics/Managerial Studies/Sport Management from Rice University. While in college, he was a proud member of the Rice Owls football team from 1998-2001, and won both the James W. Glanville award for athletics, academics &amp; integrity, and the Jess Neely Defensive Player Award. When he’s supporting his team, Joe pours his passion and energy into coaching youth sports, enjoying quality sushi dinners and spending time with his family.</p>
+                            </div>
+                        </div>
+
+                        <div id="watson" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Brandon Watson</h2>
                             <a class="close col-xs-2" href="#watson" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
@@ -426,195 +471,614 @@
                                 <p>In 2017, Brandon took on the leadership responsibilities for Southern Coastal, which includes all of Mississippi, Alabama, Louisiana and Memphis, as well as the Central and South Florida markets. Brandon currently resides in South Florida.</p>
                             </div>
                         </div>
+                    </div>
                 </div>
+                <!-- Production Leadership List Mobile-->
+                <div class="row panel-group hidden-md hidden-lg" id="productionLeadershipMobile" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default" style="border: none !important">
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-parent="#productionLeadershipMobile" data-target="#blakesleeMobile" aria-expanded="false" aria-controls="blakesleeMobile">
+                                <img src="images/KarenBlakeslee.png" onmouseover="this.src='images/KarenBlakesleeHover.png'" onmouseout="this.src='images/KarenBlakeslee.png'" width="218" height="218" alt="Karen Blakeslee - Executive Vice President, Eastern Division">
+                            </div>
+                            <div id="blakesleeMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Karen Blakeslee</h2>
+                                <a class="close col-xs-2" href="#blakesleeMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Eastern Division</h3>
+                                    <p>Karen Blakeslee joined PrimeLending in August 2008 as area manager, and was promoted to senior vice president, regional manager, Southeast in February 2011. She is responsible for branch production and operations in North Carolina, South Carolina, Tennessee, Georgia, Alabama, Florida, Mississippi, and Louisiana.</p>
+                                    <p>Karen has more than 10 years of experience in the mortgage industry. Before joining PrimeLending, she held positions at CTX Mortgage Company as a regional director of marketing and a division vice president. Karen supports PrimeLending's partnership with the Raleigh Area Habitat for Humanity initiative by serving as a volunteer, and is active in the North Carolina Food Bank organization.</p>
+                                    <p>With a Bachelor of Arts degree in education from Oregon State University, she performed her graduate work in the field of instructional technology at Brigham Young University.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-parent="#productionLeadershipMobile"  data-target="#velascoMobile" aria-expanded="false" aria-controls="velascoMobile">
+                                <img src="images/AlVelasco.png" onmouseover="this.src='images/AlVelascoHover.png'" onmouseout="this.src='images/AlVelasco.png'" width="218" height="218" alt="Al Velasco - Executive Vice President, Western Division"> 
+                            </div>
+
+                            <div id="velascoMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Al Velasco</h2>
+                                <a class="close col-xs-2" href="#velascoMobile" data-toggle="collapse" data-parent="#productionLeadership" ><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Western Division</h3>
+                                    <p>Al Velasco joined PrimeLending in August 2009 as area manager. He was promoted to senior vice president, regional manager, Midwest, in December 2011, and to executive vice president — Western division, in May 2014. Al oversees branch production and operations for PrimeLending's branch offices located in Arizona, Arkansas, California, Colorado, Hawaii, Idaho, Iowa, Kansas, Minnesota, Missouri, Nebraska, Nevada, New Mexico, Oklahoma, Oregon, Utah and Washington.</p>
+                                    <p>Al has more than 20 years of experience in the mortgage industry. Before joining PrimeLending, he served as the senior vice president, retail production for TCF Bank Corporation. He was also the regional area managers for CTX Mortgage Company and chief operating officer for Hometown Mortgage, a division of Klein Bank.</p>
+                                    <p>He has a Bachelor of Arts degree in speech communication and political science from Bethel University.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-parent="#productionLeadershipMobile" data-target="#arendtMobile" aria-expanded="false" aria-controls="arendtMobile">
+                                <img src="images/BradArendt.png" onmouseover="this.src='images/BradArendtHover.png'" onmouseout="this.src='images/BradArendt.png'" width="218" height="218" alt="Brad Arendt - Senior Vice President, Regional Manager, Southeast">
+                            </div>
+
+                            <div id="arendtMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Brad Arendt</h2>
+                                <a class="close col-xs-2" href="#arendtMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Southeast</h3>
+                                    <p>Brad is responsible for leading and supporting the PrimeLending branches in North Carolina, South Carolina, Georgia, Northern Florida, and Central and Eastern Tennessee.</p>
+                                    <p>Brad has been with PrimeLending for almost 9 years and has been the branch manager for the Raleigh group for the last 6 years. During his tenure, Brad has had a significant impact on building PrimeLending’s North Carolina presence, with his branches consistently finishing in the top 5 nationally in volume, units and profitability.</p>
+                                    <p>Brad is a multiple Chairman’s Club Power Producer, and he is someone who always strives to exhibit PrimeLending’s core convictions and exceptional leadership.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-toggle="collapse" data-parent="#productionLeadershipMobile" data-target="#chickMobile" aria-expanded="false" aria-controls="chickMobile">
+                                <img src="images/BrianChick.png" onmouseover="this.src='images/BrianChickHover.png'" onmouseout="this.src='images/BrianChick.png'" width="218" height="218" alt="Brian Chick - Senior Vice President, Regional Manager, Midwest"> 
+                            </div>
+    
+                            <div id="chickMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Brian Chick</h2>
+                                <a class="close col-xs-2" href="#chickMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Midwest</h3>
+                                    <p>Brian joined PrimeLending in 2010. In his current role, he oversees branch production and operations for branch locations in Kansas, Oklahoma, Missouri, and Arkansas. Brian has more than 13 years of experience in the mortgage lending industry. Previously, he worked as a loan officer for Bank of America.</p>
+                                    <p>Brian received his Bachelor’s degree from Missouri State University. He currently resides in Missouri with his wife of 20 years and 3 children.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-3 center"data-toggle="collapse" data-parent="#productionLeadershipMobile" data-target="#headMobile" aria-expanded="false" aria-controls="headMobile">
+                                <img src="images/BretHead.png" onmouseover="this.src='images/BretHeadHover.png'" onmouseout="this.src='images/BretHead.png'" width="218" height="218" alt="Bret Head - Senior Vice President, Regional Manager, Mid-America">
+                            </div>
+
+                            <div id="headMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Bret Head</h2>
+                                <a class="close col-xs-2" href="#headMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Mid-America</h3>
+                                    <p>With more than 23 years of mortgage lending experience, Bret Head joined PrimeLending as an area manager in September 2010 after a successful career with Bank of America. Bret was given the direct charge to grow Indiana and Ohio into a region. Today, the region consists of Indiana, Ohio, Illinois, Wisconsin, Kentucky and Michigan. During his tenure, Bret has built a quality, compliant sales organization focused on purchase lending.</p>
+                                    <p>Bret holds a Bachelor of Arts degree from Anderson University. He is an active member of the Ohio Mortgage Bankers Association and the Indiana Board of Realtors. He resides in Kokomo, Indiana, with his wife and two daughters.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#hofstetterMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/EricHofstetter.png" onmouseover="this.src='images/EricHofstetterHover.png'" onmouseout="this.src='images/EricHofstetter.png'" width="218" height="218" alt="Eric Hofstetter - Senior Vice President, Regional Manager, Mid-Atlantic">
+                            </div>
+
+                            <div id="hofstetterMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Eric Hofstetter</h2>
+                                <a class="close col-xs-2" href="#hofstetterMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Mid-Atlantic</h3>
+                                    <p>Eric Hofstetter joined PrimeLending in 2009 as an area manager for the Mid-Atlantic and in 2012, he was promoted to vice president, Mid-Atlantic region area manager. In January 2015, Eric was promoted to senior vice president, regional manager for the Mid-Atlantic region. In this role, Eric is responsible for branch production and operations in the Mid-Atlantic, which includes Delaware, Maryland, Pennsylvania, Virginia, Washington, D.C. and West Virginia.</p>
+                                    <p>Eric has more than 11 years of experience in the mortgage industry. Before joining PrimeLending, he held senior management positions at National City Mortgage, AT&amp;T and Lucent Technologies. He works out of PrimeLending's office in Timonium, Maryland.</p>
+                                    <p>Eric earned a master's degree in business administration and finance from Loyola University Maryland.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#kimMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/UlyKim.png" onmouseover="this.src='images/UlyKimHover.png'" onmouseout="this.src='images/UlyKim.png'" width="218" height="218" alt="Uly Kim - Senior Vice President, Regional Manager, Southern California and Hawaii">
+                            </div>
+
+                            <div id="kimMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Uly Kim</h2>
+                                <a class="close col-xs-2" href="#kimMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Southern California and Hawaii</h3>
+                                    <p>Uly has been working in the mortgage business since 1997, and joined PrimeLending in 2010 as the Branch Manager for a location in Orange County. He was quickly promoted to Area Manager for Orange County, San Diego County and Hawaii and again was promoted to Senior Vice President and Southern California and Hawaii Regional Manager.</p>
+                                    <p>An energetic champion of the PrimeLending brand, Uly brings experience, creativity and a true passion for working with people, whether homeowners, business partners or team mates. During his tenure, Uly has had a significant impact on expanding PrimeLending’s presence in Southern California and Hawaii, with his branches consistently growing and developing top tier producers. Above all, Uly is an exceptional servant leader, guiding his teams with great integrity, a strong work ethic and a genuine dedication to practicing PrimeLending’s Core Convictions. What is the secret to his success? He would say, "as iron sharpens iron, I’ve been intentional in surrounding myself with men and women of integrity."</p>
+                                    <p>Uly serves as a board member for the Asian Real Estate Association of America (AREAA) of Orange County. He holds a Bachelor of Arts degree in Economics and Political Science from University of California, Irvine. A current resident of Yorba Linda, California, Uly is an avid skier, surfer and tennis player, and enjoys spending time with his three boys.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#leeMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/Kellylee.png" onmouseover="this.src='images/KellyleeHover.png'" onmouseout="this.src='images/Kellylee.png'" width="218" height="218" alt="Kelly Lee - Senior Vice President, Regional Manager, Pacific Northwest"> 
+                            </div>
+                            
+                            <div id="leeMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Kelly Lee</h2>
+                                <a class="close col-xs-2" href="#leeMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Pacific Northwest</h3>
+                                    <p>Kelly Lee joined PrimeLending in November 2014 as senior vice president, regional manager, Pacific Northwest. He is responsible for branch production and operations in Alaska, Idaho, Montana, Oregon and Washington. Kelly offices out of PrimeLending’s “Lake O” branch in Lake Oswego, Oregon.</p>
+                                    <p>Before joining PrimeLending, Kelly served as vice president of sales and executive vice president for a regional mortgage company, where he managed operations including warehouse lines and investor relationships.</p>
+                                    <p>With more than 20 years of experience in the mortgage industry, Kelly has mentored leaders and sales teams to guide them to the highest level of success and achievement.</p>
+                                    <p>He earned a Bachelor of Science from Oregon State University.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#mccormickMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/MikeMcCormick.png" onmouseover="this.src='images/MikeMcCormickHover.png'" onmouseout="this.src='images/MikeMcCormick.png'" width="218" height="218" alt="Mike McCormick - Senior Vice President, Regional Manager, Northern California">
+                            </div>
+
+                            <div id="mccormickMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Mike McCormick</h2>
+                                <a class="close col-xs-2" href="#mccormickMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Northern California</h3>
+                                    <p>Mike has over 25 years of mortgage lending and real estate experience. He joined PrimeLending in December of 2015 after working for Wachovia and Union Bank for more than 21 years.</p>
+                                    <p>He is a licensed real estate broker and licensed real estate appraiser, and he holds a Bachelor of Arts degree in Communication Studies from Chico State University in California. He also attended the Pacific Coast Banking School at the University of Washington.</p>
+                                    <p>Mike currently resides in Walnut Creek, California with his wife and the youngest of his three children.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#robinsonMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/DawnRobinson.png" onmouseover="this.src='images/DawnRobinsonHover.png'" onmouseout="this.src='images/DawnRobinson.png'" width="218" height="218" alt="Dawn Robinson - Senior Vice President, Regional Manager, Southwest Region"> 
+                            </div>
+
+                            <div id="robinsonMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Dawn Robinson</h2>
+                                <a class="close col-xs-2" href="#robinsonMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Southwest Region</h3>
+                                    <p>Dawn joined PrimeLending, a PlainsCapital company, in 1999 and gained experience as an assistant loan officer and processor and, in time, a loan officer.</p>
+                                    <p>Dawn excelled in her earlier positions and soon was appointed as the vice president of secondary marketing/products where she provided leadership in the areas of hedging warehouse lending and investor relations. Proving that she was an asset to the organization, Dawn was promoted to senior vice president, Texas regional manager, where she oversaw a state producing more than $3 billion in sales. In August 2014, Dawn was promoted to senior vice president, regional manager, Southwest. She is responsible for branch production and operations in Texas, New Mexico and Arizona.</p>
+                                    <p>Dawn earned the distinction of receiving the James M. Wooten Scholarship for participation in the MBA's Future Leaders Program, and she made the National Mortgage Professional magazine's "40 Under Forty" list in 2010. She has also participated in the Masters' Coach Program through Building Champions. She was recognized as one of the "2013 Most Influential Mortgage Executives" by Mortgage Executive magazine.</p>
+                                    <p>Dawn has a Bachelor of Science degree in finance from Texas A&amp;M University and a Master of Business Administration (MBA) degree in entrepreneurship and finance from Southern Methodist University.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#stroudMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/CathyStroud.png" onmouseover="this.src='images/CathyStroudHover.png'" onmouseout="this.src='images/CathyStroud.png'" width="218" height="218" alt="Cathy Stroud - Senior Vice President, Regional Manager, Central">
+                            </div>
+
+                            <div id="stroudMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Cathy Stroud</h2>
+                                <a class="close col-xs-2" href="#stroudMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Central</h3>
+                                    <p>Cathy Stroud joined PrimeLending in August 2014 as senior vice president, regional manager, Midwest. She is responsible for branch production and operations in Arkansas, Colorado, Iowa, Kansas, Missouri, Minnesota, Nebraska, Nevada, Oklahoma and Utah.</p>
+                                    <p>Before joining PrimeLending, Cathy served as the central region vice president at HomeBridge Financial Services, Inc. Prior to that, she was a regional vice president at Cornerstone Home Lending as well as executive vice president of the central region at CTX Mortgage.</p>
+                                    <p>With more than 32 years of experience in the mortgage industry, Cathy has mentored leaders and sales teams to guide them to the highest level of success and achievement, in addition to reaching high levels of funding volume growth throughout her career.</p>
+                                    <p>As a resident of Denver, Cathy is actively involved with the Colorado chapter of the Mortgage Bankers Association, having served as president and a member of the board's executive committee. She earned her bachelor's degree from Colorado State University.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#watkinsonMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/MikeWatkinson.png" onmouseover="this.src='images/MikeWatkinsonHover.png'" onmouseout="this.src='images/MikeWatkinson.png'" width="218" height="218" alt="Mike Watkinson - Senior Vice President, Regional Manager, Northeast"> 
+                            </div>
+    
+                            <div id="watkinsonMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Mike Watkinson</h2>
+                                <a class="close col-xs-2" href="#watkinsonMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Northeast</h3>
+                                    <p>Mike Watkinson joined PrimeLending in 2013 as senior vice president, regional manager, Northeast. He is responsible for branch production and operations in New England, New York, New Jersey and western Pennsylvania.</p>
+                                    <p>Mike brings to PrimeLending a strong leadership background with over 25 years of industry experience. Before joining PrimeLending, he served as Senior Vice President at Embrace Home Loans, Regional Sales Executive for Bank of America, District Manager for National City Mortgage and State Manager/Private Mortgage Banking for Citizens Bank.</p>
+                                    <p>He has a Bachelor of Arts degree in industrial technology from Rhode Island College.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#jthompsonMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/JoeThompson.png" onmouseover="this.src='images/JoeThompsonHover.png'" onmouseout="this.src='images/JoeThompson.png'" width="218" height="218" alt="Joe Thompson - Senior Vice President, Regional Manager, South Texas"> 
+                            </div>
+
+                            <div id="jthompsonMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Joe Thompson</h2>
+                                <a class="close col-xs-2" href="#jthompsonMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, South Texas</h3>
+                                    <p>Joe Thompson, a 14-year veteran of the mortgage industry, is responsible for all production activities in South Texas, including Houston, San Antonio and Austin. Joe joined PrimeLending in 2015 as Area Manager for Southeast Texas, and quickly began making a tremendous impact. Known for his relentless drive to succeed, Joe takes great pride in coaching his team and developing rising stars. Joe epitomizes the high personal character, team-first attitude and servant leadership we value most at PrimeLending. When Hurricane Harvey wreaked havoc on the lives of our customers and employees this year, Joe led our boots on the ground recovery efforts, demonstrating tireless energy, quick decision making and a huge heart along the way.</p>
+                                        <p>Putting his leadership into action in the business community as well, Joe serves as the President of the Houston Mortgage Bankers Association, an organization dedicated to perpetuating the highest professional and ethical standards and representing the interests of the Houston real estate finance industry. In this role, Joe leads local industry advocacy and outreach programs focused on educating the public on the benefits of homeownership.</p>
+                                        <p>Joe holds a degree in Economics/Managerial Studies/Sport Management from Rice University. While in college, he was a proud member of the Rice Owls football team from 1998-2001, and won both the James W. Glanville award for athletics, academics &amp; integrity, and the Jess Neely Defensive Player Award. When he’s supporting his team, Joe pours his passion and energy into coaching youth sports, enjoying quality sushi dinners and spending time with his family.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#watsonMobile" data-toggle="collapse" data-parent="#productionLeadershipMobile" aria-expanded="false">
+                                <img src="images/BrandonWatson.png" onmouseover="this.src='images/BrandonWatsonHover.png'" onmouseout="this.src='images/BrandonWatson.png'" width="218" height="218" alt="Brandon Watson - Senior Vice President, Regional Manager, Southern Coastal"> 
+                            </div>
+    
+                            <div id="watsonMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Brandon Watson</h2>
+                                <a class="close col-xs-2" href="#watsonMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Senior Vice President, Regional Manager, Southern Coastal</h3>
+                                    <p>Brandon joined PrimeLending in 2015, serving as the area manager for the Central and South Florida markets. During his time with PrimeLending, Brandon has increased the PrimeLending presence and reputation and has served as a strong ambassador of the culture and core convictions.</p>
+                                    <p>In 2017, Brandon took on the leadership responsibilities for Southern Coastal, which includes all of Mississippi, Alabama, Louisiana and Memphis, as well as the Central and South Florida markets. Brandon currently resides in South Florida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
 
-
+                <!-- Strategic Leadership Title -->
                 <div class="row">
                     <div class="col-xs-12">
                         <h3>STRATEGIC LEADERSHIP</h3>
                         <p>Click each picture to learn more.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#salmans" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/ToddSalmans.png" onmouseover="this.src='images/ToddSalmansHover.png'" onmouseout="this.src='images/ToddSalmans.png'" width="218" height="218" alt="Todd Salmans - Chairman &amp; CEO">
-                    </div>
-                    <div id="salmans" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
-                    <h2 class="col-xs-10">Todd Salmans</h2>
-                    <a class="close col-xs-2 collapsed" href="#salmans" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                    <div class="col-xs-12">
-                      <h3>Chairman &amp; CEO</h3>
-                      <p>Todd Salmans joined PrimeLending in January 2006 as executive vice president and chief operating officer. He was promoted to president in January 2009, and he assumed chief executive officer responsibilities in January 2011. He is responsible for the strategic direction of the company.</p>
-                      <p>With more than 36 years of mortgage banking experience, Todd has held senior level sales and executive management positions for top regional and national mortgage lenders, such as Chase Home Mortgage Corporation, First Union National Bank/First Union Mortgage Corporation, and CTX Mortgage Company.</p>
-                      <p>He serves as a member of the PlainsCapital Corporation board of directors, is a member of the board of directors for the Texas Mortgage Bankers Association, and he is an American Bankers Association Mortgage Origination Committee member. Todd was recognized as one of the "2013 Most Influential Mortgage Executives" and the "2012 CEO of the Year" by Mortgage Executive magazine, an award based on company production, growth rate, reputation and overall integrity. He also attended Kansas State College of Pittsburg.</p>
-                      <p>Read Todd’s most recent blog on <a href="https://blog.primelending.com/surrounded-by-the-best" target="_blank">"Being Surrounded By The Best Of The Best"</a>.</p>
-                    </div>
-                  </div>
+                <!-- Strategic Leadership List Desktop-->
+                <div class="row panel-group hidden-xs hidden-sm" id="strategicLeaders" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default" style="border: none !important">
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#salmans" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/ToddSalmans.png" onmouseover="this.src='images/ToddSalmansHover.png'" onmouseout="this.src='images/ToddSalmans.png'" width="218" height="218" alt="Todd Salmans - Chairman &amp; CEO">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#thompson" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/SteveThompson.png" onmouseover="this.src='images/SteveThompsonHover.png'" onmouseout="this.src='images/SteveThompson.png'" width="218" height="218" alt="Steve Thompson - President"> 
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#harris" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/KristiHarris.png" onmouseover="this.src='images/KristiHarrisHover.png'" onmouseout="this.src='images/KristiHarris.png'" width="218" height="218" alt="Kristi Harris - Executive Vice President, National Operations">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#eggen" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/ScottEggen.png" onmouseover="this.src='images/ScottEggenHover.png'" onmouseout="this.src='images/ScottEggen.png'" width="218" height="218" alt="Scott Eggen - Executive Vice President, Director Capital Markets"> 
+                        </div>
+                        
+                        <div id="salmans" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                            <h2 class="col-xs-10">Todd Salmans</h2>
+                            <a class="close col-xs-2 collapsed" href="#salmans" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            <div class="col-xs-12">
+                                <h3>Chairman &amp; CEO</h3>
+                                <p>Todd Salmans joined PrimeLending in January 2006 as executive vice president and chief operating officer. He was promoted to president in January 2009, and he assumed chief executive officer responsibilities in January 2011. He is responsible for the strategic direction of the company.</p>
+                                <p>With more than 36 years of mortgage banking experience, Todd has held senior level sales and executive management positions for top regional and national mortgage lenders, such as Chase Home Mortgage Corporation, First Union National Bank/First Union Mortgage Corporation, and CTX Mortgage Company.</p>
+                                <p>He serves as a member of the PlainsCapital Corporation board of directors, is a member of the board of directors for the Texas Mortgage Bankers Association, and he is an American Bankers Association Mortgage Origination Committee member. Todd was recognized as one of the "2013 Most Influential Mortgage Executives" and the "2012 CEO of the Year" by Mortgage Executive magazine, an award based on company production, growth rate, reputation and overall integrity. He also attended Kansas State College of Pittsburg.</p>
+                                <p>Read Todd’s most recent blog on <a href="https://blog.primelending.com/surrounded-by-the-best" target="_blank">"Being Surrounded By The Best Of The Best"</a>.</p>
+                            </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#thompson" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/SteveThompson.png" onmouseover="this.src='images/SteveThompsonHover.png'" onmouseout="this.src='images/SteveThompson.png'" width="218" height="218" alt="Steve Thompson - President"> 
-                    </div>
-                    <div id="thompson" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
+                        
+                        <div id="thompson" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
                             <h2 class="col-xs-10">Steve Thompson</h2>
                             <a class="close col-xs-2 collapsed" href="#thompson" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>President</h3>
-                              <p>A 30-year veteran of the mortgage and financial services industry, Steve Thompson leads the company’s 1,300-plus loan originators nationwide, as well as the National Operations, Capital Markets, Joint Ventures and Marketing organizations. Thompson joined PrimeLending in 2011 as the Western Division Manager, quickly earning promotions to EVP, National Sales Leader in 2013 and President in 2017.</p>
-                              <p>Under Thompson’s leadership, PrimeLending has consistently grown national production numbers, ranking in the top 10 in purchase volume each year since 2012<sup style=".65em">1</sup>. Thompson built the production organization by attracting and retaining the greatest talent in the industry – surrounding his team with best-in-class productivity tools, training, marketing and support. As a result, the company has maintained a 96% customer satisfaction rating<sup style=".85em">2</sup>, earned more than <a href="https://www.zillow.com/lender-profile/PrimeLending/" target="_blank">5,000 5-Star Zillow<sup style=".65em">®</sup>reviews</a> and been recognized as a top workplace in several categories by <a href="http://reviews.greatplacetowork.com/primelending?utm_source=fortune&amp;utm_medium=referral&amp;utm_content=reviews-link&amp;utm_campaign=2016-gen-x" target="_blank">Great Place to Work<sup style=".65em">®</sup></a>.</p>
-                              <p>Prior to joining PrimeLending, Thompson held numerous leadership and production positions within the Mortgage and Financial Services industry, including key roles at several prominent nation-wide mortgage lenders. He was recognized as one of the "2013 Most Influential Mortgage Executives" by Mortgage Executive Magazine.</p>
-                              <p>A native of California, Thompson received a BA in Economics from University of California, Los Angeles and a MBA from the Paul Merage School of Business at the University of California, Irvine.</p>
+                                <h3>President</h3>
+                                <p>A 30-year veteran of the mortgage and financial services industry, Steve Thompson leads the company’s 1,300-plus loan originators nationwide, as well as the National Operations, Capital Markets, Joint Ventures and Marketing organizations. Thompson joined PrimeLending in 2011 as the Western Division Manager, quickly earning promotions to EVP, National Sales Leader in 2013 and President in 2017.</p>
+                                <p>Under Thompson’s leadership, PrimeLending has consistently grown national production numbers, ranking in the top 10 in purchase volume each year since 2012<sup style=".65em">1</sup>. Thompson built the production organization by attracting and retaining the greatest talent in the industry – surrounding his team with best-in-class productivity tools, training, marketing and support. As a result, the company has maintained a 96% customer satisfaction rating<sup style=".85em">2</sup>, earned more than <a href="https://www.zillow.com/lender-profile/PrimeLending/" target="_blank">5,000 5-Star Zillow<sup style=".65em">®</sup>reviews</a> and been recognized as a top workplace in several categories by <a href="http://reviews.greatplacetowork.com/primelending?utm_source=fortune&amp;utm_medium=referral&amp;utm_content=reviews-link&amp;utm_campaign=2016-gen-x" target="_blank">Great Place to Work<sup style=".65em">®</sup></a>.</p>
+                                <p>Prior to joining PrimeLending, Thompson held numerous leadership and production positions within the Mortgage and Financial Services industry, including key roles at several prominent nation-wide mortgage lenders. He was recognized as one of the "2013 Most Influential Mortgage Executives" by Mortgage Executive Magazine.</p>
+                                <p>A native of California, Thompson received a BA in Economics from University of California, Los Angeles and a MBA from the Paul Merage School of Business at the University of California, Irvine.</p>
                             </div>
-                          </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#harris" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/KristiHarris.png" onmouseover="this.src='images/KristiHarrisHover.png'" onmouseout="this.src='images/KristiHarris.png'" width="218" height="218" alt="Kristi Harris - Executive Vice President, National Operations">
-                    </div>
-                    <div id="harris" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
+                        
+                        <div id="harris" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
                             <h2 class="col-xs-10">Kristi Harris</h2>
                             <a class="close col-xs-2 collapsed" href="#harris" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, National Operations</h3>
-                              <p>Kristi Harris joined PrimeLending in 1996. As executive vice president of national operations, she is responsible for underwriting, closing, post closing, investor delivery and product development. She and her team support a national branch network with a physical presence in 42 states.</p>
-                              <p>Kristi has more than 25 years of mortgage industry experience and has held numerous roles during her tenure within the mortgage industry, including leadership roles in processing and underwriting. Kristi is a member of the PrimeLending executive management team.</p>
+                                <h3>Executive Vice President, National Operations</h3>
+                                <p>Kristi Harris joined PrimeLending in 1996. As executive vice president of national operations, she is responsible for underwriting, closing, post closing, investor delivery and product development. She and her team support a national branch network with a physical presence in 42 states.</p>
+                                <p>Kristi has more than 25 years of mortgage industry experience and has held numerous roles during her tenure within the mortgage industry, including leadership roles in processing and underwriting. Kristi is a member of the PrimeLending executive management team.</p>
                             </div>
-                          </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#eggen" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/ScottEggen.png" onmouseover="this.src='images/ScottEggenHover.png'" onmouseout="this.src='images/ScottEggen.png'" width="218" height="218" alt="Scott Eggen - Executive Vice President, Director Capital Markets"> 
-                    </div>
-                    <div id="eggen" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
+                        
+                        <div id="eggen" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
                             <h2 class="col-xs-10">Scott Eggen</h2>
                             <a class="close col-xs-2 collapsed" href="#eggen" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, Director Capital Markets</h3>
-                              <p>Scott Eggen joined PrimeLending in March 2001 as senior vice president, capital markets. In October 2012, Scott was promoted to executive vice president, director capital markets. He is responsible for secondary marketing functions, risk management, mortgage loan programs, pricing and investor relations.</p>
-                              <p>Scott has more than 30 years of experience in mortgage banking and finance. He served as senior vice president of marketing for the Heigl Mortgage &amp; Financial Corporation, and was the owner/managing partner of Realty Mortgage Corporation. Scott also served as managing partner of the Eggen Group, which managed proprietary trading of both fixed income and equity markets.</p>
-                              <p>Scott serves as a public speaker for the Mortgage Bankers Association and Texas Mortgage Bankers Association. He has a business finance degree from Normandale College and a business education degree from St. Cloud State University.</p>
+                                <h3>Executive Vice President, Director Capital Markets</h3>
+                                <p>Scott Eggen joined PrimeLending in March 2001 as senior vice president, capital markets. In October 2012, Scott was promoted to executive vice president, director capital markets. He is responsible for secondary marketing functions, risk management, mortgage loan programs, pricing and investor relations.</p>
+                                <p>Scott has more than 30 years of experience in mortgage banking and finance. He served as senior vice president of marketing for the Heigl Mortgage &amp; Financial Corporation, and was the owner/managing partner of Realty Mortgage Corporation. Scott also served as managing partner of the Eggen Group, which managed proprietary trading of both fixed income and equity markets.</p>
+                                <p>Scott serves as a public speaker for the Mortgage Bankers Association and Texas Mortgage Bankers Association. He has a business finance degree from Normandale College and a business education degree from St. Cloud State University.</p>
                             </div>
-                          </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#klein" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/KeithKlein.png" onmouseover="this.src='images/KeithKleinHover.png'" onmouseout="this.src='images/KeithKlein.png'" width="218" height="218" alt="Keith Klein - Executive Vice President, Chief Operating Officer">
-                    </div>
-                    <div id="klein" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+
+
+                        
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#klein" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/KeithKlein.png" onmouseover="this.src='images/KeithKleinHover.png'" onmouseout="this.src='images/KeithKlein.png'" width="218" height="218" alt="Keith Klein - Executive Vice President, Chief Operating Officer">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#elkins" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/TimElkins.png" onmouseover="this.src='images/TimElkinsHover.png'" onmouseout="this.src='images/TimElkins.png'" width="218" height="218" alt="Tim Elkins - Executive Vice President, Chief Information Officer">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#pretzlaff" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/EricPretzlaff.png" onmouseover="this.src='images/EricPretzlaffHover.png'" onmouseout="this.src='images/EricPretzlaff.png'" width="218" height="218" alt="Eric Pretzlaff - Executive Vice President, Chief Financial Officer">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#buhr" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/CindyBuhr.png" onmouseover="this.src='images/CindyBuhrHover.png'" onmouseout="this.src='images/CindyBuhr.png'" width="218" height="218" alt="Cindy S. Buhr - Executive Vice President, General Counsel"> 
+                        </div>
+                                                
+                        <div id="klein" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Keith Klein</h2>
                             <a class="close col-xs-2" href="#klein" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, Chief Operating Officer</h3>
-                              <p>Keith Klein joined PrimeLending in May 2007 as chief financial officer. He was promoted to executive vice president and chief operating officer in January 2011. He works directly with managers responsible for servicing, compliance, quality control, risk management and leasing/facilities.</p>
-                              <p>Before joining PrimeLending, he was senior vice president of forecasting/benchmarking and corporate initiatives at National City Mortgage. Prior to that, he was the senior vice president and controller of Accubanc Mortgage. Keith has more than 20 years of experience in the mortgage banking industry</p>
-                              <p>Keith is a certified public accountant (CPA), and serves as secretary and treasurer on the PrimeLending Board of Directors. Keith is a graduate of Texas State University at San Marcos.</p>
+                                <h3>Executive Vice President, Chief Operating Officer</h3>
+                                <p>Keith Klein joined PrimeLending in May 2007 as chief financial officer. He was promoted to executive vice president and chief operating officer in January 2011. He works directly with managers responsible for servicing, compliance, quality control, risk management and leasing/facilities.</p>
+                                <p>Before joining PrimeLending, he was senior vice president of forecasting/benchmarking and corporate initiatives at National City Mortgage. Prior to that, he was the senior vice president and controller of Accubanc Mortgage. Keith has more than 20 years of experience in the mortgage banking industry</p>
+                                <p>Keith is a certified public accountant (CPA), and serves as secretary and treasurer on the PrimeLending Board of Directors. Keith is a graduate of Texas State University at San Marcos.</p>
                             </div>
-                          </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#elkins" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/TimElkins.png" onmouseover="this.src='images/TimElkinsHover.png'" onmouseout="this.src='images/TimElkins.png'" width="218" height="218" alt="Tim Elkins - Executive Vice President, Chief Information Officer">
-                    </div>
-                    <div id="elkins" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
+                        
+                        <div id="elkins" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
                             <h2 class="col-xs-10">Tim Elkins</h2>
                             <a class="close col-xs-2 collapsed" href="#elkins" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, Chief Information Officer</h3>
-                              <p>Tim Elkins joined PrimeLending in November of 2008 as chief information officer. He is responsible for information security, IT operations and technology initiatives.</p>
-                              <p>Tim has more than 20 years of experience in the mortgage industry. Prior to joining PrimeLending, he served as chief information officer at AmericaHomeKey and BSM Financial.</p>
-                              <p>Tim is the chair of the Residential Technology Forum (RESTECH) for the Mortgage Bankers Association. Additionally, working with fellow CIOs from other industry-leading brands as well as senior staff from CIO.com and the Harvard Business Review, Tim is a member of the Enterprisers Editorial Board.</p>
-                              <p>In 2012 and 2013, Tim was honored as one of the Computerworld Premier 100 IT Leaders and led his team to being selected as a CIO 100 recipient for their innovation in the mortgage industry.</p>
-                              <p>Tim has a Bachelor of Business Administration degree in finance from Texas Tech University.</p>
+                                <h3>Executive Vice President, Chief Information Officer</h3>
+                                <p>Tim Elkins joined PrimeLending in November of 2008 as chief information officer. He is responsible for information security, IT operations and technology initiatives.</p>
+                                <p>Tim has more than 20 years of experience in the mortgage industry. Prior to joining PrimeLending, he served as chief information officer at AmericaHomeKey and BSM Financial.</p>
+                                <p>Tim is the chair of the Residential Technology Forum (RESTECH) for the Mortgage Bankers Association. Additionally, working with fellow CIOs from other industry-leading brands as well as senior staff from CIO.com and the Harvard Business Review, Tim is a member of the Enterprisers Editorial Board.</p>
+                                <p>In 2012 and 2013, Tim was honored as one of the Computerworld Premier 100 IT Leaders and led his team to being selected as a CIO 100 recipient for their innovation in the mortgage industry.</p>
+                                <p>Tim has a Bachelor of Business Administration degree in finance from Texas Tech University.</p>
                             </div>
-                          </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#pretzlaff" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/EricPretzlaff.png" onmouseover="this.src='images/EricPretzlaffHover.png'" onmouseout="this.src='images/EricPretzlaff.png'" width="218" height="218" alt="Eric Pretzlaff - Executive Vice President, Chief Financial Officer">
-                    </div>
-                    <div id="pretzlaff" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
+                        
+                        <div id="pretzlaff" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
                             <h2 class="col-xs-10">Eric Pretzlaff</h2>
                             <a class="close col-xs-2 collapsed" href="#pretzlaff" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, Chief Financial Officer</h3>
-                              <p>Eric Pretzlaff joined PrimeLending in August 2011 as senior vice president, chief financial officer. He is responsible for all aspects of financial management and reporting for the company.</p>
-                              <p>Before joining PrimeLending, Eric served as internal audit director for Centex Corporation until transferring to Centex's wholly owned mortgage company, CTX Mortgage Company, where he later served as controller. Following Pulte Homes' acquisition of Centex in 2009, he assumed the role of controller for Pulte's wholly owned title company, PGP Title.</p>
-                              <p>Eric spent the first 10 years of his career in the Dallas audit practice of Price Waterhouse.</p>
-                              <p>Eric graduated with a Bachelor of Science degree in accounting from Central Michigan University and is a licensed Certified Public Accountant.</p>
+                                <h3>Executive Vice President, Chief Financial Officer</h3>
+                                <p>Eric Pretzlaff joined PrimeLending in August 2011 as senior vice president, chief financial officer. He is responsible for all aspects of financial management and reporting for the company.</p>
+                                <p>Before joining PrimeLending, Eric served as internal audit director for Centex Corporation until transferring to Centex's wholly owned mortgage company, CTX Mortgage Company, where he later served as controller. Following Pulte Homes' acquisition of Centex in 2009, he assumed the role of controller for Pulte's wholly owned title company, PGP Title.</p>
+                                <p>Eric spent the first 10 years of his career in the Dallas audit practice of Price Waterhouse.</p>
+                                <p>Eric graduated with a Bachelor of Science degree in accounting from Central Michigan University and is a licensed Certified Public Accountant.</p>
                             </div>
-                          </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#buhr" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/CindyBuhr.png" onmouseover="this.src='images/CindyBuhrHover.png'" onmouseout="this.src='images/CindyBuhr.png'" width="218" height="218" alt="Cindy S. Buhr - Executive Vice President, General Counsel"> 
-                    </div>
-                    <div id="buhr" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
+                        
+                        <div id="buhr" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
                             <h2 class="col-xs-10">Cindy S. Buhr</h2>
                             <a class="close col-xs-2 collapsed" href="#buhr" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, General Counsel</h3>
-                              <p>Cindy Buhr joined PrimeLending in July 2010. As executive vice president and general counsel, Cindy oversees the legal department.</p>
-                              <p>From April 2009 to June 2010, Cindy was the vice president and assistant general counsel for PlainsCapital Corporation. Prior to that, she spent 11 years with Southwest Airlines Co., serving as associate general counsel.</p>
-                              <p>Before going in-house, Cindy was a litigation associate in Dallas with the law firms of Carrington, Coleman, Sloman &amp; Blumenthal (1993 – 1998) and Johnson &amp; Gibbs (1990 – 1993).</p>
-                              <p>Cindy is a 1990 honors graduate from Southern Methodist University School of Law, where she served on Law Review (Journal of Air Law and Commerce). She earned a BBA in accounting with high honors from the University of Texas at Austin. Cindy is licensed in Texas and is a member of a number of local and national industry and bar associations. She is also active in various civic and community organizations.</p>
+                                <h3>Executive Vice President, General Counsel</h3>
+                                <p>Cindy Buhr joined PrimeLending in July 2010. As executive vice president and general counsel, Cindy oversees the legal department.</p>
+                                <p>From April 2009 to June 2010, Cindy was the vice president and assistant general counsel for PlainsCapital Corporation. Prior to that, she spent 11 years with Southwest Airlines Co., serving as associate general counsel.</p>
+                                <p>Before going in-house, Cindy was a litigation associate in Dallas with the law firms of Carrington, Coleman, Sloman &amp; Blumenthal (1993 – 1998) and Johnson &amp; Gibbs (1990 – 1993).</p>
+                                <p>Cindy is a 1990 honors graduate from Southern Methodist University School of Law, where she served on Law Review (Journal of Air Law and Commerce). She earned a BBA in accounting with high honors from the University of Texas at Austin. Cindy is licensed in Texas and is a member of a number of local and national industry and bar associations. She is also active in various civic and community organizations.</p>
                             </div>
-                          </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#strawn" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/DudleyStrawn.png" onmouseover="this.src='images/DudleyStrawnHover.png'" onmouseout="this.src='images/DudleyStrawn.png'" width="218" height="218" alt="Dudley Strawn - Executive Vice President, Human Resources">
-                    </div>
-                    <div id="strawn" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#strawn" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/DudleyStrawn.png" onmouseover="this.src='images/DudleyStrawnHover.png'" onmouseout="this.src='images/DudleyStrawn.png'" width="218" height="218" alt="Dudley Strawn - Executive Vice President, Human Resources">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#garza" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/SusieGarza.png" onmouseover="this.src='images/SusieGarzaHover.png'" onmouseout="this.src='images/SusieGarza.png'" width="218" height="218" alt="Susie Garza - Executive Vice President, Director of Enterprise Risk Management"> 
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#lugat" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
+                            <img src="images/GeneLugat.png" onmouseover="this.src='images/GeneLugatHover.png'" onmouseout="this.src='images/GeneLugat.png'" width="218" height="218" alt="Gene M. Lugat - Executive Vice President, Strategic Support">
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#howard" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="true">
+                            <img src="images/NisaHoward.png" onmouseover="this.src='images/NisaHowardHover.png'" onmouseout="this.src='images/NisaHoward.png'" width="218" height="218" alt="Nisa Reyes Howard - Executive Vice President, Director of Compliance"> 
+                        </div>
+
+                        <div id="strawn" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
                             <h2 class="col-xs-10">Dudley Strawn</h2>
                             <a class="close col-xs-2 collapsed" href="#strawn" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, Human Resources</h3>
-                              <p>As executive vice president, human resources, Dudley Strawn oversees the HR function, including recruiting, on-boarding, talent management, payroll and employee relations.</p>
-                              <p>Dudley brings a wealth of experience in human resources and the mortgage industry, having served in several human resources roles at Fairway Independent Mortgage, MetLife Home Loans and First Horizon National Corporation.</p>
-                              <p>He has a Master of Arts degree in communications from the University of Memphis.</p>
+                                <h3>Executive Vice President, Human Resources</h3>
+                                <p>As executive vice president, human resources, Dudley Strawn oversees the HR function, including recruiting, on-boarding, talent management, payroll and employee relations.</p>
+                                <p>Dudley brings a wealth of experience in human resources and the mortgage industry, having served in several human resources roles at Fairway Independent Mortgage, MetLife Home Loans and First Horizon National Corporation.</p>
+                                <p>He has a Master of Arts degree in communications from the University of Memphis.</p>
                             </div>
-                          </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#garza" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/SusieGarza.png" onmouseover="this.src='images/SusieGarzaHover.png'" onmouseout="this.src='images/SusieGarza.png'" width="218" height="218" alt="Susie Garza - Executive Vice President, Director of Enterprise Risk Management"> 
-                    </div>
-                    <div id="garza" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="height: 0px;">
+                        </div>
+  
+                        <div id="garza" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
                             <h2 class="col-xs-10">Susie Garza</h2>
                             <a class="close col-xs-2 collapsed" href="#garza" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, Director of Enterprise Risk Management</h3>
-                              <p>Susie Garza joined PrimeLending in 2006 as assistant vice president, production management. In 2009, she was promoted to senior vice president, director of human resources/compliance, and she most recently served as senior vice president, risk officer.</p>
-                              <p>Today, Susie serves as executive vice president, director of enterprise risk management, and is responsible for proactively managing and mitigating risks that could impact PrimeLending's ability to achieve its business objectives and strategic goals.</p>
-                              <p>Susie has more than 17 years of experience in the mortgage lending industry. Before joining PrimeLending, she served as assistant vice president of regional operations and vice president of joint venture relationships at CTX Mortgage Company.</p>
-                              <p>Susie is active in the Dallas Mortgage Bankers Association. She also supports PrimeLending's partnership with the Dallas Area Habitat for Humanity initiative by serving as a volunteer.</p>
+                                <h3>Executive Vice President, Director of Enterprise Risk Management</h3>
+                                <p>Susie Garza joined PrimeLending in 2006 as assistant vice president, production management. In 2009, she was promoted to senior vice president, director of human resources/compliance, and she most recently served as senior vice president, risk officer.</p>
+                                <p>Today, Susie serves as executive vice president, director of enterprise risk management, and is responsible for proactively managing and mitigating risks that could impact PrimeLending's ability to achieve its business objectives and strategic goals.</p>
+                                <p>Susie has more than 17 years of experience in the mortgage lending industry. Before joining PrimeLending, she served as assistant vice president of regional operations and vice president of joint venture relationships at CTX Mortgage Company.</p>
+                                <p>Susie is active in the Dallas Mortgage Bankers Association. She also supports PrimeLending's partnership with the Dallas Area Habitat for Humanity initiative by serving as a volunteer.</p>
                             </div>
-                          </div>
+                        </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#lugat" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="false">
-                        <img src="images/GeneLugat.png" onmouseover="this.src='images/GeneLugatHover.png'" onmouseout="this.src='images/GeneLugat.png'" width="218" height="218" alt="Gene M. Lugat - Executive Vice President, Strategic Support">
-                    </div>
-                    <div id="lugat" class="collapse col-xs-12 leaderDetails" aria-expanded="false">
+                        <div id="lugat" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
                             <h2 class="col-xs-10">Gene M. Lugat</h2>
                             <a class="close col-xs-2" href="#lugat" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, Strategic Support</h3>
-                              <p>Gene M. Lugat joined PrimeLending, A PlainsCapital Company as Senior Vice President, Regional Production Manager for the Mid-Atlantic Region in 2009. In October 2012, he was promoted to Executive Vice President of the Eastern Division/National Industry and Political Relations with responsibility for production for all 28 states east of the Mississippi. In 2017, he took on additional executive leadership responsibilities representing PrimeLendings’ government affairs and industry policies in Washington, DC.</p>
-                              <p>As a respected and distinguished professional, Gene is a highly sought after keynote speaker. He recently served on the National MBA’s MORPAC Committee as a board member for the 2015/2016 election cycles. In January 2017, he was appointed Chairman of the National MBA’s Mortgage Action Alliance Committee for the 2017/2018 cycles.</p>
-                              <p>A veteran with over thirty years of experience in the mortgage industry, Gene brings a wealth of business acumen and proven leadership expertise to his role. He served the Maryland Mortgage Bankers Association as its 52nd President in 2001, and has been a board member for the past 22 years. In 2006, he was named “Maryland Mortgage Banker of the Year” by the MDMBA. Gene is a MBA’s Future Leaders Program graduate class of 2000.</p>
-                              <p>Gene is a graduate of Shepherd University and a member of its Athletic Hall of Fame. He is happily married and the proud father of three young men.</p>
+                                <h3>Executive Vice President, Strategic Support</h3>
+                                <p>Gene M. Lugat joined PrimeLending, A PlainsCapital Company as Senior Vice President, Regional Production Manager for the Mid-Atlantic Region in 2009. In October 2012, he was promoted to Executive Vice President of the Eastern Division/National Industry and Political Relations with responsibility for production for all 28 states east of the Mississippi. In 2017, he took on additional executive leadership responsibilities representing PrimeLendings’ government affairs and industry policies in Washington, DC.</p>
+                                <p>As a respected and distinguished professional, Gene is a highly sought after keynote speaker. He recently served on the National MBA’s MORPAC Committee as a board member for the 2015/2016 election cycles. In January 2017, he was appointed Chairman of the National MBA’s Mortgage Action Alliance Committee for the 2017/2018 cycles.</p>
+                                <p>A veteran with over thirty years of experience in the mortgage industry, Gene brings a wealth of business acumen and proven leadership expertise to his role. He served the Maryland Mortgage Bankers Association as its 52nd President in 2001, and has been a board member for the past 22 years. In 2006, he was named “Maryland Mortgage Banker of the Year” by the MDMBA. Gene is a MBA’s Future Leaders Program graduate class of 2000.</p>
+                                <p>Gene is a graduate of Shepherd University and a member of its Athletic Hall of Fame. He is happily married and the proud father of three young men.</p>
                             </div>
-                          </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#howard" data-toggle="collapse" data-parent="#strategicLeaders" aria-expanded="true">
-                        <img src="images/NisaHoward.png" onmouseover="this.src='images/NisaHowardHover.png'" onmouseout="this.src='images/NisaHoward.png'" width="218" height="218" alt="Nisa Reyes Howard - Executive Vice President, Director of Compliance"> 
-                    </div>
-                    <div id="howard" class="collapse col-xs-12 leaderDetails" aria-expanded="false" style="">
+                        </div>
+                       
+                        <div id="howard" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="">
                             <h2 class="col-xs-10">Nisa Reyes Howard</h2>
                             <a class="close col-xs-2" href="#howard" data-toggle="collapse" aria-expanded="true"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                             <div class="col-xs-12">
-                              <h3>Executive Vice President, Director of Compliance</h3>
-                              <p>Since joining PrimeLending in 2014, Nisa Reyes Howard has led the Compliance Department with responsibility for all monitoring of the regulatory environment, testing of regulatory compliance, operations and sales support, document management, and regulator relationship management.</p>
-                              <p>Nisa has been in the financial services industry for more than 20 years, with an emphasis on mortgage lending. Prior to joining PrimeLending, Nisa served as Senior Compliance Director for CitiMortgage with oversight of the National Mortgage Settlement; Director of Production Compliance for MetLife Bank N.A; and several roles for Bank of America Home Loans including 1st Vice President—Wholesale Compliance and Operational Risk and Production Attorney in the Legal Department.</p>
-                              <p>Nisa is a State Bar of Texas Licensed Attorney graduating from Texas A&amp;M Law School in 2004. Nisa holds an undergraduate degree from University of Texas at Arlington.</p>
+                                <h3>Executive Vice President, Director of Compliance</h3>
+                                <p>Since joining PrimeLending in 2014, Nisa Reyes Howard has led the Compliance Department with responsibility for all monitoring of the regulatory environment, testing of regulatory compliance, operations and sales support, document management, and regulator relationship management.</p>
+                                <p>Nisa has been in the financial services industry for more than 20 years, with an emphasis on mortgage lending. Prior to joining PrimeLending, Nisa served as Senior Compliance Director for CitiMortgage with oversight of the National Mortgage Settlement; Director of Production Compliance for MetLife Bank N.A; and several roles for Bank of America Home Loans including 1st Vice President—Wholesale Compliance and Operational Risk and Production Attorney in the Legal Department.</p>
+                                <p>Nisa is a State Bar of Texas Licensed Attorney graduating from Texas A&amp;M Law School in 2004. Nisa holds an undergraduate degree from University of Texas at Arlington.</p>
                             </div>
-                          </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Strategic Leadership List Mobile-->
+                <div class="row panel-group hidden-md hidden-lg" id="strategicLeadersMobile" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default" style="border: none !important">
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#salmansMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/ToddSalmans.png" onmouseover="this.src='images/ToddSalmansHover.png'" onmouseout="this.src='images/ToddSalmans.png'" width="218" height="218" alt="Todd Salmans - Chairman &amp; CEO">
+                            </div>
+                            <div id="salmansMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Todd Salmans</h2>
+                                <a class="close col-xs-2 collapsed" href="#salmansMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Chairman &amp; CEO</h3>
+                                    <p>Todd Salmans joined PrimeLending in January 2006 as executive vice president and chief operating officer. He was promoted to president in January 2009, and he assumed chief executive officer responsibilities in January 2011. He is responsible for the strategic direction of the company.</p>
+                                    <p>With more than 36 years of mortgage banking experience, Todd has held senior level sales and executive management positions for top regional and national mortgage lenders, such as Chase Home Mortgage Corporation, First Union National Bank/First Union Mortgage Corporation, and CTX Mortgage Company.</p>
+                                    <p>He serves as a member of the PlainsCapital Corporation board of directors, is a member of the board of directors for the Texas Mortgage Bankers Association, and he is an American Bankers Association Mortgage Origination Committee member. Todd was recognized as one of the "2013 Most Influential Mortgage Executives" and the "2012 CEO of the Year" by Mortgage Executive magazine, an award based on company production, growth rate, reputation and overall integrity. He also attended Kansas State College of Pittsburg.</p>
+                                    <p>Read Todd’s most recent blog on <a href="https://blog.primelending.com/surrounded-by-the-best" target="_blank">"Being Surrounded By The Best Of The Best"</a>.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#thompsonMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/SteveThompson.png" onmouseover="this.src='images/SteveThompsonHover.png'" onmouseout="this.src='images/SteveThompson.png'" width="218" height="218" alt="Steve Thompson - President"> 
+                            </div>
+                            <div id="thompsonMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Steve Thompson</h2>
+                                <a class="close col-xs-2 collapsed" href="#thompsonMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>President</h3>
+                                    <p>A 30-year veteran of the mortgage and financial services industry, Steve Thompson leads the company’s 1,300-plus loan originators nationwide, as well as the National Operations, Capital Markets, Joint Ventures and Marketing organizations. Thompson joined PrimeLending in 2011 as the Western Division Manager, quickly earning promotions to EVP, National Sales Leader in 2013 and President in 2017.</p>
+                                    <p>Under Thompson’s leadership, PrimeLending has consistently grown national production numbers, ranking in the top 10 in purchase volume each year since 2012<sup style=".65em">1</sup>. Thompson built the production organization by attracting and retaining the greatest talent in the industry – surrounding his team with best-in-class productivity tools, training, marketing and support. As a result, the company has maintained a 96% customer satisfaction rating<sup style=".85em">2</sup>, earned more than <a href="https://www.zillow.com/lender-profile/PrimeLending/" target="_blank">5,000 5-Star Zillow<sup style=".65em">®</sup>reviews</a> and been recognized as a top workplace in several categories by <a href="http://reviews.greatplacetowork.com/primelending?utm_source=fortune&amp;utm_medium=referral&amp;utm_content=reviews-link&amp;utm_campaign=2016-gen-x" target="_blank">Great Place to Work<sup style=".65em">®</sup></a>.</p>
+                                    <p>Prior to joining PrimeLending, Thompson held numerous leadership and production positions within the Mortgage and Financial Services industry, including key roles at several prominent nation-wide mortgage lenders. He was recognized as one of the "2013 Most Influential Mortgage Executives" by Mortgage Executive Magazine.</p>
+                                    <p>A native of California, Thompson received a BA in Economics from University of California, Los Angeles and a MBA from the Paul Merage School of Business at the University of California, Irvine.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#harrisMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/KristiHarris.png" onmouseover="this.src='images/KristiHarrisHover.png'" onmouseout="this.src='images/KristiHarris.png'" width="218" height="218" alt="Kristi Harris - Executive Vice President, National Operations">
+                            </div>
+                            <div id="harrisMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Kristi Harris</h2>
+                                <a class="close col-xs-2 collapsed" href="#harrisMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, National Operations</h3>
+                                    <p>Kristi Harris joined PrimeLending in 1996. As executive vice president of national operations, she is responsible for underwriting, closing, post closing, investor delivery and product development. She and her team support a national branch network with a physical presence in 42 states.</p>
+                                    <p>Kristi has more than 25 years of mortgage industry experience and has held numerous roles during her tenure within the mortgage industry, including leadership roles in processing and underwriting. Kristi is a member of the PrimeLending executive management team.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#eggenMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/ScottEggen.png" onmouseover="this.src='images/ScottEggenHover.png'" onmouseout="this.src='images/ScottEggen.png'" width="218" height="218" alt="Scott Eggen - Executive Vice President, Director Capital Markets"> 
+                            </div>
+                            <div id="eggenMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Scott Eggen</h2>
+                                <a class="close col-xs-2 collapsed" href="#eggenMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Director Capital Markets</h3>
+                                    <p>Scott Eggen joined PrimeLending in March 2001 as senior vice president, capital markets. In October 2012, Scott was promoted to executive vice president, director capital markets. He is responsible for secondary marketing functions, risk management, mortgage loan programs, pricing and investor relations.</p>
+                                    <p>Scott has more than 30 years of experience in mortgage banking and finance. He served as senior vice president of marketing for the Heigl Mortgage &amp; Financial Corporation, and was the owner/managing partner of Realty Mortgage Corporation. Scott also served as managing partner of the Eggen Group, which managed proprietary trading of both fixed income and equity markets.</p>
+                                    <p>Scott serves as a public speaker for the Mortgage Bankers Association and Texas Mortgage Bankers Association. He has a business finance degree from Normandale College and a business education degree from St. Cloud State University.</p>
+                                </div>
+                            </div>
+    
+    
+    
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#kleinMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/KeithKlein.png" onmouseover="this.src='images/KeithKleinHover.png'" onmouseout="this.src='images/KeithKlein.png'" width="218" height="218" alt="Keith Klein - Executive Vice President, Chief Operating Officer">
+                            </div>
+                            <div id="kleinMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Keith Klein</h2>
+                                <a class="close col-xs-2" href="#kleinMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Chief Operating Officer</h3>
+                                    <p>Keith Klein joined PrimeLending in May 2007 as chief financial officer. He was promoted to executive vice president and chief operating officer in January 2011. He works directly with managers responsible for servicing, compliance, quality control, risk management and leasing/facilities.</p>
+                                    <p>Before joining PrimeLending, he was senior vice president of forecasting/benchmarking and corporate initiatives at National City Mortgage. Prior to that, he was the senior vice president and controller of Accubanc Mortgage. Keith has more than 20 years of experience in the mortgage banking industry</p>
+                                    <p>Keith is a certified public accountant (CPA), and serves as secretary and treasurer on the PrimeLending Board of Directors. Keith is a graduate of Texas State University at San Marcos.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#elkinsMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/TimElkins.png" onmouseover="this.src='images/TimElkinsHover.png'" onmouseout="this.src='images/TimElkins.png'" width="218" height="218" alt="Tim Elkins - Executive Vice President, Chief Information Officer">
+                            </div>
+                            <div id="elkinsMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Tim Elkins</h2>
+                                <a class="close col-xs-2 collapsed" href="#elkinsMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Chief Information Officer</h3>
+                                    <p>Tim Elkins joined PrimeLending in November of 2008 as chief information officer. He is responsible for information security, IT operations and technology initiatives.</p>
+                                    <p>Tim has more than 20 years of experience in the mortgage industry. Prior to joining PrimeLending, he served as chief information officer at AmericaHomeKey and BSM Financial.</p>
+                                    <p>Tim is the chair of the Residential Technology Forum (RESTECH) for the Mortgage Bankers Association. Additionally, working with fellow CIOs from other industry-leading brands as well as senior staff from CIO.com and the Harvard Business Review, Tim is a member of the Enterprisers Editorial Board.</p>
+                                    <p>In 2012 and 2013, Tim was honored as one of the Computerworld Premier 100 IT Leaders and led his team to being selected as a CIO 100 recipient for their innovation in the mortgage industry.</p>
+                                    <p>Tim has a Bachelor of Business Administration degree in finance from Texas Tech University.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#pretzlaffMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/EricPretzlaff.png" onmouseover="this.src='images/EricPretzlaffHover.png'" onmouseout="this.src='images/EricPretzlaff.png'" width="218" height="218" alt="Eric Pretzlaff - Executive Vice President, Chief Financial Officer">
+                            </div>
+                            <div id="pretzlaffMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Eric Pretzlaff</h2>
+                                <a class="close col-xs-2 collapsed" href="#pretzlaffMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Chief Financial Officer</h3>
+                                    <p>Eric Pretzlaff joined PrimeLending in August 2011 as senior vice president, chief financial officer. He is responsible for all aspects of financial management and reporting for the company.</p>
+                                    <p>Before joining PrimeLending, Eric served as internal audit director for Centex Corporation until transferring to Centex's wholly owned mortgage company, CTX Mortgage Company, where he later served as controller. Following Pulte Homes' acquisition of Centex in 2009, he assumed the role of controller for Pulte's wholly owned title company, PGP Title.</p>
+                                    <p>Eric spent the first 10 years of his career in the Dallas audit practice of Price Waterhouse.</p>
+                                    <p>Eric graduated with a Bachelor of Science degree in accounting from Central Michigan University and is a licensed Certified Public Accountant.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#buhrMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/CindyBuhr.png" onmouseover="this.src='images/CindyBuhrHover.png'" onmouseout="this.src='images/CindyBuhr.png'" width="218" height="218" alt="Cindy S. Buhr - Executive Vice President, General Counsel"> 
+                            </div>
+                            <div id="buhrMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Cindy S. Buhr</h2>
+                                <a class="close col-xs-2 collapsed" href="#buhrMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, General Counsel</h3>
+                                    <p>Cindy Buhr joined PrimeLending in July 2010. As executive vice president and general counsel, Cindy oversees the legal department.</p>
+                                    <p>From April 2009 to June 2010, Cindy was the vice president and assistant general counsel for PlainsCapital Corporation. Prior to that, she spent 11 years with Southwest Airlines Co., serving as associate general counsel.</p>
+                                    <p>Before going in-house, Cindy was a litigation associate in Dallas with the law firms of Carrington, Coleman, Sloman &amp; Blumenthal (1993 – 1998) and Johnson &amp; Gibbs (1990 – 1993).</p>
+                                    <p>Cindy is a 1990 honors graduate from Southern Methodist University School of Law, where she served on Law Review (Journal of Air Law and Commerce). She earned a BBA in accounting with high honors from the University of Texas at Austin. Cindy is licensed in Texas and is a member of a number of local and national industry and bar associations. She is also active in various civic and community organizations.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#strawnMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/DudleyStrawn.png" onmouseover="this.src='images/DudleyStrawnHover.png'" onmouseout="this.src='images/DudleyStrawn.png'" width="218" height="218" alt="Dudley Strawn - Executive Vice President, Human Resources">
+                            </div>
+                            <div id="strawnMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Dudley Strawn</h2>
+                                <a class="close col-xs-2 collapsed" href="#strawnMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Human Resources</h3>
+                                    <p>As executive vice president, human resources, Dudley Strawn oversees the HR function, including recruiting, on-boarding, talent management, payroll and employee relations.</p>
+                                    <p>Dudley brings a wealth of experience in human resources and the mortgage industry, having served in several human resources roles at Fairway Independent Mortgage, MetLife Home Loans and First Horizon National Corporation.</p>
+                                    <p>He has a Master of Arts degree in communications from the University of Memphis.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#garzaMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/SusieGarza.png" onmouseover="this.src='images/SusieGarzaHover.png'" onmouseout="this.src='images/SusieGarza.png'" width="218" height="218" alt="Susie Garza - Executive Vice President, Director of Enterprise Risk Management"> 
+                            </div>
+                            <div id="garzaMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="height: 0px;">
+                                <h2 class="col-xs-10">Susie Garza</h2>
+                                <a class="close col-xs-2 collapsed" href="#garzaMobile" data-toggle="collapse" aria-expanded="false"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Director of Enterprise Risk Management</h3>
+                                    <p>Susie Garza joined PrimeLending in 2006 as assistant vice president, production management. In 2009, she was promoted to senior vice president, director of human resources/compliance, and she most recently served as senior vice president, risk officer.</p>
+                                    <p>Today, Susie serves as executive vice president, director of enterprise risk management, and is responsible for proactively managing and mitigating risks that could impact PrimeLending's ability to achieve its business objectives and strategic goals.</p>
+                                    <p>Susie has more than 17 years of experience in the mortgage lending industry. Before joining PrimeLending, she served as assistant vice president of regional operations and vice president of joint venture relationships at CTX Mortgage Company.</p>
+                                    <p>Susie is active in the Dallas Mortgage Bankers Association. She also supports PrimeLending's partnership with the Dallas Area Habitat for Humanity initiative by serving as a volunteer.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#lugatMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="false">
+                                <img src="images/GeneLugat.png" onmouseover="this.src='images/GeneLugatHover.png'" onmouseout="this.src='images/GeneLugat.png'" width="218" height="218" alt="Gene M. Lugat - Executive Vice President, Strategic Support">
+                            </div>
+                            <div id="lugatMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false">
+                                <h2 class="col-xs-10">Gene M. Lugat</h2>
+                                <a class="close col-xs-2" href="#lugatMobile" data-toggle="collapse"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Strategic Support</h3>
+                                    <p>Gene M. Lugat joined PrimeLending, A PlainsCapital Company as Senior Vice President, Regional Production Manager for the Mid-Atlantic Region in 2009. In October 2012, he was promoted to Executive Vice President of the Eastern Division/National Industry and Political Relations with responsibility for production for all 28 states east of the Mississippi. In 2017, he took on additional executive leadership responsibilities representing PrimeLendings’ government affairs and industry policies in Washington, DC.</p>
+                                    <p>As a respected and distinguished professional, Gene is a highly sought after keynote speaker. He recently served on the National MBA’s MORPAC Committee as a board member for the 2015/2016 election cycles. In January 2017, he was appointed Chairman of the National MBA’s Mortgage Action Alliance Committee for the 2017/2018 cycles.</p>
+                                    <p>A veteran with over thirty years of experience in the mortgage industry, Gene brings a wealth of business acumen and proven leadership expertise to his role. He served the Maryland Mortgage Bankers Association as its 52nd President in 2001, and has been a board member for the past 22 years. In 2006, he was named “Maryland Mortgage Banker of the Year” by the MDMBA. Gene is a MBA’s Future Leaders Program graduate class of 2000.</p>
+                                    <p>Gene is a graduate of Shepherd University and a member of its Athletic Hall of Fame. He is happily married and the proud father of three young men.</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-4 col-md-3 center" data-target="#howardMobile" data-toggle="collapse" data-parent="#strategicLeadersMobile" aria-expanded="true">
+                                <img src="images/NisaHoward.png" onmouseover="this.src='images/NisaHowardHover.png'" onmouseout="this.src='images/NisaHoward.png'" width="218" height="218" alt="Nisa Reyes Howard - Executive Vice President, Director of Compliance"> 
+                            </div>
+                            <div id="howardMobile" class="collapse col-xs-12 leaderDetails" role="tabpanel" aria-expanded="false" style="">
+                                <h2 class="col-xs-10">Nisa Reyes Howard</h2>
+                                <a class="close col-xs-2" href="#howardMobile" data-toggle="collapse" aria-expanded="true"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <div class="col-xs-12">
+                                    <h3>Executive Vice President, Director of Compliance</h3>
+                                    <p>Since joining PrimeLending in 2014, Nisa Reyes Howard has led the Compliance Department with responsibility for all monitoring of the regulatory environment, testing of regulatory compliance, operations and sales support, document management, and regulator relationship management.</p>
+                                    <p>Nisa has been in the financial services industry for more than 20 years, with an emphasis on mortgage lending. Prior to joining PrimeLending, Nisa served as Senior Compliance Director for CitiMortgage with oversight of the National Mortgage Settlement; Director of Production Compliance for MetLife Bank N.A; and several roles for Bank of America Home Loans including 1st Vice President—Wholesale Compliance and Operational Risk and Production Attorney in the Legal Department.</p>
+                                    <p>Nisa is a State Bar of Texas Licensed Attorney graduating from Texas A&amp;M Law School in 2004. Nisa holds an undergraduate degree from University of Texas at Arlington.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
             </div>
-        </section>
+        </section> 
 
 
 

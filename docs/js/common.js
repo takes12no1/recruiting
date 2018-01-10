@@ -43,17 +43,20 @@ $(function() {
     function openModal() {
         $('.modalOuter').removeClass('hidden animated zoomOut negativeZ');
         $('.modalOuter').addClass('animated zoomIn');
+        $("body").addClass("modal-open");
         modalOpen = true;
-        
+        console.log(modalOpen);
     }
 
     function closeModal() {
         $('.modalOuter').removeClass('animated zoomIn');
         $('.modalOuter').addClass('animated zoomOut');
+        $("body").removeClass("modal-open");
         modalOpen = false;
         setTimeout(function(){
             $('.modalOuter').addClass('negativeZ');
         }, 1000);
+        console.log(modalOpen);
         
     }
 
